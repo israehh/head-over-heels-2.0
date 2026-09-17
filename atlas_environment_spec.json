@@ -1,0 +1,3948 @@
+{
+  "atlas": {
+    "name": "atlas_environment.png",
+    "dimensions": {
+      "width": 2048,
+      "height": 2048
+    },
+    "format": "RGBA8888_PNG",
+    "filterMode": "Point/Nearest",
+    "totalElements": 168,
+    "shelfPackedFinalHeight": 634,
+    "occupancyRate": "31.0% (Vertical Shelf)"
+  },
+  "biomes": {
+    "alpha": {
+      "name": "Cryo-Docking Bay",
+      "primaryTile": "tile_floor_alpha_var1"
+    },
+    "beta": {
+      "name": "Engineering Core & Heavy Cargo",
+      "primaryTile": "tile_floor_beta_var1"
+    },
+    "gamma": {
+      "name": "Logistics Grid & Fusion Confinement",
+      "primaryTile": "tile_floor_gamma_var1"
+    },
+    "delta": {
+      "name": "Power Substation & Stacking Yard",
+      "primaryTile": "tile_floor_delta_var1"
+    },
+    "omega": {
+      "name": "Citadel Bastion & Overmind Sanctum",
+      "primaryTile": "tile_floor_omega_var1"
+    },
+    "nexus": {
+      "name": "Orbital Central Transit Nexus",
+      "primaryTile": "tile_floor_nexus_var1"
+    },
+    "secrets": {
+      "name": "Catacombs & Secret Caches",
+      "primaryTile": "tile_floor_secrets_var1"
+    }
+  },
+  "elements": [
+    {
+      "id": "tile_floor_alpha_var1",
+      "name": "ALPHA Floor Tile Var 1",
+      "category": "FLOORS",
+      "biome": "alpha",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_alpha_var2",
+      "name": "ALPHA Floor Tile Var 2",
+      "category": "FLOORS",
+      "biome": "alpha",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 66,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_alpha_var3",
+      "name": "ALPHA Floor Tile Var 3",
+      "category": "FLOORS",
+      "biome": "alpha",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 132,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_alpha_var4",
+      "name": "ALPHA Floor Tile Var 4",
+      "category": "FLOORS",
+      "biome": "alpha",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 198,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_hazard_alpha",
+      "name": "ALPHA Hazard Border Tile",
+      "category": "FLOORS",
+      "biome": "alpha",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 264,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_grate_alpha",
+      "name": "ALPHA Subfloor Grate Tile",
+      "category": "FLOORS",
+      "biome": "alpha",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 330,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_beta_var1",
+      "name": "BETA Floor Tile Var 1",
+      "category": "FLOORS",
+      "biome": "beta",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 396,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_beta_var2",
+      "name": "BETA Floor Tile Var 2",
+      "category": "FLOORS",
+      "biome": "beta",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 462,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_beta_var3",
+      "name": "BETA Floor Tile Var 3",
+      "category": "FLOORS",
+      "biome": "beta",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 528,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_beta_var4",
+      "name": "BETA Floor Tile Var 4",
+      "category": "FLOORS",
+      "biome": "beta",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 594,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_hazard_beta",
+      "name": "BETA Hazard Border Tile",
+      "category": "FLOORS",
+      "biome": "beta",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 660,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_grate_beta",
+      "name": "BETA Subfloor Grate Tile",
+      "category": "FLOORS",
+      "biome": "beta",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 726,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_gamma_var1",
+      "name": "GAMMA Floor Tile Var 1",
+      "category": "FLOORS",
+      "biome": "gamma",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 792,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_gamma_var2",
+      "name": "GAMMA Floor Tile Var 2",
+      "category": "FLOORS",
+      "biome": "gamma",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 858,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_gamma_var3",
+      "name": "GAMMA Floor Tile Var 3",
+      "category": "FLOORS",
+      "biome": "gamma",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 924,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_gamma_var4",
+      "name": "GAMMA Floor Tile Var 4",
+      "category": "FLOORS",
+      "biome": "gamma",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 990,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_hazard_gamma",
+      "name": "GAMMA Hazard Border Tile",
+      "category": "FLOORS",
+      "biome": "gamma",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1056,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_grate_gamma",
+      "name": "GAMMA Subfloor Grate Tile",
+      "category": "FLOORS",
+      "biome": "gamma",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1122,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_delta_var1",
+      "name": "DELTA Floor Tile Var 1",
+      "category": "FLOORS",
+      "biome": "delta",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1188,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_delta_var2",
+      "name": "DELTA Floor Tile Var 2",
+      "category": "FLOORS",
+      "biome": "delta",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1254,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_delta_var3",
+      "name": "DELTA Floor Tile Var 3",
+      "category": "FLOORS",
+      "biome": "delta",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1320,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_delta_var4",
+      "name": "DELTA Floor Tile Var 4",
+      "category": "FLOORS",
+      "biome": "delta",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1386,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_hazard_delta",
+      "name": "DELTA Hazard Border Tile",
+      "category": "FLOORS",
+      "biome": "delta",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1452,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_grate_delta",
+      "name": "DELTA Subfloor Grate Tile",
+      "category": "FLOORS",
+      "biome": "delta",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1518,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_omega_var1",
+      "name": "OMEGA Floor Tile Var 1",
+      "category": "FLOORS",
+      "biome": "omega",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1584,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_omega_var2",
+      "name": "OMEGA Floor Tile Var 2",
+      "category": "FLOORS",
+      "biome": "omega",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1650,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_omega_var3",
+      "name": "OMEGA Floor Tile Var 3",
+      "category": "FLOORS",
+      "biome": "omega",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1716,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_omega_var4",
+      "name": "OMEGA Floor Tile Var 4",
+      "category": "FLOORS",
+      "biome": "omega",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1782,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_hazard_omega",
+      "name": "OMEGA Hazard Border Tile",
+      "category": "FLOORS",
+      "biome": "omega",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1848,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_grate_omega",
+      "name": "OMEGA Subfloor Grate Tile",
+      "category": "FLOORS",
+      "biome": "omega",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1914,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_nexus_var1",
+      "name": "NEXUS Floor Tile Var 1",
+      "category": "FLOORS",
+      "biome": "nexus",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1980,
+        "y": 0,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_nexus_var2",
+      "name": "NEXUS Floor Tile Var 2",
+      "category": "FLOORS",
+      "biome": "nexus",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 0,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_nexus_var3",
+      "name": "NEXUS Floor Tile Var 3",
+      "category": "FLOORS",
+      "biome": "nexus",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 66,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_nexus_var4",
+      "name": "NEXUS Floor Tile Var 4",
+      "category": "FLOORS",
+      "biome": "nexus",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 132,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_hazard_nexus",
+      "name": "NEXUS Hazard Border Tile",
+      "category": "FLOORS",
+      "biome": "nexus",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 198,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_grate_nexus",
+      "name": "NEXUS Subfloor Grate Tile",
+      "category": "FLOORS",
+      "biome": "nexus",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 264,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_secrets_var1",
+      "name": "SECRETS Floor Tile Var 1",
+      "category": "FLOORS",
+      "biome": "secrets",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 330,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_secrets_var2",
+      "name": "SECRETS Floor Tile Var 2",
+      "category": "FLOORS",
+      "biome": "secrets",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 396,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_secrets_var3",
+      "name": "SECRETS Floor Tile Var 3",
+      "category": "FLOORS",
+      "biome": "secrets",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 462,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_secrets_var4",
+      "name": "SECRETS Floor Tile Var 4",
+      "category": "FLOORS",
+      "biome": "secrets",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 528,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_hazard_secrets",
+      "name": "SECRETS Hazard Border Tile",
+      "category": "FLOORS",
+      "biome": "secrets",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 594,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_grate_secrets",
+      "name": "SECRETS Subfloor Grate Tile",
+      "category": "FLOORS",
+      "biome": "secrets",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 660,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_common_var1",
+      "name": "COMMON Floor Tile Var 1",
+      "category": "FLOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 726,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_common_var2",
+      "name": "COMMON Floor Tile Var 2",
+      "category": "FLOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 792,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_common_var3",
+      "name": "COMMON Floor Tile Var 3",
+      "category": "FLOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 858,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_floor_common_var4",
+      "name": "COMMON Floor Tile Var 4",
+      "category": "FLOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 924,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_hazard_common",
+      "name": "COMMON Hazard Border Tile",
+      "category": "FLOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 990,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "tile_grate_common",
+      "name": "COMMON Subfloor Grate Tile",
+      "category": "FLOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 32,
+      "anchor": {
+        "x": 32,
+        "y": 16
+      },
+      "collision": {
+        "type": "isometric_diamond",
+        "halfW": 32,
+        "halfH": 16
+      },
+      "bounds": {
+        "x": 1056,
+        "y": 34,
+        "width": 64,
+        "height": 32
+      }
+    },
+    {
+      "id": "wall_ne_standard_alpha",
+      "name": "ALPHA Wall Facing SW (NE edge)",
+      "category": "WALLS",
+      "biome": "alpha",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1122,
+        "y": 34,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_nw_standard_alpha",
+      "name": "ALPHA Wall Facing SE (NW edge)",
+      "category": "WALLS",
+      "biome": "alpha",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1188,
+        "y": 34,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_pillar_column_alpha",
+      "name": "ALPHA Structural Column Pillar",
+      "category": "WALLS",
+      "biome": "alpha",
+      "width": 64,
+      "height": 96,
+      "anchor": {
+        "x": 32,
+        "y": 80
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 96
+      },
+      "bounds": {
+        "x": 1254,
+        "y": 34,
+        "width": 64,
+        "height": 96
+      }
+    },
+    {
+      "id": "wall_corner_in_alpha",
+      "name": "ALPHA Concave Inner Corner",
+      "category": "WALLS",
+      "biome": "alpha",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1320,
+        "y": 34,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_corner_out_alpha",
+      "name": "ALPHA Convex Outer Corner",
+      "category": "WALLS",
+      "biome": "alpha",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1386,
+        "y": 34,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_reinforced_tall_alpha",
+      "name": "ALPHA Heavy Reinforced Tall Wall",
+      "category": "WALLS",
+      "biome": "alpha",
+      "width": 64,
+      "height": 128,
+      "anchor": {
+        "x": 32,
+        "y": 112
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 128
+      },
+      "bounds": {
+        "x": 1452,
+        "y": 34,
+        "width": 64,
+        "height": 128
+      }
+    },
+    {
+      "id": "wall_ne_standard_beta",
+      "name": "BETA Wall Facing SW (NE edge)",
+      "category": "WALLS",
+      "biome": "beta",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1518,
+        "y": 34,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_nw_standard_beta",
+      "name": "BETA Wall Facing SE (NW edge)",
+      "category": "WALLS",
+      "biome": "beta",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1584,
+        "y": 34,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_pillar_column_beta",
+      "name": "BETA Structural Column Pillar",
+      "category": "WALLS",
+      "biome": "beta",
+      "width": 64,
+      "height": 96,
+      "anchor": {
+        "x": 32,
+        "y": 80
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 96
+      },
+      "bounds": {
+        "x": 1650,
+        "y": 34,
+        "width": 64,
+        "height": 96
+      }
+    },
+    {
+      "id": "wall_corner_in_beta",
+      "name": "BETA Concave Inner Corner",
+      "category": "WALLS",
+      "biome": "beta",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1716,
+        "y": 34,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_corner_out_beta",
+      "name": "BETA Convex Outer Corner",
+      "category": "WALLS",
+      "biome": "beta",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1782,
+        "y": 34,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_reinforced_tall_beta",
+      "name": "BETA Heavy Reinforced Tall Wall",
+      "category": "WALLS",
+      "biome": "beta",
+      "width": 64,
+      "height": 128,
+      "anchor": {
+        "x": 32,
+        "y": 112
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 128
+      },
+      "bounds": {
+        "x": 1848,
+        "y": 34,
+        "width": 64,
+        "height": 128
+      }
+    },
+    {
+      "id": "wall_ne_standard_gamma",
+      "name": "GAMMA Wall Facing SW (NE edge)",
+      "category": "WALLS",
+      "biome": "gamma",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1914,
+        "y": 34,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_nw_standard_gamma",
+      "name": "GAMMA Wall Facing SE (NW edge)",
+      "category": "WALLS",
+      "biome": "gamma",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1980,
+        "y": 34,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_pillar_column_gamma",
+      "name": "GAMMA Structural Column Pillar",
+      "category": "WALLS",
+      "biome": "gamma",
+      "width": 64,
+      "height": 96,
+      "anchor": {
+        "x": 32,
+        "y": 80
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 96
+      },
+      "bounds": {
+        "x": 0,
+        "y": 164,
+        "width": 64,
+        "height": 96
+      }
+    },
+    {
+      "id": "wall_corner_in_gamma",
+      "name": "GAMMA Concave Inner Corner",
+      "category": "WALLS",
+      "biome": "gamma",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 66,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_corner_out_gamma",
+      "name": "GAMMA Convex Outer Corner",
+      "category": "WALLS",
+      "biome": "gamma",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 132,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_reinforced_tall_gamma",
+      "name": "GAMMA Heavy Reinforced Tall Wall",
+      "category": "WALLS",
+      "biome": "gamma",
+      "width": 64,
+      "height": 128,
+      "anchor": {
+        "x": 32,
+        "y": 112
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 128
+      },
+      "bounds": {
+        "x": 198,
+        "y": 164,
+        "width": 64,
+        "height": 128
+      }
+    },
+    {
+      "id": "wall_ne_standard_delta",
+      "name": "DELTA Wall Facing SW (NE edge)",
+      "category": "WALLS",
+      "biome": "delta",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 264,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_nw_standard_delta",
+      "name": "DELTA Wall Facing SE (NW edge)",
+      "category": "WALLS",
+      "biome": "delta",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 330,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_pillar_column_delta",
+      "name": "DELTA Structural Column Pillar",
+      "category": "WALLS",
+      "biome": "delta",
+      "width": 64,
+      "height": 96,
+      "anchor": {
+        "x": 32,
+        "y": 80
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 96
+      },
+      "bounds": {
+        "x": 396,
+        "y": 164,
+        "width": 64,
+        "height": 96
+      }
+    },
+    {
+      "id": "wall_corner_in_delta",
+      "name": "DELTA Concave Inner Corner",
+      "category": "WALLS",
+      "biome": "delta",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 462,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_corner_out_delta",
+      "name": "DELTA Convex Outer Corner",
+      "category": "WALLS",
+      "biome": "delta",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 528,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_reinforced_tall_delta",
+      "name": "DELTA Heavy Reinforced Tall Wall",
+      "category": "WALLS",
+      "biome": "delta",
+      "width": 64,
+      "height": 128,
+      "anchor": {
+        "x": 32,
+        "y": 112
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 128
+      },
+      "bounds": {
+        "x": 594,
+        "y": 164,
+        "width": 64,
+        "height": 128
+      }
+    },
+    {
+      "id": "wall_ne_standard_omega",
+      "name": "OMEGA Wall Facing SW (NE edge)",
+      "category": "WALLS",
+      "biome": "omega",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 660,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_nw_standard_omega",
+      "name": "OMEGA Wall Facing SE (NW edge)",
+      "category": "WALLS",
+      "biome": "omega",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 726,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_pillar_column_omega",
+      "name": "OMEGA Structural Column Pillar",
+      "category": "WALLS",
+      "biome": "omega",
+      "width": 64,
+      "height": 96,
+      "anchor": {
+        "x": 32,
+        "y": 80
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 96
+      },
+      "bounds": {
+        "x": 792,
+        "y": 164,
+        "width": 64,
+        "height": 96
+      }
+    },
+    {
+      "id": "wall_corner_in_omega",
+      "name": "OMEGA Concave Inner Corner",
+      "category": "WALLS",
+      "biome": "omega",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 858,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_corner_out_omega",
+      "name": "OMEGA Convex Outer Corner",
+      "category": "WALLS",
+      "biome": "omega",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 924,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_reinforced_tall_omega",
+      "name": "OMEGA Heavy Reinforced Tall Wall",
+      "category": "WALLS",
+      "biome": "omega",
+      "width": 64,
+      "height": 128,
+      "anchor": {
+        "x": 32,
+        "y": 112
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 128
+      },
+      "bounds": {
+        "x": 990,
+        "y": 164,
+        "width": 64,
+        "height": 128
+      }
+    },
+    {
+      "id": "wall_ne_standard_nexus",
+      "name": "NEXUS Wall Facing SW (NE edge)",
+      "category": "WALLS",
+      "biome": "nexus",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1056,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_nw_standard_nexus",
+      "name": "NEXUS Wall Facing SE (NW edge)",
+      "category": "WALLS",
+      "biome": "nexus",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1122,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_pillar_column_nexus",
+      "name": "NEXUS Structural Column Pillar",
+      "category": "WALLS",
+      "biome": "nexus",
+      "width": 64,
+      "height": 96,
+      "anchor": {
+        "x": 32,
+        "y": 80
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 96
+      },
+      "bounds": {
+        "x": 1188,
+        "y": 164,
+        "width": 64,
+        "height": 96
+      }
+    },
+    {
+      "id": "wall_corner_in_nexus",
+      "name": "NEXUS Concave Inner Corner",
+      "category": "WALLS",
+      "biome": "nexus",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1254,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_corner_out_nexus",
+      "name": "NEXUS Convex Outer Corner",
+      "category": "WALLS",
+      "biome": "nexus",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1320,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_reinforced_tall_nexus",
+      "name": "NEXUS Heavy Reinforced Tall Wall",
+      "category": "WALLS",
+      "biome": "nexus",
+      "width": 64,
+      "height": 128,
+      "anchor": {
+        "x": 32,
+        "y": 112
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 128
+      },
+      "bounds": {
+        "x": 1386,
+        "y": 164,
+        "width": 64,
+        "height": 128
+      }
+    },
+    {
+      "id": "wall_ne_standard_secrets",
+      "name": "SECRETS Wall Facing SW (NE edge)",
+      "category": "WALLS",
+      "biome": "secrets",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1452,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_nw_standard_secrets",
+      "name": "SECRETS Wall Facing SE (NW edge)",
+      "category": "WALLS",
+      "biome": "secrets",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1518,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_pillar_column_secrets",
+      "name": "SECRETS Structural Column Pillar",
+      "category": "WALLS",
+      "biome": "secrets",
+      "width": 64,
+      "height": 96,
+      "anchor": {
+        "x": 32,
+        "y": 80
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 96
+      },
+      "bounds": {
+        "x": 1584,
+        "y": 164,
+        "width": 64,
+        "height": 96
+      }
+    },
+    {
+      "id": "wall_corner_in_secrets",
+      "name": "SECRETS Concave Inner Corner",
+      "category": "WALLS",
+      "biome": "secrets",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1650,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_corner_out_secrets",
+      "name": "SECRETS Convex Outer Corner",
+      "category": "WALLS",
+      "biome": "secrets",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1716,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_reinforced_tall_secrets",
+      "name": "SECRETS Heavy Reinforced Tall Wall",
+      "category": "WALLS",
+      "biome": "secrets",
+      "width": 64,
+      "height": 128,
+      "anchor": {
+        "x": 32,
+        "y": 112
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 128
+      },
+      "bounds": {
+        "x": 1782,
+        "y": 164,
+        "width": 64,
+        "height": 128
+      }
+    },
+    {
+      "id": "wall_ne_standard_common",
+      "name": "COMMON Wall Facing SW (NE edge)",
+      "category": "WALLS",
+      "biome": "common",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1848,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_nw_standard_common",
+      "name": "COMMON Wall Facing SE (NW edge)",
+      "category": "WALLS",
+      "biome": "common",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 1914,
+        "y": 164,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_pillar_column_common",
+      "name": "COMMON Structural Column Pillar",
+      "category": "WALLS",
+      "biome": "common",
+      "width": 64,
+      "height": 96,
+      "anchor": {
+        "x": 32,
+        "y": 80
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 96
+      },
+      "bounds": {
+        "x": 1980,
+        "y": 164,
+        "width": 64,
+        "height": 96
+      }
+    },
+    {
+      "id": "wall_corner_in_common",
+      "name": "COMMON Concave Inner Corner",
+      "category": "WALLS",
+      "biome": "common",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 0,
+        "y": 294,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_corner_out_common",
+      "name": "COMMON Convex Outer Corner",
+      "category": "WALLS",
+      "biome": "common",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 64
+      },
+      "bounds": {
+        "x": 66,
+        "y": 294,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "wall_reinforced_tall_common",
+      "name": "COMMON Heavy Reinforced Tall Wall",
+      "category": "WALLS",
+      "biome": "common",
+      "width": 64,
+      "height": 128,
+      "anchor": {
+        "x": 32,
+        "y": 112
+      },
+      "collision": {
+        "type": "solid_isometric_wall",
+        "width": 64,
+        "height": 32,
+        "wallHeight": 128
+      },
+      "bounds": {
+        "x": 132,
+        "y": 294,
+        "width": 64,
+        "height": 128
+      }
+    },
+    {
+      "id": "door_frame_standard",
+      "name": "Door Frame Archway (standard)",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "doorway_portal",
+        "width": 48,
+        "height": 16
+      },
+      "bounds": {
+        "x": 198,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_standard_f0",
+      "name": "Door Sliding Shield standard Frame 0",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 264,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_standard_f1",
+      "name": "Door Sliding Shield standard Frame 1",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 330,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_standard_f2",
+      "name": "Door Sliding Shield standard Frame 2",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 396,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_standard_f3",
+      "name": "Door Sliding Shield standard Frame 3",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 462,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_standard_f4",
+      "name": "Door Sliding Shield standard Frame 4",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 528,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_standard_f5",
+      "name": "Door Sliding Shield standard Frame 5",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 594,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_standard_f6",
+      "name": "Door Sliding Shield standard Frame 6",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 660,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_standard_f7",
+      "name": "Door Sliding Shield standard Frame 7",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 726,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_frame_blue",
+      "name": "Door Frame Archway (blue)",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "doorway_portal",
+        "width": 48,
+        "height": 16
+      },
+      "bounds": {
+        "x": 792,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_blue_f0",
+      "name": "Door Sliding Shield blue Frame 0",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 858,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_blue_f1",
+      "name": "Door Sliding Shield blue Frame 1",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 924,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_blue_f2",
+      "name": "Door Sliding Shield blue Frame 2",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 990,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_blue_f3",
+      "name": "Door Sliding Shield blue Frame 3",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 1056,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_blue_f4",
+      "name": "Door Sliding Shield blue Frame 4",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 1122,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_blue_f5",
+      "name": "Door Sliding Shield blue Frame 5",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 1188,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_blue_f6",
+      "name": "Door Sliding Shield blue Frame 6",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 1254,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_blue_f7",
+      "name": "Door Sliding Shield blue Frame 7",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 1320,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_frame_red",
+      "name": "Door Frame Archway (red)",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "doorway_portal",
+        "width": 48,
+        "height": 16
+      },
+      "bounds": {
+        "x": 1386,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_red_f0",
+      "name": "Door Sliding Shield red Frame 0",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 1452,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_red_f1",
+      "name": "Door Sliding Shield red Frame 1",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 1518,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_red_f2",
+      "name": "Door Sliding Shield red Frame 2",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 1584,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_red_f3",
+      "name": "Door Sliding Shield red Frame 3",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 1650,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_red_f4",
+      "name": "Door Sliding Shield red Frame 4",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 1716,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_red_f5",
+      "name": "Door Sliding Shield red Frame 5",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 1782,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_red_f6",
+      "name": "Door Sliding Shield red Frame 6",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 1848,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_red_f7",
+      "name": "Door Sliding Shield red Frame 7",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 1914,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_frame_green",
+      "name": "Door Frame Archway (green)",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "doorway_portal",
+        "width": 48,
+        "height": 16
+      },
+      "bounds": {
+        "x": 1980,
+        "y": 294,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_green_f0",
+      "name": "Door Sliding Shield green Frame 0",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 0,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_green_f1",
+      "name": "Door Sliding Shield green Frame 1",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 66,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_green_f2",
+      "name": "Door Sliding Shield green Frame 2",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 132,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_green_f3",
+      "name": "Door Sliding Shield green Frame 3",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 198,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_green_f4",
+      "name": "Door Sliding Shield green Frame 4",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 264,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_green_f5",
+      "name": "Door Sliding Shield green Frame 5",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 330,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_green_f6",
+      "name": "Door Sliding Shield green Frame 6",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 396,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_green_f7",
+      "name": "Door Sliding Shield green Frame 7",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 462,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_frame_citadel",
+      "name": "Door Frame Archway (citadel)",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "doorway_portal",
+        "width": 48,
+        "height": 16
+      },
+      "bounds": {
+        "x": 528,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_citadel_f0",
+      "name": "Door Sliding Shield citadel Frame 0",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 594,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_citadel_f1",
+      "name": "Door Sliding Shield citadel Frame 1",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 660,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_citadel_f2",
+      "name": "Door Sliding Shield citadel Frame 2",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 726,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_citadel_f3",
+      "name": "Door Sliding Shield citadel Frame 3",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": true
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 792,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_citadel_f4",
+      "name": "Door Sliding Shield citadel Frame 4",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 858,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_citadel_f5",
+      "name": "Door Sliding Shield citadel Frame 5",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 924,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_citadel_f6",
+      "name": "Door Sliding Shield citadel Frame 6",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 990,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "door_slide_citadel_f7",
+      "name": "Door Sliding Shield citadel Frame 7",
+      "category": "DOORS",
+      "biome": "common",
+      "width": 64,
+      "height": 80,
+      "anchor": {
+        "x": 32,
+        "y": 64
+      },
+      "collision": {
+        "type": "door_barrier",
+        "active": false
+      },
+      "frameCount": 8,
+      "bounds": {
+        "x": 1056,
+        "y": 424,
+        "width": 64,
+        "height": 80
+      }
+    },
+    {
+      "id": "crate_standard_blue",
+      "name": "Movable Crate standard_blue",
+      "category": "CRATES",
+      "biome": "common",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "isometric_box_3d",
+        "width": 36,
+        "depth": 36,
+        "height": 36
+      },
+      "bounds": {
+        "x": 1122,
+        "y": 424,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "crate_standard_blue_grabbed",
+      "name": "Movable Crate standard_blue (Carried / Active State)",
+      "category": "CRATES",
+      "biome": "common",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "carried_entity"
+      },
+      "bounds": {
+        "x": 1188,
+        "y": 424,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "crate_heavy_iron",
+      "name": "Movable Crate heavy_iron",
+      "category": "CRATES",
+      "biome": "common",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "isometric_box_3d",
+        "width": 36,
+        "depth": 36,
+        "height": 36
+      },
+      "bounds": {
+        "x": 1254,
+        "y": 424,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "crate_heavy_iron_grabbed",
+      "name": "Movable Crate heavy_iron (Carried / Active State)",
+      "category": "CRATES",
+      "biome": "common",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "carried_entity"
+      },
+      "bounds": {
+        "x": 1320,
+        "y": 424,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "crate_cryo_container",
+      "name": "Movable Crate cryo_container",
+      "category": "CRATES",
+      "biome": "common",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "isometric_box_3d",
+        "width": 36,
+        "depth": 36,
+        "height": 36
+      },
+      "bounds": {
+        "x": 1386,
+        "y": 424,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "crate_cryo_container_grabbed",
+      "name": "Movable Crate cryo_container (Carried / Active State)",
+      "category": "CRATES",
+      "biome": "common",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "carried_entity"
+      },
+      "bounds": {
+        "x": 1452,
+        "y": 424,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "crate_volatile_orange",
+      "name": "Movable Crate volatile_orange",
+      "category": "CRATES",
+      "biome": "common",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "isometric_box_3d",
+        "width": 36,
+        "depth": 36,
+        "height": 36
+      },
+      "bounds": {
+        "x": 1518,
+        "y": 424,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "crate_volatile_orange_grabbed",
+      "name": "Movable Crate volatile_orange (Carried / Active State)",
+      "category": "CRATES",
+      "biome": "common",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 48
+      },
+      "collision": {
+        "type": "carried_entity"
+      },
+      "bounds": {
+        "x": 1584,
+        "y": 424,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "switch_pressure_cyan_idle",
+      "name": "Pressure Plate pressure_cyan (Unpressed)",
+      "category": "SWITCHES",
+      "biome": "common",
+      "width": 48,
+      "height": 28,
+      "anchor": {
+        "x": 24,
+        "y": 14
+      },
+      "collision": {
+        "type": "trigger_pad",
+        "radius": 18
+      },
+      "bounds": {
+        "x": 1650,
+        "y": 424,
+        "width": 48,
+        "height": 28
+      }
+    },
+    {
+      "id": "switch_pressure_cyan_pressed",
+      "name": "Pressure Plate pressure_cyan (Depressed/Activated)",
+      "category": "SWITCHES",
+      "biome": "common",
+      "width": 48,
+      "height": 28,
+      "anchor": {
+        "x": 24,
+        "y": 14
+      },
+      "collision": {
+        "type": "trigger_pad",
+        "radius": 18
+      },
+      "bounds": {
+        "x": 1700,
+        "y": 424,
+        "width": 48,
+        "height": 28
+      }
+    },
+    {
+      "id": "switch_pressure_amber_idle",
+      "name": "Pressure Plate pressure_amber (Unpressed)",
+      "category": "SWITCHES",
+      "biome": "common",
+      "width": 48,
+      "height": 28,
+      "anchor": {
+        "x": 24,
+        "y": 14
+      },
+      "collision": {
+        "type": "trigger_pad",
+        "radius": 18
+      },
+      "bounds": {
+        "x": 1750,
+        "y": 424,
+        "width": 48,
+        "height": 28
+      }
+    },
+    {
+      "id": "switch_pressure_amber_pressed",
+      "name": "Pressure Plate pressure_amber (Depressed/Activated)",
+      "category": "SWITCHES",
+      "biome": "common",
+      "width": 48,
+      "height": 28,
+      "anchor": {
+        "x": 24,
+        "y": 14
+      },
+      "collision": {
+        "type": "trigger_pad",
+        "radius": 18
+      },
+      "bounds": {
+        "x": 1800,
+        "y": 424,
+        "width": 48,
+        "height": 28
+      }
+    },
+    {
+      "id": "switch_pressure_heavy_idle",
+      "name": "Pressure Plate pressure_heavy (Unpressed)",
+      "category": "SWITCHES",
+      "biome": "common",
+      "width": 48,
+      "height": 28,
+      "anchor": {
+        "x": 24,
+        "y": 14
+      },
+      "collision": {
+        "type": "trigger_pad",
+        "radius": 18
+      },
+      "bounds": {
+        "x": 1850,
+        "y": 424,
+        "width": 48,
+        "height": 28
+      }
+    },
+    {
+      "id": "switch_pressure_heavy_pressed",
+      "name": "Pressure Plate pressure_heavy (Depressed/Activated)",
+      "category": "SWITCHES",
+      "biome": "common",
+      "width": 48,
+      "height": 28,
+      "anchor": {
+        "x": 24,
+        "y": 14
+      },
+      "collision": {
+        "type": "trigger_pad",
+        "radius": 18
+      },
+      "bounds": {
+        "x": 1900,
+        "y": 424,
+        "width": 48,
+        "height": 28
+      }
+    },
+    {
+      "id": "teleporter_pad_f0",
+      "name": "Quantum Teleporter Pad Frame 0",
+      "category": "SWITCHES",
+      "biome": "common",
+      "width": 64,
+      "height": 36,
+      "anchor": {
+        "x": 32,
+        "y": 18
+      },
+      "collision": {
+        "type": "trigger_zone",
+        "radius": 24
+      },
+      "frameCount": 4,
+      "bounds": {
+        "x": 1950,
+        "y": 424,
+        "width": 64,
+        "height": 36
+      }
+    },
+    {
+      "id": "teleporter_pad_f1",
+      "name": "Quantum Teleporter Pad Frame 1",
+      "category": "SWITCHES",
+      "biome": "common",
+      "width": 64,
+      "height": 36,
+      "anchor": {
+        "x": 32,
+        "y": 18
+      },
+      "collision": {
+        "type": "trigger_zone",
+        "radius": 24
+      },
+      "frameCount": 4,
+      "bounds": {
+        "x": 0,
+        "y": 506,
+        "width": 64,
+        "height": 36
+      }
+    },
+    {
+      "id": "teleporter_pad_f2",
+      "name": "Quantum Teleporter Pad Frame 2",
+      "category": "SWITCHES",
+      "biome": "common",
+      "width": 64,
+      "height": 36,
+      "anchor": {
+        "x": 32,
+        "y": 18
+      },
+      "collision": {
+        "type": "trigger_zone",
+        "radius": 24
+      },
+      "frameCount": 4,
+      "bounds": {
+        "x": 66,
+        "y": 506,
+        "width": 64,
+        "height": 36
+      }
+    },
+    {
+      "id": "teleporter_pad_f3",
+      "name": "Quantum Teleporter Pad Frame 3",
+      "category": "SWITCHES",
+      "biome": "common",
+      "width": 64,
+      "height": 36,
+      "anchor": {
+        "x": 32,
+        "y": 18
+      },
+      "collision": {
+        "type": "trigger_zone",
+        "radius": 24
+      },
+      "frameCount": 4,
+      "bounds": {
+        "x": 132,
+        "y": 506,
+        "width": 64,
+        "height": 36
+      }
+    },
+    {
+      "id": "terminal_console_security_idle",
+      "name": "Terminal console_security Idle",
+      "category": "TERMINALS",
+      "biome": "common",
+      "width": 32,
+      "height": 48,
+      "anchor": {
+        "x": 16,
+        "y": 40
+      },
+      "collision": {
+        "type": "solid_terminal_box",
+        "width": 24,
+        "depth": 24
+      },
+      "bounds": {
+        "x": 198,
+        "y": 506,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "terminal_console_security_active",
+      "name": "Terminal console_security Screen Glow",
+      "category": "TERMINALS",
+      "biome": "common",
+      "width": 32,
+      "height": 48,
+      "anchor": {
+        "x": 16,
+        "y": 40
+      },
+      "collision": {
+        "type": "solid_terminal_box",
+        "width": 24,
+        "depth": 24
+      },
+      "bounds": {
+        "x": 232,
+        "y": 506,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "terminal_console_lift_override_idle",
+      "name": "Terminal console_lift_override Idle",
+      "category": "TERMINALS",
+      "biome": "common",
+      "width": 32,
+      "height": 48,
+      "anchor": {
+        "x": 16,
+        "y": 40
+      },
+      "collision": {
+        "type": "solid_terminal_box",
+        "width": 24,
+        "depth": 24
+      },
+      "bounds": {
+        "x": 266,
+        "y": 506,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "terminal_console_lift_override_active",
+      "name": "Terminal console_lift_override Screen Glow",
+      "category": "TERMINALS",
+      "biome": "common",
+      "width": 32,
+      "height": 48,
+      "anchor": {
+        "x": 16,
+        "y": 40
+      },
+      "collision": {
+        "type": "solid_terminal_box",
+        "width": 24,
+        "depth": 24
+      },
+      "bounds": {
+        "x": 300,
+        "y": 506,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "terminal_console_lore_idle",
+      "name": "Terminal console_lore Idle",
+      "category": "TERMINALS",
+      "biome": "common",
+      "width": 32,
+      "height": 48,
+      "anchor": {
+        "x": 16,
+        "y": 40
+      },
+      "collision": {
+        "type": "solid_terminal_box",
+        "width": 24,
+        "depth": 24
+      },
+      "bounds": {
+        "x": 334,
+        "y": 506,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "terminal_console_lore_active",
+      "name": "Terminal console_lore Screen Glow",
+      "category": "TERMINALS",
+      "biome": "common",
+      "width": 32,
+      "height": 48,
+      "anchor": {
+        "x": 16,
+        "y": 40
+      },
+      "collision": {
+        "type": "solid_terminal_box",
+        "width": 24,
+        "depth": 24
+      },
+      "bounds": {
+        "x": 368,
+        "y": 506,
+        "width": 32,
+        "height": 48
+      }
+    },
+    {
+      "id": "elevator_lift_platform_standard",
+      "name": "Elevator Platform lift_platform_standard",
+      "category": "ELEVATORS",
+      "biome": "common",
+      "width": 64,
+      "height": 36,
+      "anchor": {
+        "x": 32,
+        "y": 18
+      },
+      "collision": {
+        "type": "dynamic_floor_platform",
+        "halfW": 32,
+        "halfH": 18
+      },
+      "bounds": {
+        "x": 402,
+        "y": 506,
+        "width": 64,
+        "height": 36
+      }
+    },
+    {
+      "id": "elevator_lift_platform_shaft_rail",
+      "name": "Elevator Platform lift_platform_shaft_rail",
+      "category": "ELEVATORS",
+      "biome": "common",
+      "width": 64,
+      "height": 36,
+      "anchor": {
+        "x": 32,
+        "y": 18
+      },
+      "collision": {
+        "type": "dynamic_floor_platform",
+        "halfW": 32,
+        "halfH": 18
+      },
+      "bounds": {
+        "x": 468,
+        "y": 506,
+        "width": 64,
+        "height": 36
+      }
+    },
+    {
+      "id": "portal_stargate_frame",
+      "name": "Quantum Stargate Ring Frame",
+      "category": "PORTALS",
+      "biome": "omega",
+      "width": 96,
+      "height": 128,
+      "anchor": {
+        "x": 48,
+        "y": 112
+      },
+      "collision": {
+        "type": "solid_archway",
+        "width": 80,
+        "height": 24
+      },
+      "bounds": {
+        "x": 534,
+        "y": 506,
+        "width": 96,
+        "height": 128
+      }
+    }
+  ]
+}

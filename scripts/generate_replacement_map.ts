@@ -1,0 +1,863 @@
+import * as fs from 'fs';
+import * as path from 'path';
+
+interface ReplacementEntry {
+  id: string;
+  file: string;
+  functionName: string;
+  lineNumbers: {
+    start: number;
+    end: number;
+  };
+  proceduralDescription: string;
+  assetReplacementRequired: string;
+  atlasName: string;
+  spriteName: string;
+  fallbackSprite?: string;
+  anchorPoint: {
+    x: number;
+    y: number;
+    description: string;
+  };
+  depthSortingLayer: {
+    layerName: string;
+    formula: string;
+    relativeOffset: number;
+    description: string;
+  };
+  collisionSource: {
+    type: 'floorGrid' | 'AABB' | 'cylinder' | 'lineSegment' | 'trigger' | 'none';
+    geometry: string;
+    dataSource: string;
+  };
+  animationSource: {
+    type: 'static' | 'stateMachine' | 'flipbook' | 'uvScroll' | 'pulseSine' | 'subframeLife';
+    fps?: number;
+    frames?: number;
+    controllerVariable: string;
+    description: string;
+  };
+}
+
+const replacementMap: {
+  meta: {
+    title: string;
+    targetFile: string;
+    totalProceduralBlocks: number;
+    atlasesReferenced: string[];
+    generatedAt: string;
+  };
+  replacements: ReplacementEntry[];
+} = {
+  meta: {
+    title: 'Orbital Station Zenith — Renderer Procedural to Sprite Replacement Map',
+    targetFile: 'src/engine/renderer.ts',
+    totalProceduralBlocks: 26,
+    atlasesReferenced: [
+      'atlas_player.png',
+      'atlas_environment.png',
+      'atlas_entities_items.png',
+      'atlas_vfx_ui.png'
+    ],
+    generatedAt: new Date().toISOString()
+  },
+  replacements: [
+    // ------------------------------------------------------------------------
+    // 1. BACKDROP & PARALLAX SPACE
+    // ------------------------------------------------------------------------
+    {
+      id: 'PROC_01_BACKDROP_GRADIENT',
+      file: 'src/engine/renderer.ts',
+      functionName: 'drawCinematicBackdrop',
+      lineNumbers: { start: 126, end: 149 },
+      proceduralDescription: 'Deep void rect fill (#020408) followed by quadrant-tinted radial gradient nebula backdrop.',
+      assetReplacementRequired: 'Seamless tiling high-res cosmic nebula texture quad with biome tint parameters.',
+      atlasName: 'atlas_vfx_ui.png',
+      spriteName: 'bg_nebula_quadrant_overlay',
+      fallbackSprite: 'bg_space_nebula_alpha',
+      anchorPoint: { x: 0, y: 0, description: 'Top-left corner of viewport.' },
+      depthSortingLayer: {
+        layerName: 'background_void',
+        formula: '-100000',
+        relativeOffset: -100000,
+        description: 'Fixed background layer rendered prior to camera translation/scale.'
+      },
+      collisionSource: {
+        type: 'none',
+        geometry: 'None',
+        dataSource: 'N/A'
+      },
+      animationSource: {
+        type: 'uvScroll',
+        controllerVariable: 'time * 0.005, cameraX * 0.02, cameraY * 0.02',
+        description: 'Slow continuous UV drift combined with camera parallax offset.'
+      }
+    },
+    {
+      id: 'PROC_02_STARFIELD_POINTS',
+      file: 'src/engine/renderer.ts',
+      functionName: 'drawCinematicBackdrop',
+      lineNumbers: { start: 150, end: 164 },
+      proceduralDescription: '60 pseudorandom parallax 1.0-1.6px star rectangles with sinusoidal flickering alpha.',
+      assetReplacementRequired: 'Two-tier parallax starfield quad texture with alpha mask channel.',
+      atlasName: 'atlas_vfx_ui.png',
+      spriteName: 'bg_parallax_stars_tier1',
+      fallbackSprite: 'bg_parallax_stars_tier2',
+      anchorPoint: { x: 0, y: 0, description: 'Top-left viewport origin.' },
+      depthSortingLayer: {
+        layerName: 'background_stars',
+        formula: '-90000',
+        relativeOffset: -90000,
+        description: 'Sub-background layer before isometric world grid.'
+      },
+      collisionSource: {
+        type: 'none',
+        geometry: 'None',
+        dataSource: 'N/A'
+      },
+      animationSource: {
+        type: 'uvScroll',
+        controllerVariable: 'cameraX * 0.04, cameraY * 0.04, time',
+        description: 'Parallax UV offset tied to camera position plus alpha sine shimmer.'
+      }
+    },
+
+    // ------------------------------------------------------------------------
+    // 2. WALLS & ELEVATED COLUMNS
+    // ------------------------------------------------------------------------
+    {
+      id: 'PROC_03_WALL_BASE_AO',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueMapTiles',
+      lineNumbers: { start: 196, end: 201 },
+      proceduralDescription: 'Base ambient occlusion ground contact ellipse (rgba(0,0,0,0.55)).',
+      assetReplacementRequired: 'Soft-edge isometric 64x32 ambient occlusion contact decal.',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'ao_column_ground_contact',
+      anchorPoint: { x: 32, y: 16, description: 'Center of isometric diamond contact foot.' },
+      depthSortingLayer: {
+        layerName: 'floor_ao',
+        formula: '(x + y) * 100 - 5',
+        relativeOffset: -5,
+        description: 'Rendered directly on floor surface beneath column vertical volume.'
+      },
+      collisionSource: {
+        type: 'floorGrid',
+        geometry: 'Isometric grid cell occupancy (1x1 tile)',
+        dataSource: 'room.floorGrid[x][y].type === "wall"'
+      },
+      animationSource: {
+        type: 'static',
+        controllerVariable: 'none',
+        description: 'Static ambient occlusion shadow decal.'
+      }
+    },
+    {
+      id: 'PROC_04_WALL_LEFT_SHADOW_FACE',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueMapTiles',
+      lineNumbers: { start: 203, end: 234 },
+      proceduralDescription: 'Left face gradient (#111827 to #090d16) with structural vertical ribs and edge seams.',
+      assetReplacementRequired: 'Modular Isometric North-West (NW) bulkhead wall segment.',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'wall_nw_standard_{biome}',
+      fallbackSprite: 'wall_nw_standard_alpha',
+      anchorPoint: { x: 32, y: 64, description: 'Bottom center pivot at ground contact base.' },
+      depthSortingLayer: {
+        layerName: 'walls',
+        formula: '(x + y) * 100 + elev * 10',
+        relativeOffset: 0,
+        description: 'Standard isometric z-sorted elevation depth.'
+      },
+      collisionSource: {
+        type: 'floorGrid',
+        geometry: 'Tile grid solid barrier (elevation height block)',
+        dataSource: 'room.floorGrid[x][y].elevation'
+      },
+      animationSource: {
+        type: 'static',
+        controllerVariable: 'none',
+        description: 'Static environment texture with pre-baked normal and directional shading.'
+      }
+    },
+    {
+      id: 'PROC_05_WALL_RIGHT_LIT_FACE',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueMapTiles',
+      lineNumbers: { start: 235, end: 261 },
+      proceduralDescription: 'Right face metallic gradient (#243044 to #131b2a) with structural vertical ribbing.',
+      assetReplacementRequired: 'Modular Isometric North-East (NE) bulkhead wall segment.',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'wall_ne_standard_{biome}',
+      fallbackSprite: 'wall_ne_standard_alpha',
+      anchorPoint: { x: 32, y: 64, description: 'Bottom center pivot at ground contact base.' },
+      depthSortingLayer: {
+        layerName: 'walls',
+        formula: '(x + y) * 100 + elev * 10',
+        relativeOffset: 0,
+        description: 'Standard isometric depth for NE wall face.'
+      },
+      collisionSource: {
+        type: 'floorGrid',
+        geometry: 'Tile grid solid barrier',
+        dataSource: 'room.floorGrid[x][y].elevation'
+      },
+      animationSource: {
+        type: 'static',
+        controllerVariable: 'none',
+        description: 'Static environment texture.'
+      }
+    },
+    {
+      id: 'PROC_06_WALL_TOP_CAP_AND_LED',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueMapTiles',
+      lineNumbers: { start: 262, end: 306 },
+      proceduralDescription: 'Top diamond cap with specular bevel rim, recessed inner panel, and periodic pulsing status LED.',
+      assetReplacementRequired: 'Integrated wall column cap sprite / pillar column asset with 2-frame LED pulse.',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'wall_pillar_column_{biome}',
+      fallbackSprite: 'wall_pillar_column_alpha',
+      anchorPoint: { x: 32, y: 96, description: 'Bottom center of full 64x96 pillar column.' },
+      depthSortingLayer: {
+        layerName: 'walls_cap',
+        formula: '(x + y) * 100 + elev * 10 + 2',
+        relativeOffset: 2,
+        description: 'Column cap sorted slightly in front of base wall segment.'
+      },
+      collisionSource: {
+        type: 'floorGrid',
+        geometry: 'Solid pillar column obstacle',
+        dataSource: 'room.floorGrid[x][y]'
+      },
+      animationSource: {
+        type: 'pulseSine',
+        controllerVariable: 'Math.sin(time * 3 + x * 2 + y)',
+        description: '2-frame emissive diode flicker on column top.'
+      }
+    },
+
+    // ------------------------------------------------------------------------
+    // 3. FLOOR TILES & CONDUITS
+    // ------------------------------------------------------------------------
+    {
+      id: 'PROC_07_FLOOR_DECK_DIAMOND',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueMapTiles',
+      lineNumbers: { start: 313, end: 352 },
+      proceduralDescription: 'Isometric 64x32 diamond floor with checkerboard metallic gradients (#101726 vs #151e30), seams, and corner bolts.',
+      assetReplacementRequired: 'Biome standard floor tile variants (Var 1 and Var 2).',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'tile_floor_{biome}_var1',
+      fallbackSprite: 'tile_floor_alpha_var1',
+      anchorPoint: { x: 32, y: 16, description: 'Center pivot of 64x32 isometric diamond.' },
+      depthSortingLayer: {
+        layerName: 'floor',
+        formula: '(x + y) * 100',
+        relativeOffset: 0,
+        description: 'Base floor plane layer.'
+      },
+      collisionSource: {
+        type: 'floorGrid',
+        geometry: 'Traversable isometric surface (elevation == 0)',
+        dataSource: 'room.floorGrid[x][y].walkable'
+      },
+      animationSource: {
+        type: 'static',
+        controllerVariable: 'none',
+        description: 'Static deck plate texture with baked specular and corner rivets.'
+      }
+    },
+    {
+      id: 'PROC_08_FLOOR_GRATE_AND_CONDUITS',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueMapTiles',
+      lineNumbers: { start: 353, end: 375 },
+      proceduralDescription: 'Diamond grip micro-circuit overlay lines and pulsing cyan energy conduits (rgba(56,189,248,...)).',
+      assetReplacementRequired: 'Subfloor ventilation grate tile and emissive hazard conduit overlay.',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'tile_grate_{biome}',
+      fallbackSprite: 'tile_hazard_{biome}',
+      anchorPoint: { x: 32, y: 16, description: 'Center pivot of 64x32 isometric diamond.' },
+      depthSortingLayer: {
+        layerName: 'floor_decal',
+        formula: '(x + y) * 100 + 1',
+        relativeOffset: 1,
+        description: 'Decal layer directly above base floor tile.'
+      },
+      collisionSource: {
+        type: 'floorGrid',
+        geometry: 'Traversable or hazard floor cell',
+        dataSource: 'room.floorGrid[x][y]'
+      },
+      animationSource: {
+        type: 'pulseSine',
+        controllerVariable: 'Math.sin(time * 4 + x + y)',
+        description: 'Sinusoidal glow alpha pulse on conduit emissive channels.'
+      }
+    },
+
+    // ------------------------------------------------------------------------
+    // 4. FLOOR OBJECTS (TERMINALS, SWITCHES, TELEPORTERS)
+    // ------------------------------------------------------------------------
+    {
+      id: 'PROC_09_TERMINAL_CONSOLE',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueFloorObjects',
+      lineNumbers: { start: 407, end: 446 },
+      proceduralDescription: 'Pedestal base shadow, metal stand rect, glowing round-rect holographic screen with scanlines, and SYS_IDLE/ONLINE text.',
+      assetReplacementRequired: 'Security Terminal Console with holographic screen animation.',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'terminal_console_security_idle',
+      fallbackSprite: 'terminal_console_security_active',
+      anchorPoint: { x: 16, y: 40, description: 'Base center of terminal pedestal stand.' },
+      depthSortingLayer: {
+        layerName: 'floor_props',
+        formula: '(sw.x + sw.y) * 100 + sw.z * 10 + 25',
+        relativeOffset: 25,
+        description: 'Tall prop depth sorting above floor tiles.'
+      },
+      collisionSource: {
+        type: 'cylinder',
+        geometry: 'Solid obstacle cylinder (radius: 0.4 tiles, height: 1.2 tiles)',
+        dataSource: 'sw.x, sw.y, sw.z'
+      },
+      animationSource: {
+        type: 'stateMachine',
+        controllerVariable: 'sw.isActivated',
+        description: 'Switches between idle cyan screen and active emerald green holographic display.'
+      }
+    },
+    {
+      id: 'PROC_10_PRESSURE_PLATE_SWITCH',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueFloorObjects',
+      lineNumbers: { start: 456, end: 489 },
+      proceduralDescription: 'Heavy titanium isometric pressure plate with contact AO, outer ring, inner compression pad, and status light pulse.',
+      assetReplacementRequired: 'Titanium Pressure Plate (unpressed vs depressed sprite states).',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'switch_pressure_cyan_idle',
+      fallbackSprite: 'switch_pressure_cyan_pressed',
+      anchorPoint: { x: 24, y: 14, description: 'Center pivot of 48x28 pressure plate.' },
+      depthSortingLayer: {
+        layerName: 'floor_switches',
+        formula: '(sw.x + sw.y) * 100 + sw.z * 10 + 5',
+        relativeOffset: 5,
+        description: 'Low-profile floor object sorting immediately above floor plane.'
+      },
+      collisionSource: {
+        type: 'trigger',
+        geometry: 'Floor trigger volume (AABB: 0.8 x 0.8 tiles, height: 0.2 tiles)',
+        dataSource: 'sw.x, sw.y, sw.z, sw.requiredWeight'
+      },
+      animationSource: {
+        type: 'stateMachine',
+        controllerVariable: 'sw.isActivated',
+        description: 'Depression spring displacement (4px Z-drop) with color shift to emerald.'
+      }
+    },
+    {
+      id: 'PROC_11_TELEPORTER_PAD_AND_BEAM',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueFloorObjects',
+      lineNumbers: { start: 507, end: 536 },
+      proceduralDescription: 'Circular teleporter pad with outer metal ring, swirling quantum core ellipse, and vertical cylindrical energy beam line.',
+      assetReplacementRequired: 'Quantum Teleporter Pad platform sprite with animated swirling core and beam overlay.',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'teleporter_pad_standard',
+      fallbackSprite: 'vfx_teleport_beam_f0',
+      anchorPoint: { x: 32, y: 18, description: 'Center pivot of 64x36 teleporter platform.' },
+      depthSortingLayer: {
+        layerName: 'floor_teleporters',
+        formula: '(tp.x + tp.y) * 100 + tp.z * 10 + 6',
+        relativeOffset: 6,
+        description: 'Floor prop layer with additive energy beam vertical sorting.'
+      },
+      collisionSource: {
+        type: 'trigger',
+        geometry: 'Cylindrical teleport trigger (radius: 0.6 tiles, height: 1.5 tiles)',
+        dataSource: 'tp.x, tp.y, tp.z, tp.targetRoomId'
+      },
+      animationSource: {
+        type: 'flipbook',
+        fps: 8,
+        frames: 4,
+        controllerVariable: 'time',
+        description: '4-frame rotating quantum vortex animation loop + vertical beam pulse.'
+      }
+    },
+
+    // ------------------------------------------------------------------------
+    // 5. MOVING ELEVATORS
+    // ------------------------------------------------------------------------
+    {
+      id: 'PROC_12_ELEVATOR_PLATFORM_AND_SHAFT',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueMovingElevators',
+      lineNumbers: { start: 1306, end: 1347 },
+      proceduralDescription: 'Vertical hydraulic guide column rect, base shadow ellipse, platform top deck diamond, and pulsing center reactor ring.',
+      assetReplacementRequired: 'Industrial Elevator Lift Platform Deck and modular hydraulic shaft rails.',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'elevator_lift_platform_standard',
+      fallbackSprite: 'elevator_hydraulic_shaft',
+      anchorPoint: { x: 32, y: 18, description: 'Center top surface of 64x36 lift deck.' },
+      depthSortingLayer: {
+        layerName: 'moving_platforms',
+        formula: '(elev.x + elev.y) * 100 + elev.z * 10 + 15',
+        relativeOffset: 15,
+        description: 'Dynamically updated vertical depth following platform elev.z.'
+      },
+      collisionSource: {
+        type: 'AABB',
+        geometry: 'Dynamic moving walkable platform AABB (w: elev.width, d: elev.depth, topZ: elev.z)',
+        dataSource: 'elev.x, elev.y, elev.z, elev.width, elev.depth'
+      },
+      animationSource: {
+        type: 'pulseSine',
+        controllerVariable: 'Math.sin(time * 5)',
+        description: 'Sinusoidal reactor core illumination pulse.'
+      }
+    },
+
+    // ------------------------------------------------------------------------
+    // 6. CRATES & TACTICAL CONTAINERS
+    // ------------------------------------------------------------------------
+    {
+      id: 'PROC_13_CRATE_DROP_SHADOW',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueCrates',
+      lineNumbers: { start: 564, end: 574 },
+      proceduralDescription: 'Ground shadow ellipse beneath crate, scaling dynamically based on altitude (crate.z - surfaceZ).',
+      assetReplacementRequired: 'Dynamic soft-edged isometric shadow decal.',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'crate_shadow_dynamic',
+      anchorPoint: { x: 24, y: 12, description: 'Center of ground contact shadow ellipse.' },
+      depthSortingLayer: {
+        layerName: 'crate_shadow',
+        formula: '(crate.x + crate.y) * 100 + surfaceZ * 10 + 1',
+        relativeOffset: 1,
+        description: 'Directly on the surface below crate, independent of crate air altitude.'
+      },
+      collisionSource: {
+        type: 'none',
+        geometry: 'Visual projection only',
+        dataSource: 'surfaceZ'
+      },
+      animationSource: {
+        type: 'stateMachine',
+        controllerVariable: 'crate.z - surfaceZ',
+        description: 'Scales from 1.0 (grounded) down to 0.35 at peak height.'
+      }
+    },
+    {
+      id: 'PROC_14_TACTICAL_CARGO_CRATE',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueCrates',
+      lineNumbers: { start: 575, end: 666 },
+      proceduralDescription: 'Left face (#1e3a8a), titanium bumpers, right face (#2563eb), top deck (#60a5fa), magnetic clamping plate, and CRG-02 stencil.',
+      assetReplacementRequired: '2.5D Isometric Tactical Cargo Crate (Blue Standard, Heavy Iron, Cryo, Explosive).',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'crate_standard_blue',
+      fallbackSprite: 'crate_heavy_iron',
+      anchorPoint: { x: 32, y: 48, description: 'Ground center contact pivot at bottom corner vertex.' },
+      depthSortingLayer: {
+        layerName: 'movable_entities',
+        formula: '(crate.x + crate.y + 0.5) * 100 + crate.z * 10 + 20',
+        relativeOffset: 20,
+        description: 'Standard movable entity depth sort.'
+      },
+      collisionSource: {
+        type: 'AABB',
+        geometry: 'Solid dynamic pushable block AABB (w: crate.w, d: crate.d, h: crate.h)',
+        dataSource: 'crate.x, crate.y, crate.z, crate.w, crate.d, crate.h'
+      },
+      animationSource: {
+        type: 'stateMachine',
+        controllerVariable: 'crate.isCarried ? "carried" : "ground"',
+        description: 'Magnetic clamp emissive highlight state when lifted by player.'
+      }
+    },
+
+    // ------------------------------------------------------------------------
+    // 7. DOORS & LASER HAZARDS
+    // ------------------------------------------------------------------------
+    {
+      id: 'PROC_15_BULKHEAD_DOOR_FRAME',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueDoorsAndLasers',
+      lineNumbers: { start: 691, end: 700 },
+      proceduralDescription: 'Hydraulic frame pillars and structural archway rectangle (pos.x - 20, pos.y - 48, 40, 48).',
+      assetReplacementRequired: 'Modular Isometric Bulkhead Door Archway Frame.',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'door_frame_standard',
+      fallbackSprite: 'door_frame_citadel_boss',
+      anchorPoint: { x: 32, y: 64, description: 'Bottom center of 64x80 door frame.' },
+      depthSortingLayer: {
+        layerName: 'doors_frame',
+        formula: '(door.x + door.y) * 100 + door.z * 10 + 29',
+        relativeOffset: 29,
+        description: 'Frame rendered immediately behind/with sliding panels.'
+      },
+      collisionSource: {
+        type: 'AABB',
+        geometry: 'Static wall frame boundary columns',
+        dataSource: 'door.x, door.y, door.z'
+      },
+      animationSource: {
+        type: 'static',
+        controllerVariable: 'door.isOpen',
+        description: 'Frame color accent shifts green/red based on door unlock state.'
+      }
+    },
+    {
+      id: 'PROC_16_DOOR_SLIDING_PANELS',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueDoorsAndLasers',
+      lineNumbers: { start: 701, end: 739 },
+      proceduralDescription: 'Sliding armored panels with security clearance badge (SEC-α, SEC-R, APEX) or open gateway green hologram.',
+      assetReplacementRequired: '8-frame hydraulic sliding armored door animation strip.',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'door_slide_standard_f0',
+      fallbackSprite: 'door_slide_standard_f7',
+      anchorPoint: { x: 32, y: 64, description: 'Bottom center of sliding door panel.' },
+      depthSortingLayer: {
+        layerName: 'doors_panels',
+        formula: '(door.x + door.y) * 100 + door.z * 10 + 30',
+        relativeOffset: 30,
+        description: 'Interlocking barrier depth sorting.'
+      },
+      collisionSource: {
+        type: 'AABB',
+        geometry: 'Impassable solid wall volume when door.isOpen is false',
+        dataSource: 'door.isOpen, door.requiredKeycard'
+      },
+      animationSource: {
+        type: 'flipbook',
+        fps: 12,
+        frames: 8,
+        controllerVariable: 'door.openProgress || (door.isOpen ? 1 : 0)',
+        description: '8-frame hydraulic blast-shield separation and retraction into frame.'
+      }
+    },
+    {
+      id: 'PROC_17_LASER_HAZARD_BEAM',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueDoorsAndLasers',
+      lineNumbers: { start: 752, end: 795 },
+      proceduralDescription: 'Pulsing outer hazard glow (8-12px), intense red core (3.5px), blinding white core (1.2px), and ground reflection pool.',
+      assetReplacementRequired: 'Laser emitter cap sprite, repeating beam tile, and ground reflection decal.',
+      atlasName: 'atlas_vfx_ui.png',
+      spriteName: 'vfx_laser_beam_tile',
+      fallbackSprite: 'vfx_laser_emitter_cap',
+      anchorPoint: { x: 0, y: 4, description: 'Left center alignment along laser trajectory line.' },
+      depthSortingLayer: {
+        layerName: 'hazards',
+        formula: '(laser.startX + laser.startY) * 100 + laser.z * 10 + 28',
+        relativeOffset: 28,
+        description: 'Laser beam depth sorting over floor and obstacles.'
+      },
+      collisionSource: {
+        type: 'lineSegment',
+        geometry: 'Raycast 2D segment from (startX, startY, z) to (endX, endY, z)',
+        dataSource: 'laser.startX, laser.startY, laser.endX, laser.endY, laser.isActive'
+      },
+      animationSource: {
+        type: 'uvScroll',
+        controllerVariable: 'time * 18',
+        description: 'High-frequency core oscillation and horizontal UV texture scroll.'
+      }
+    },
+
+    // ------------------------------------------------------------------------
+    // 8. COLLECTIBLES & ITEMS
+    // ------------------------------------------------------------------------
+    {
+      id: 'PROC_18_KEYCARD_COLLECTIBLE',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueItems',
+      lineNumbers: { start: 821, end: 851 },
+      proceduralDescription: 'Ground shadow ellipse, vertical sinusoidal hover bob, glowing round-rect card body, and clearance Greek glyph.',
+      assetReplacementRequired: 'Floating 8-frame rotating holographic security keycards (Blue, Red, Green, Purple).',
+      atlasName: 'atlas_entities_items.png',
+      spriteName: 'keycard_blue_f0',
+      fallbackSprite: 'keycard_red_f0',
+      anchorPoint: { x: 12, y: 16, description: 'Center pivot of 24x24 floating keycard item.' },
+      depthSortingLayer: {
+        layerName: 'collectibles',
+        formula: '(item.x + item.y) * 100 + item.z * 10 + 25',
+        relativeOffset: 25,
+        description: 'Item pickup depth layer.'
+      },
+      collisionSource: {
+        type: 'cylinder',
+        geometry: 'Player proximity pickup trigger (radius: 0.5 tiles, height: 1.0 tiles)',
+        dataSource: 'item.x, item.y, item.z, item.isCollected'
+      },
+      animationSource: {
+        type: 'flipbook',
+        fps: 8,
+        frames: 8,
+        controllerVariable: 'time',
+        description: '8-frame continuous 360-degree card spin with specular shimmer.'
+      }
+    },
+    {
+      id: 'PROC_19_NEXUS_QUANTUM_FRAGMENT',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueItems',
+      lineNumbers: { start: 852, end: 883 },
+      proceduralDescription: 'Ground shadow, pulsating golden glow blur (16-24px), octahedron diamond crystal polygon, and facet lines.',
+      assetReplacementRequired: '12-frame rotating emissive quantum crystal octahedron (Fragments I to V).',
+      atlasName: 'atlas_entities_items.png',
+      spriteName: 'nexus_fragment_1_f0',
+      fallbackSprite: 'nexus_fragment_master_crest_f0',
+      anchorPoint: { x: 16, y: 16, description: 'Center pivot of 32x32 crystal sprite.' },
+      depthSortingLayer: {
+        layerName: 'collectibles_quantum',
+        formula: '(item.x + item.y) * 100 + item.z * 10 + 26',
+        relativeOffset: 26,
+        description: 'High-priority collectible sorting.'
+      },
+      collisionSource: {
+        type: 'cylinder',
+        geometry: 'Quantum collection trigger zone (radius: 0.6 tiles, height: 1.2 tiles)',
+        dataSource: 'item.x, item.y, item.z, item.isCollected'
+      },
+      animationSource: {
+        type: 'flipbook',
+        fps: 10,
+        frames: 12,
+        controllerVariable: 'time',
+        description: '12-frame tumbling octahedral crystal with pulsing facet flares.'
+      }
+    },
+    {
+      id: 'PROC_20_ENERGY_CELL_MEDKIT',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueItems',
+      lineNumbers: { start: 884, end: 894 },
+      proceduralDescription: 'Glowing emerald circle arc (r=6) with shadow blur (10px) and vertical hover bob.',
+      assetReplacementRequired: '4-frame hovering plasma cell canister / nano-medkit sprite.',
+      atlasName: 'atlas_entities_items.png',
+      spriteName: 'plasma_cell_f0',
+      fallbackSprite: 'plasma_cell_f3',
+      anchorPoint: { x: 10, y: 10, description: 'Center pivot of 20x20 cell sprite.' },
+      depthSortingLayer: {
+        layerName: 'collectibles_supplies',
+        formula: '(item.x + item.y) * 100 + item.z * 10 + 24',
+        relativeOffset: 24,
+        description: 'Supply drop sorting.'
+      },
+      collisionSource: {
+        type: 'cylinder',
+        geometry: 'Pickup proximity cylinder (radius: 0.5 tiles)',
+        dataSource: 'item.x, item.y, item.z'
+      },
+      animationSource: {
+        type: 'flipbook',
+        fps: 6,
+        frames: 4,
+        controllerVariable: 'time',
+        description: '4-frame vertical levitation and fluid energy pulse.'
+      }
+    },
+
+    // ------------------------------------------------------------------------
+    // 9. VISION CONES & ENEMY RADAR
+    // ------------------------------------------------------------------------
+    {
+      id: 'PROC_21_VISION_CONE_AND_RADAR_SWEEP',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueVisionCones',
+      lineNumbers: { start: 924, end: 1011 },
+      proceduralDescription: '16-segment isometric fan polygon with alert state tinting, radar sweep arc lines, and turret targeting laser dots.',
+      assetReplacementRequired: 'Textured projection mesh using 128x128 soft-edge radar gradient mask + scanlines.',
+      atlasName: 'atlas_vfx_ui.png',
+      spriteName: 'vfx_vision_cone_mask',
+      fallbackSprite: 'vfx_vision_cone_scanline',
+      anchorPoint: { x: 64, y: 0, description: 'Apex point of vision cone fan.' },
+      depthSortingLayer: {
+        layerName: 'ground_projectors',
+        formula: '(drone.x + drone.y) * 100 + 12',
+        relativeOffset: 12,
+        description: 'Volumetric ground projection above floor tiles but below entities.'
+      },
+      collisionSource: {
+        type: 'cylinder',
+        geometry: 'FOV cone raycast check (fov: drone.visionFov, range: drone.visionRange, angle: drone.visionAngle)',
+        dataSource: 'drone.x, drone.y, drone.visionAngle, drone.visionRange, drone.visionFov'
+      },
+      animationSource: {
+        type: 'uvScroll',
+        controllerVariable: 'time * (state === "chase" ? 2.5 : 1.2)',
+        description: 'Continuous outward radial sweep texture wave.'
+      }
+    },
+
+    // ------------------------------------------------------------------------
+    // 10. DRONES & DEFENSE TURRETS
+    // ------------------------------------------------------------------------
+    {
+      id: 'PROC_22_DEFENSE_TURRET',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueDrones',
+      lineNumbers: { start: 1053, end: 1101 },
+      proceduralDescription: 'Bolted octagonal base ellipse, hazard chevrons, rotating armored dome, dual gun barrels, and central sensor eye.',
+      assetReplacementRequired: 'Heavy Bolted Base prop + 16-directional swivel gun turret head.',
+      atlasName: 'atlas_entities_items.png',
+      spriteName: 'turret_head_dir0',
+      fallbackSprite: 'turret_base_heavy',
+      anchorPoint: { x: 24, y: 38, description: 'Base contact center of 48x48 turret assembly.' },
+      depthSortingLayer: {
+        layerName: 'enemy_turret',
+        formula: '(drone.x + drone.y) * 100 + drone.z * 10 + 40',
+        relativeOffset: 40,
+        description: 'Solid enemy defense structure depth.'
+      },
+      collisionSource: {
+        type: 'cylinder',
+        geometry: 'Solid obstacle cylinder (radius: 0.6 tiles, height: 1.0 tiles)',
+        dataSource: 'drone.x, drone.y, drone.z'
+      },
+      animationSource: {
+        type: 'stateMachine',
+        controllerVariable: 'Math.round(((drone.visionAngle % (Math.PI*2)) / (Math.PI*2)) * 16) % 16',
+        description: '16-direction angle quantizer selecting directional swivel sprite.'
+      }
+    },
+    {
+      id: 'PROC_23_PATROL_SENTINEL_DRONE',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueDrones',
+      lineNumbers: { start: 1102, end: 1154 },
+      proceduralDescription: 'Hover bob, ground shadow, anti-gravity thruster ring, metallic chassis round-rect, sensor eye, and stabilizer wings.',
+      assetReplacementRequired: 'Animated 4-direction floating Combat Sentinel / Interceptor Drone.',
+      atlasName: 'atlas_entities_items.png',
+      spriteName: 'drone_sentinel_hover_se_f0',
+      fallbackSprite: 'drone_sentinel_hover_ne_f0',
+      anchorPoint: { x: 24, y: 36, description: 'Center bottom of 48x48 floating drone sprite.' },
+      depthSortingLayer: {
+        layerName: 'enemy_drone',
+        formula: '(drone.x + drone.y) * 100 + drone.z * 10 + 40',
+        relativeOffset: 40,
+        description: 'Hovering aerial enemy entity depth.'
+      },
+      collisionSource: {
+        type: 'cylinder',
+        geometry: 'Mobile aerial combatant cylinder (radius: 0.5 tiles, height: 0.8 tiles)',
+        dataSource: 'drone.x, drone.y, drone.z, drone.type'
+      },
+      animationSource: {
+        type: 'flipbook',
+        fps: 8,
+        frames: 4,
+        controllerVariable: 'drone.facingDirection, time',
+        description: '4-direction 4-frame anti-grav hover bob loop + alert pulse state.'
+      }
+    },
+
+    // ------------------------------------------------------------------------
+    // 11. ENEMY PROJECTILES
+    // ------------------------------------------------------------------------
+    {
+      id: 'PROC_24_ENERGY_PROJECTILE',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueProjectiles',
+      lineNumbers: { start: 1175, end: 1205 },
+      proceduralDescription: 'Red energy bolt core arc (r=5), hot white center (r=2.5), and directional motion streak trail line.',
+      assetReplacementRequired: 'High-energy kinetic plasma bolt / orb projectile sprite with emissive glow trail.',
+      atlasName: 'atlas_entities_items.png',
+      spriteName: 'projectile_bolt_red',
+      fallbackSprite: 'projectile_bolt_cyan',
+      anchorPoint: { x: 8, y: 8, description: 'Center pivot of 16x16 projectile sprite.' },
+      depthSortingLayer: {
+        layerName: 'projectiles',
+        formula: '(p.x + p.y) * 100 + p.z * 10 + 42',
+        relativeOffset: 42,
+        description: 'Fast-moving entity depth layer.'
+      },
+      collisionSource: {
+        type: 'cylinder',
+        geometry: 'Point/Sphere collision volume (radius: 0.2 tiles)',
+        dataSource: 'p.x, p.y, p.z, p.vx, p.vy'
+      },
+      animationSource: {
+        type: 'stateMachine',
+        controllerVariable: 'Math.atan2(p.vy, p.vx)',
+        description: 'Oriented sprite rotation following velocity trajectory vector.'
+      }
+    },
+
+    // ------------------------------------------------------------------------
+    // 12. EXIT PORTAL (QUANTUM EVENT HORIZON)
+    // ------------------------------------------------------------------------
+    {
+      id: 'PROC_25_STARGATE_EXIT_PORTAL',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queueExitPortal',
+      lineNumbers: { start: 1226, end: 1277 },
+      proceduralDescription: 'Heavy stargate ellipse frame, radial vortex gradient, rotating chevron glyphs, and cell count status readout.',
+      assetReplacementRequired: 'Stargate Portal Armature Frame sprite + 8-frame swirling quantum event horizon vortex.',
+      atlasName: 'atlas_environment.png',
+      spriteName: 'stargate_portal_frame',
+      fallbackSprite: 'vfx_portal_vortex_f0',
+      anchorPoint: { x: 48, y: 100, description: 'Center base of 96x128 stargate archway.' },
+      depthSortingLayer: {
+        layerName: 'portal_structure',
+        formula: '(portal.x + portal.y) * 100 + portal.z * 10 + 45',
+        relativeOffset: 45,
+        description: 'Massive endgame exit landmark depth.'
+      },
+      collisionSource: {
+        type: 'trigger',
+        geometry: 'Exit gateway event horizon trigger (radius: 1.2 tiles, height: 2.5 tiles)',
+        dataSource: 'portal.x, portal.y, portal.z, portal.requiredEnergyCells'
+      },
+      animationSource: {
+        type: 'flipbook',
+        fps: 10,
+        frames: 8,
+        controllerVariable: 'time',
+        description: '8-frame continuous quantum vortex rotation and grav-lens distortion.'
+      }
+    },
+
+    // ------------------------------------------------------------------------
+    // 13. PLAYER HERO CHARACTER
+    // ------------------------------------------------------------------------
+    {
+      id: 'PROC_26_PLAYER_CYBER_OPERATIVE',
+      file: 'src/engine/renderer.ts',
+      functionName: 'queuePlayer',
+      lineNumbers: { start: 1366, end: 1555 },
+      proceduralDescription: 'Dynamic shadow ellipse, cybernetic leg strokes, armored torso, rim light highlight, arc reactor core, head helmet, cyan visor lens flare, magnetic crate harness, and jump jet thruster flare.',
+      assetReplacementRequired: 'Full 8-direction animated Cyber Operative character spritesheet (Idle, Walk, Run, Jump, Carry, Push, Hurt, Death).',
+      atlasName: 'atlas_player.png',
+      spriteName: 'player_idle_se_f0',
+      fallbackSprite: 'player_walk_se_f0',
+      anchorPoint: { x: 32, y: 52, description: 'Ground contact anchor point between character boots.' },
+      depthSortingLayer: {
+        layerName: 'player_hero',
+        formula: '(player.x + player.y) * 100 + player.z * 10 + 32',
+        relativeOffset: 32,
+        description: 'Primary character depth layer.'
+      },
+      collisionSource: {
+        type: 'cylinder',
+        geometry: 'Isometric character capsule (radius: 0.35 tiles, height: 1.6 tiles, footZ: player.z)',
+        dataSource: 'player.x, player.y, player.z, player.hitbox'
+      },
+      animationSource: {
+        type: 'stateMachine',
+        fps: 12,
+        frames: 404,
+        controllerVariable: 'player.state, player.direction, player.walkFrame, player.isGrounded, player.carriedCrate',
+        description: 'Hierarchical state machine driving 8-direction action frames with jump jet and carried crate attachments.'
+      }
+    }
+  ]
+};
+
+const outputPath = path.join(process.cwd(), 'renderer_replacement_map.json');
+fs.writeFileSync(outputPath, JSON.stringify(replacementMap, null, 2), 'utf8');
+console.log(`Generated renderer_replacement_map.json with ${replacementMap.replacements.length} verified procedural draw replacements.`);

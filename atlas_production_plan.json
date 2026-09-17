@@ -1,0 +1,99 @@
+{
+  "project": "Orbital Station Zenith",
+  "pipelineVersion": "2.0.0-Production-Bespoke",
+  "generatedAt": "2026-09-17T19:47:46.051Z",
+  "targetEngines": [
+    {
+      "engine": "Pygame",
+      "format": "pygame.Surface with SRCALPHA",
+      "extractionMethod": "surface.subsurface(pygame.Rect(x, y, w, h))",
+      "features": [
+        "Software blitting",
+        "Zero dependency",
+        "Integer pixel grid"
+      ]
+    },
+    {
+      "engine": "Godot 4.x",
+      "format": "AtlasTexture & SpriteFrames resource (.tres)",
+      "extractionMethod": "AtlasTexture with region Rect2(x, y, w, h)",
+      "features": [
+        "TileSet 2D Isometric projection",
+        "ShaderMaterial support",
+        "AnimatedSprite2D"
+      ]
+    },
+    {
+      "engine": "Unity 2022/2023 LTS",
+      "format": "Sprite Sheet (Texture Type: Sprite (2D and UI), Sprite Mode: Multiple)",
+      "extractionMethod": "Unity Sprite Editor slicing via .meta file or script",
+      "features": [
+        "SpriteRenderer sorting layers",
+        "2D Isometric Tilemap",
+        "Pixel Perfect Camera"
+      ]
+    },
+    {
+      "engine": "Unreal Engine 5.x",
+      "format": "Paper2D / PaperZD Sprite & Flipbook assets",
+      "extractionMethod": "Extract Sprites from Texture / JSON Sheet importer",
+      "features": [
+        "PaperFlipbookComponent",
+        "PaperTileMapComponent",
+        "Translucent Unlit Shading"
+      ]
+    }
+  ],
+  "atlases": [
+    {
+      "id": "atlas_player",
+      "fileName": "atlas_player.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 1024
+      },
+      "colorDepth": "32-bit RGBA",
+      "totalFrames": 404,
+      "description": "Player 8-direction animated character suit, animations, harness, jump jet, and ground shadow."
+    },
+    {
+      "id": "atlas_environment",
+      "fileName": "atlas_environment.png",
+      "dimensions": {
+        "width": 2048,
+        "height": 2048
+      },
+      "colorDepth": "32-bit RGBA",
+      "totalFrames": 168,
+      "description": "Biomes floors, modular walls, hydraulic bulkhead doors, tactical crates, pressure plates, elevators, terminals, and stargate portal frame."
+    },
+    {
+      "id": "atlas_entities_items",
+      "fileName": "atlas_entities_items.png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "colorDepth": "32-bit RGBA",
+      "totalFrames": 195,
+      "description": "Hostile drones, rotating turrets, Overmind boss core, security keycards, Nexus fragments, energy cells, medkits, and projectiles."
+    },
+    {
+      "id": "atlas_vfx_ui",
+      "fileName": "atlas_vfx_ui.png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "colorDepth": "32-bit RGBA",
+      "totalFrames": 44,
+      "description": "VFX strips (lasers, particles, vortex, vision cone projection), HUD frames, meters, CRT minimap bezel, alert badges, and key prompts."
+    }
+  ],
+  "totalAssetsAcrossAtlases": 811,
+  "gpuMemoryFootprintMB": "32.00",
+  "batchingStrategy": {
+    "drawCallsPerRoomTarget": "<= 4 (1 per active texture atlas)",
+    "sortingMethod": "Z-order Isometric Painter's Algorithm"
+  }
+}

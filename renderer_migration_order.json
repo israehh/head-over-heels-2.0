@@ -1,0 +1,337 @@
+{
+  "title": "Orbital Station Zenith — Renderer Sprite Migration Order by Safety",
+  "version": "1.0.0",
+  "meta": {
+    "author": "Senior Engine Programmer & Technical Artist",
+    "strategy": "Progressive, zero-regression replacement pipeline from static background geometry to complex dynamic interactive actors and VFX",
+    "totalStages": 10
+  },
+  "stages": [
+    {
+      "safetyRank": 1,
+      "category": "Floor",
+      "targetFile": "src/engine/renderer.ts",
+      "targetFunction": "queueMapTiles",
+      "lineRange": {
+        "start": 308,
+        "end": 376
+      },
+      "safetyLevel": "Maximum Safety",
+      "safetyRationale": "Floor tiles are purely static decorative base planes rendered at depth offset 0. They do not have moving collision hulls or state transitions. Replacing diamond vector paths with 64x32 sprites carries zero risk of breaking physics or game logic.",
+      "riskAssessment": {
+        "visualRisk": "Very Low (minor seam alignment if anchor points deviate from 32, 16)",
+        "physicsRisk": "Zero (walkability is determined by grid data, not floor drawing)",
+        "gameplayRisk": "Zero"
+      },
+      "breakingChangesPotential": "None",
+      "collisionDependency": "None (uses room.floorGrid[x][y].walkable independently)",
+      "associatedAtlas": "atlas_environment.png",
+      "sampleSprites": [
+        "tile_floor_alpha_standard",
+        "tile_floor_alpha_alt",
+        "tile_floor_beta_standard",
+        "tile_floor_gamma_standard",
+        "tile_floor_delta_standard",
+        "tile_floor_omega_standard"
+      ],
+      "regressionTestCases": [
+        "Verify floor tile checkerboard alternates seamlessly across all 53 rooms",
+        "Verify 1-pixel gap test: zero black void seams between adjacent isometric diamond tiles",
+        "Verify camera panning at 60 FPS shows no jitter along diagonal diamond seams"
+      ]
+    },
+    {
+      "safetyRank": 2,
+      "category": "Wall",
+      "targetFile": "src/engine/renderer.ts",
+      "targetFunction": "queueMapTiles",
+      "lineRange": {
+        "start": 190,
+        "end": 307
+      },
+      "safetyLevel": "Very High",
+      "safetyRationale": "Wall structures occupy fixed grid cells with static elevations. Replaces procedural left/right face polygons and ambient occlusion ellipses with pre-rendered bulkhead sprites. Depth sorting is already decoupled via (x + y) * 100 + elev * 10.",
+      "riskAssessment": {
+        "visualRisk": "Low (vertical height alignment for multi-elevation pillars)",
+        "physicsRisk": "Zero (AABB wall collision is calculated in isometric.ts independent of canvas draw calls)",
+        "gameplayRisk": "Zero"
+      },
+      "breakingChangesPotential": "None",
+      "collisionDependency": "Independent (room.floorGrid[x][y].elevation and type === 'wall' dictate collision)",
+      "associatedAtlas": "atlas_environment.png",
+      "sampleSprites": [
+        "wall_standard_alpha",
+        "wall_nw_standard_alpha",
+        "wall_ne_standard_alpha",
+        "wall_pillar_column_alpha",
+        "wall_standard_omega"
+      ],
+      "regressionTestCases": [
+        "Check corner junctions where NW and NE wall faces intersect",
+        "Test high elevation pillars (elevation 2 and 3 in Sector 14 and 18) for baseline alignment",
+        "Ensure wall top LED status lights correctly align with bulkhead cap positions"
+      ]
+    },
+    {
+      "safetyRank": 3,
+      "category": "Crate",
+      "targetFile": "src/engine/renderer.ts",
+      "targetFunction": "queueCrates",
+      "lineRange": {
+        "start": 544,
+        "end": 670
+      },
+      "safetyLevel": "High",
+      "safetyRationale": "Crates are dynamic movable entities, but their rendering footprint is uniform (standard 64x64 sprite container). They possess a clean bounding box and straightforward surface shadow scaling based on altitude.",
+      "riskAssessment": {
+        "visualRisk": "Low (shadow scaling during falling or player carrying must match procedural behavior)",
+        "physicsRisk": "Low (render position must strictly match crate.x, crate.y, crate.z coordinates)",
+        "gameplayRisk": "Low"
+      },
+      "breakingChangesPotential": "Low",
+      "collisionDependency": "Uses getSurfaceBelow() and crate AABB; visual sprite must align with physical bounding box",
+      "associatedAtlas": "atlas_environment.png",
+      "sampleSprites": [
+        "crate_standard_blue",
+        "crate_heavy_reinforced",
+        "crate_shadow_dynamic"
+      ],
+      "regressionTestCases": [
+        "Push crate across room and confirm zero visual lag or offset between sprite and physics box",
+        "Drop crate off elevated ledge to verify drop shadow contracts and fades with height",
+        "Stack two crates on top of each other and verify depth sorting order"
+      ]
+    },
+    {
+      "safetyRank": 4,
+      "category": "Door",
+      "targetFile": "src/engine/renderer.ts",
+      "targetFunction": "queueDoorsAndLasers",
+      "lineRange": {
+        "start": 674,
+        "end": 743
+      },
+      "safetyLevel": "High",
+      "safetyRationale": "Doors are positioned at fixed grid coordinates between sectors. State transition is binary (closed vs. open) with an 8-frame sliding panel animation. Frame and panel sprites can be blitted with high precision.",
+      "riskAssessment": {
+        "visualRisk": "Low (badge color tinting for keycard tiers must match security level)",
+        "physicsRisk": "Zero (door barrier collision logic in gameLoop.ts checks door.isOpen boolean)",
+        "gameplayRisk": "Zero"
+      },
+      "breakingChangesPotential": "Low",
+      "collisionDependency": "Solid barrier when door.isOpen === false; open passageway when true",
+      "associatedAtlas": "atlas_environment.png",
+      "sampleSprites": [
+        "door_frame_standard",
+        "door_slide_standard_f0",
+        "door_slide_standard_f3",
+        "door_slide_standard_f7",
+        "badge_keycard_alpha",
+        "badge_keycard_beta"
+      ],
+      "regressionTestCases": [
+        "Verify locked doors display correct security tier badge (SEC-α, SEC-β, SEC-R, APEX)",
+        "Trigger door unlock and verify smooth 8-frame sliding panel retraction",
+        "Verify open doors display holographic threshold field without obstructing doorway walkability"
+      ]
+    },
+    {
+      "safetyRank": 5,
+      "category": "Player",
+      "targetFile": "src/engine/renderer.ts",
+      "targetFunction": "queuePlayer",
+      "lineRange": {
+        "start": 1355,
+        "end": 1555
+      },
+      "safetyLevel": "Medium-High",
+      "safetyRationale": "The player hero is the visual focal point of the camera. The sprite controller must map 8 directions (N, NE, E, SE, S, SW, W, NW), 4 locomotion states (idle, walk, jump, carry), and invulnerability flashing.",
+      "riskAssessment": {
+        "visualRisk": "Medium (walk cycle frame synchronization and boot ground contact anchor point)",
+        "physicsRisk": "Zero (movement and velocity are integrated in gameLoop.ts prior to render queue)",
+        "gameplayRisk": "Low (camera centering depends on player world coordinates)"
+      },
+      "breakingChangesPotential": "Medium (requires correct frame indexing based on walkFrame and direction)",
+      "collisionDependency": "Directly represents the user's avatar; boot anchor must touch surfaceZ plane exactly",
+      "associatedAtlas": "atlas_player.png",
+      "sampleSprites": [
+        "player_idle_s_f0",
+        "player_walk_se_f2",
+        "player_carry_idle_e_f0",
+        "player_carry_walk_s_f3",
+        "player_jump_n_f0"
+      ],
+      "regressionTestCases": [
+        "Walk in all 8 compass directions; verify sprite matches movement vector",
+        "Pick up a cargo crate; verify character transitions to carried-crate hold animation",
+        "Jump and land; verify vertical offset and drop shadow contraction",
+        "Take damage from a laser; verify invulnerability transparency strobe"
+      ]
+    },
+    {
+      "safetyRank": 6,
+      "category": "Switch",
+      "targetFile": "src/engine/renderer.ts",
+      "targetFunction": "queueFloorObjects",
+      "lineRange": {
+        "start": 386,
+        "end": 492
+      },
+      "safetyLevel": "Medium",
+      "safetyRationale": "Includes pressure plates and computer terminals. Pressure plates require distinct visual feedback for unweighted, weighted, and heavy-weighted states. Terminals have status screens and pedestal structures.",
+      "riskAssessment": {
+        "visualRisk": "Low (depression depth must visually communicate active state)",
+        "physicsRisk": "Zero (puzzleSystem.ts evaluates pressure triggers independently)",
+        "gameplayRisk": "Medium (player must immediately recognize whether a switch is activated)"
+      },
+      "breakingChangesPotential": "Low",
+      "collisionDependency": "Trigger bounding box AABB; terminal has solid obstacle cylinder",
+      "associatedAtlas": "atlas_environment.png",
+      "sampleSprites": [
+        "switch_pressure_cyan_idle",
+        "switch_pressure_cyan_active",
+        "switch_pressure_heavy_idle",
+        "switch_pressure_heavy_active",
+        "terminal_console_security_idle",
+        "terminal_console_security_active"
+      ],
+      "regressionTestCases": [
+        "Step onto standard pressure plate; verify transition to depressed green state",
+        "Place crate on heavy pressure plate; verify amber to green activation transition",
+        "Interact with security terminal; verify display text switches from SYS_IDLE to SYS_ONLINE"
+      ]
+    },
+    {
+      "safetyRank": 7,
+      "category": "Collectibles",
+      "targetFile": "src/engine/renderer.ts",
+      "targetFunction": "queueItems",
+      "lineRange": {
+        "start": 803,
+        "end": 898
+      },
+      "safetyLevel": "Medium",
+      "safetyRationale": "Collectibles (Keycards, Nexus Crystal Shards, Energy Cells) float with vertical bobbing animations and ground contact shadows. Items disappear upon pickup (item.isCollected === true).",
+      "riskAssessment": {
+        "visualRisk": "Low (golden aura and crystalline tumbling animation should be smooth)",
+        "physicsRisk": "Zero (pickup collision radius is evaluated in gameLoop.ts)",
+        "gameplayRisk": "Low"
+      },
+      "breakingChangesPotential": "Low",
+      "collisionDependency": "Proximity cylinder pickup volume; items have no physical collision barrier",
+      "associatedAtlas": "atlas_entities_items.png",
+      "sampleSprites": [
+        "keycard_blue_f0",
+        "keycard_red_f0",
+        "keycard_green_f0",
+        "nexus_fragment_1_f0",
+        "nexus_fragment_1_f5",
+        "plasma_cell_f0"
+      ],
+      "regressionTestCases": [
+        "Verify Keycard spin animation and distinct card colors (Alpha, Beta, Red, Green)",
+        "Verify Nexus Fragment crystal octahedron rotation and golden particle emission",
+        "Walk into item; verify immediate pickup and removal from render queue"
+      ]
+    },
+    {
+      "safetyRank": 8,
+      "category": "Drones",
+      "targetFile": "src/engine/renderer.ts",
+      "targetFunction": "queueDrones",
+      "lineRange": {
+        "start": 1020,
+        "end": 1159
+      },
+      "safetyLevel": "Medium-Low",
+      "safetyRationale": "Drones have complex behavioral states (patrol, suspicious, search, chase), anti-grav hover oscillation, directional heading, and turret angle rotation. Alert status alters drone hull color and eye emissions.",
+      "riskAssessment": {
+        "visualRisk": "Medium (turret head angle rotation interpolation and sentinel hover bob)",
+        "physicsRisk": "Low (drone position is driven by enemyAI.ts)",
+        "gameplayRisk": "Medium (alert state visibility is critical for stealth gameplay)"
+      },
+      "breakingChangesPotential": "Medium (turret head angle indexing across 16 sprite sub-angles)",
+      "collisionDependency": "Movement boundary cylinder and player line-of-sight check",
+      "associatedAtlas": "atlas_entities_items.png",
+      "sampleSprites": [
+        "drone_sentinel_hover_se_f0",
+        "drone_sentinel_hover_sw_f0",
+        "drone_sentinel_chase_se_f0",
+        "turret_base_industrial",
+        "turret_head_dir0",
+        "turret_head_dir4",
+        "turret_head_dir8"
+      ],
+      "regressionTestCases": [
+        "Test Sentinel hover loop in calm state (cyan sensor eye, smooth bob)",
+        "Step into vision cone; verify instant shift to pursuit sprite (crimson hull, red flare eye)",
+        "Walk around stationary turret; verify dual-barrel head smoothly rotates through all 16 angles"
+      ]
+    },
+    {
+      "safetyRank": 9,
+      "category": "Boss",
+      "targetFile": "src/engine/renderer.ts",
+      "targetFunction": "queueExitPortal",
+      "lineRange": {
+        "start": 1210,
+        "end": 1280
+      },
+      "safetyLevel": "Low (High Complexity)",
+      "safetyRationale": "Sector 20 contains the Quantum Event Horizon Gateway and the AI Overmind Core Extraction finale. The portal has rotating outer chevrons, gravitational vortex gradients, and conditional priming logic based on collected Nexus fragments and energy cells.",
+      "riskAssessment": {
+        "visualRisk": "Medium (vortex rotation blending and celestial event horizon effects)",
+        "physicsRisk": "Low (trigger zone triggers game win screen)",
+        "gameplayRisk": "High (must accurately reflect whether player has required 5 fragments to extract)"
+      },
+      "breakingChangesPotential": "Medium (stargate ring and vortex texture layering)",
+      "collisionDependency": "Exit portal extraction trigger volume (radius 1.2, height 2.5)",
+      "associatedAtlas": "atlas_environment.png",
+      "sampleSprites": [
+        "stargate_portal_frame_dormant",
+        "stargate_portal_frame_primed",
+        "vortex_event_horizon_f0",
+        "vortex_event_horizon_f4",
+        "stargate_chevron_ring"
+      ],
+      "regressionTestCases": [
+        "Verify locked portal displays dormant gray arch with GATEWAY LOCK status readout",
+        "Collect all 5 Nexus Fragments and 3 Energy Cells; verify vortex ignites with emerald swirl",
+        "Step through primed portal in Sector 20; verify EndGameModal triggers correctly"
+      ]
+    },
+    {
+      "safetyRank": 10,
+      "category": "VFX",
+      "targetFile": "src/engine/renderer.ts",
+      "targetFunction": "queueVisionCones, queueDoorsAndLasers, drawCinematicBackdrop, drawParticles",
+      "lineRange": {
+        "start": 117,
+        "end": 1640
+      },
+      "safetyLevel": "Lowest Safety (Highest Visual Dynamics)",
+      "safetyRationale": "VFX comprises dynamic volumetric vision cones, repeating tiled laser beams, particle bursts, and parallax starfield backgrounds. Many of these elements require additive blending, UV scrolling, and dynamic geometric deformation rather than simple sprite blits.",
+      "riskAssessment": {
+        "visualRisk": "High (laser beam segment repetition must align with raycast start/end points without warping)",
+        "physicsRisk": "Zero (pure visual feedback)",
+        "gameplayRisk": "High (vision cones clearly define stealth detection zones; incorrect projection breaks gameplay)"
+      },
+      "breakingChangesPotential": "High (requires canvas pattern textures or segmented 9-slice / textured mesh quads)",
+      "collisionDependency": "Lasers represent lethal raycasts; vision cones represent sensory FOV geometry",
+      "associatedAtlas": "atlas_vfx_ui.png",
+      "sampleSprites": [
+        "vfx_laser_beam_tile",
+        "vfx_laser_cap_emitter",
+        "vfx_vision_cone_mask",
+        "bg_nebula_quadrant_overlay",
+        "bg_parallax_stars_tier1",
+        "vfx_particle_spark_cyan"
+      ],
+      "regressionTestCases": [
+        "Verify laser beams tile cleanly between startX/Y and endX/Y without distortion",
+        "Verify vision cone expands and contracts smoothly with alert level (patrol, suspicious, chase)",
+        "Verify background nebula scrolls smoothly with camera parallax without stutter"
+      ]
+    }
+  ]
+}

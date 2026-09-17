@@ -1,0 +1,1744 @@
+{
+  "sector_00": {
+    "tiles": [
+      "tile_floor_nexus_var1",
+      "tile_floor_nexus_var2",
+      "tile_hazard_nexus",
+      "tile_grate_nexus"
+    ],
+    "props": [
+      "wall_ne_standard_nexus",
+      "wall_nw_standard_nexus",
+      "wall_pillar_column_nexus",
+      "wall_corner_in_nexus",
+      "wall_corner_out_nexus",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0",
+      "elevator_lift_platform_standard"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_01": {
+    "tiles": [
+      "tile_floor_alpha_var1",
+      "tile_floor_alpha_var2",
+      "tile_hazard_alpha",
+      "tile_grate_alpha"
+    ],
+    "props": [
+      "wall_ne_standard_alpha",
+      "wall_nw_standard_alpha",
+      "wall_pillar_column_alpha",
+      "wall_corner_in_alpha",
+      "wall_corner_out_alpha",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_02": {
+    "tiles": [
+      "tile_floor_alpha_var1",
+      "tile_floor_alpha_var2",
+      "tile_hazard_alpha",
+      "tile_grate_alpha"
+    ],
+    "props": [
+      "wall_ne_standard_alpha",
+      "wall_nw_standard_alpha",
+      "wall_pillar_column_alpha",
+      "wall_corner_in_alpha",
+      "wall_corner_out_alpha",
+      "crate_standard_blue",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "keycard_blue_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_03": {
+    "tiles": [
+      "tile_floor_alpha_var1",
+      "tile_floor_alpha_var2",
+      "tile_hazard_alpha",
+      "tile_grate_alpha"
+    ],
+    "props": [
+      "wall_ne_standard_alpha",
+      "wall_nw_standard_alpha",
+      "wall_pillar_column_alpha",
+      "wall_corner_in_alpha",
+      "wall_corner_out_alpha",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "nano_medkit_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_04": {
+    "tiles": [
+      "tile_floor_alpha_var1",
+      "tile_floor_alpha_var2",
+      "tile_hazard_alpha",
+      "tile_grate_alpha"
+    ],
+    "props": [
+      "wall_ne_standard_alpha",
+      "wall_nw_standard_alpha",
+      "wall_pillar_column_alpha",
+      "wall_corner_in_alpha",
+      "wall_corner_out_alpha",
+      "crate_standard_blue",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0"
+    ],
+    "collectibles": [
+      "frag_alpha_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay"
+    ]
+  },
+  "sector_05": {
+    "tiles": [
+      "tile_floor_beta_var1",
+      "tile_floor_beta_var2",
+      "tile_hazard_beta",
+      "tile_grate_beta"
+    ],
+    "props": [
+      "wall_ne_standard_beta",
+      "wall_nw_standard_beta",
+      "wall_pillar_column_beta",
+      "wall_corner_in_beta",
+      "wall_corner_out_beta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_06": {
+    "tiles": [
+      "tile_floor_beta_var1",
+      "tile_floor_beta_var2",
+      "tile_hazard_beta",
+      "tile_grate_beta"
+    ],
+    "props": [
+      "wall_ne_standard_beta",
+      "wall_nw_standard_beta",
+      "wall_pillar_column_beta",
+      "wall_corner_in_beta",
+      "wall_corner_out_beta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "nano_medkit_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_07": {
+    "tiles": [
+      "tile_floor_beta_var1",
+      "tile_floor_beta_var2",
+      "tile_hazard_beta",
+      "tile_grate_beta"
+    ],
+    "props": [
+      "wall_ne_standard_beta",
+      "wall_nw_standard_beta",
+      "wall_pillar_column_beta",
+      "wall_corner_in_beta",
+      "wall_corner_out_beta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0"
+    ],
+    "collectibles": [
+      "keycard_red_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_08": {
+    "tiles": [
+      "tile_floor_beta_var1",
+      "tile_floor_beta_var2",
+      "tile_hazard_beta",
+      "tile_grate_beta"
+    ],
+    "props": [
+      "wall_ne_standard_beta",
+      "wall_nw_standard_beta",
+      "wall_pillar_column_beta",
+      "wall_corner_in_beta",
+      "wall_corner_out_beta",
+      "crate_standard_blue",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0",
+      "elevator_lift_platform_standard"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0",
+      "drone_interceptor_rapid_se_f0",
+      "drone_enforcer_heavy_se_f0"
+    ],
+    "collectibles": [
+      "frag_alpha_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay"
+    ]
+  },
+  "sector_09": {
+    "tiles": [
+      "tile_floor_gamma_var1",
+      "tile_floor_gamma_var2",
+      "tile_hazard_gamma",
+      "tile_grate_gamma"
+    ],
+    "props": [
+      "wall_ne_standard_gamma",
+      "wall_nw_standard_gamma",
+      "wall_pillar_column_gamma",
+      "wall_corner_in_gamma",
+      "wall_corner_out_gamma",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0",
+      "elevator_lift_platform_standard"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_10": {
+    "tiles": [
+      "tile_floor_gamma_var1",
+      "tile_floor_gamma_var2",
+      "tile_hazard_gamma",
+      "tile_grate_gamma"
+    ],
+    "props": [
+      "wall_ne_standard_gamma",
+      "wall_nw_standard_gamma",
+      "wall_pillar_column_gamma",
+      "wall_corner_in_gamma",
+      "wall_corner_out_gamma",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "nano_medkit_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_11": {
+    "tiles": [
+      "tile_floor_gamma_var1",
+      "tile_floor_gamma_var2",
+      "tile_hazard_gamma",
+      "tile_grate_gamma"
+    ],
+    "props": [
+      "wall_ne_standard_gamma",
+      "wall_nw_standard_gamma",
+      "wall_pillar_column_gamma",
+      "wall_corner_in_gamma",
+      "wall_corner_out_gamma",
+      "crate_standard_blue",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0",
+      "drone_interceptor_rapid_se_f0",
+      "drone_enforcer_heavy_se_f0"
+    ],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay"
+    ]
+  },
+  "sector_12": {
+    "tiles": [
+      "tile_floor_gamma_var1",
+      "tile_floor_gamma_var2",
+      "tile_hazard_gamma",
+      "tile_grate_gamma"
+    ],
+    "props": [
+      "wall_ne_standard_gamma",
+      "wall_nw_standard_gamma",
+      "wall_pillar_column_gamma",
+      "wall_corner_in_gamma",
+      "wall_corner_out_gamma",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0",
+      "drone_interceptor_rapid_se_f0",
+      "drone_enforcer_heavy_se_f0"
+    ],
+    "collectibles": [
+      "frag_alpha_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay"
+    ]
+  },
+  "sector_13": {
+    "tiles": [
+      "tile_floor_delta_var1",
+      "tile_floor_delta_var2",
+      "tile_hazard_delta",
+      "tile_grate_delta"
+    ],
+    "props": [
+      "wall_ne_standard_delta",
+      "wall_nw_standard_delta",
+      "wall_pillar_column_delta",
+      "wall_corner_in_delta",
+      "wall_corner_out_delta",
+      "crate_standard_blue",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_14": {
+    "tiles": [
+      "tile_floor_delta_var1",
+      "tile_floor_delta_var2",
+      "tile_hazard_delta",
+      "tile_grate_delta"
+    ],
+    "props": [
+      "wall_ne_standard_delta",
+      "wall_nw_standard_delta",
+      "wall_pillar_column_delta",
+      "wall_corner_in_delta",
+      "wall_corner_out_delta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "nano_medkit_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_15": {
+    "tiles": [
+      "tile_floor_delta_var1",
+      "tile_floor_delta_var2",
+      "tile_hazard_delta",
+      "tile_grate_delta"
+    ],
+    "props": [
+      "wall_ne_standard_delta",
+      "wall_nw_standard_delta",
+      "wall_pillar_column_delta",
+      "wall_corner_in_delta",
+      "wall_corner_out_delta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0",
+      "drone_interceptor_rapid_se_f0"
+    ],
+    "collectibles": [
+      "keycard_green_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_16": {
+    "tiles": [
+      "tile_floor_delta_var1",
+      "tile_floor_delta_var2",
+      "tile_hazard_delta",
+      "tile_grate_delta"
+    ],
+    "props": [
+      "wall_ne_standard_delta",
+      "wall_nw_standard_delta",
+      "wall_pillar_column_delta",
+      "wall_corner_in_delta",
+      "wall_corner_out_delta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0",
+      "drone_interceptor_rapid_se_f0",
+      "drone_enforcer_heavy_se_f0"
+    ],
+    "collectibles": [
+      "frag_alpha_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay"
+    ]
+  },
+  "sector_17": {
+    "tiles": [
+      "tile_floor_omega_var1",
+      "tile_floor_omega_var2",
+      "tile_hazard_omega",
+      "tile_grate_omega"
+    ],
+    "props": [
+      "wall_ne_standard_omega",
+      "wall_nw_standard_omega",
+      "wall_pillar_column_omega",
+      "wall_corner_in_omega",
+      "wall_corner_out_omega",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0",
+      "drone_interceptor_rapid_se_f0",
+      "drone_enforcer_heavy_se_f0"
+    ],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay"
+    ]
+  },
+  "sector_18": {
+    "tiles": [
+      "tile_floor_omega_var1",
+      "tile_floor_omega_var2",
+      "tile_hazard_omega",
+      "tile_grate_omega"
+    ],
+    "props": [
+      "wall_ne_standard_omega",
+      "wall_nw_standard_omega",
+      "wall_pillar_column_omega",
+      "wall_corner_in_omega",
+      "wall_corner_out_omega",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0",
+      "drone_interceptor_rapid_se_f0",
+      "drone_enforcer_heavy_se_f0"
+    ],
+    "collectibles": [
+      "nano_medkit_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay"
+    ]
+  },
+  "sector_19": {
+    "tiles": [
+      "tile_floor_omega_var1",
+      "tile_floor_omega_var2",
+      "tile_hazard_omega",
+      "tile_grate_omega"
+    ],
+    "props": [
+      "wall_ne_standard_omega",
+      "wall_nw_standard_omega",
+      "wall_pillar_column_omega",
+      "wall_corner_in_omega",
+      "wall_corner_out_omega",
+      "crate_standard_blue",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0",
+      "drone_interceptor_rapid_se_f0",
+      "drone_enforcer_heavy_se_f0"
+    ],
+    "collectibles": [
+      "frag_alpha_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_20": {
+    "tiles": [
+      "tile_floor_omega_var1",
+      "tile_floor_omega_var2",
+      "tile_hazard_omega",
+      "tile_grate_omega"
+    ],
+    "props": [
+      "wall_ne_standard_omega",
+      "wall_nw_standard_omega",
+      "wall_pillar_column_omega",
+      "wall_corner_in_omega",
+      "wall_corner_out_omega",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0",
+      "portal_stargate_frame"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0",
+      "drone_interceptor_rapid_se_f0",
+      "drone_enforcer_heavy_se_f0",
+      "boss_overmind_core_f0",
+      "boss_overmind_satellite_1"
+    ],
+    "collectibles": [],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay",
+      "vfx_portal_vortex_f0"
+    ]
+  },
+  "sector_21": {
+    "tiles": [
+      "tile_floor_beta_var1",
+      "tile_floor_beta_var2",
+      "tile_hazard_beta",
+      "tile_grate_beta"
+    ],
+    "props": [
+      "wall_ne_standard_beta",
+      "wall_nw_standard_beta",
+      "wall_pillar_column_beta",
+      "wall_corner_in_beta",
+      "wall_corner_out_beta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0"
+    ],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_22": {
+    "tiles": [
+      "tile_floor_beta_var1",
+      "tile_floor_beta_var2",
+      "tile_hazard_beta",
+      "tile_grate_beta"
+    ],
+    "props": [
+      "wall_ne_standard_beta",
+      "wall_nw_standard_beta",
+      "wall_pillar_column_beta",
+      "wall_corner_in_beta",
+      "wall_corner_out_beta",
+      "crate_standard_blue",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0",
+      "elevator_lift_platform_standard"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0"
+    ],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay"
+    ]
+  },
+  "sector_23": {
+    "tiles": [
+      "tile_floor_beta_var1",
+      "tile_floor_beta_var2",
+      "tile_hazard_beta",
+      "tile_grate_beta"
+    ],
+    "props": [
+      "wall_ne_standard_beta",
+      "wall_nw_standard_beta",
+      "wall_pillar_column_beta",
+      "wall_corner_in_beta",
+      "wall_corner_out_beta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "nano_medkit_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_24": {
+    "tiles": [
+      "tile_floor_beta_var1",
+      "tile_floor_beta_var2",
+      "tile_hazard_beta",
+      "tile_grate_beta"
+    ],
+    "props": [
+      "wall_ne_standard_beta",
+      "wall_nw_standard_beta",
+      "wall_pillar_column_beta",
+      "wall_corner_in_beta",
+      "wall_corner_out_beta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0"
+    ],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay"
+    ]
+  },
+  "sector_25": {
+    "tiles": [
+      "tile_floor_beta_var1",
+      "tile_floor_beta_var2",
+      "tile_hazard_beta",
+      "tile_grate_beta"
+    ],
+    "props": [
+      "wall_ne_standard_beta",
+      "wall_nw_standard_beta",
+      "wall_pillar_column_beta",
+      "wall_corner_in_beta",
+      "wall_corner_out_beta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0",
+      "drone_interceptor_rapid_se_f0",
+      "drone_enforcer_heavy_se_f0"
+    ],
+    "collectibles": [
+      "frag_alpha_f0",
+      "nano_medkit_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_26": {
+    "tiles": [
+      "tile_floor_beta_var1",
+      "tile_floor_beta_var2",
+      "tile_hazard_beta",
+      "tile_grate_beta"
+    ],
+    "props": [
+      "wall_ne_standard_beta",
+      "wall_nw_standard_beta",
+      "wall_pillar_column_beta",
+      "wall_corner_in_beta",
+      "wall_corner_out_beta",
+      "crate_standard_blue",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "keycard_blue_f0",
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_27": {
+    "tiles": [
+      "tile_floor_beta_var1",
+      "tile_floor_beta_var2",
+      "tile_hazard_beta",
+      "tile_grate_beta"
+    ],
+    "props": [
+      "wall_ne_standard_beta",
+      "wall_nw_standard_beta",
+      "wall_pillar_column_beta",
+      "wall_corner_in_beta",
+      "wall_corner_out_beta",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_28": {
+    "tiles": [
+      "tile_floor_gamma_var1",
+      "tile_floor_gamma_var2",
+      "tile_hazard_gamma",
+      "tile_grate_gamma"
+    ],
+    "props": [
+      "wall_ne_standard_gamma",
+      "wall_nw_standard_gamma",
+      "wall_pillar_column_gamma",
+      "wall_corner_in_gamma",
+      "wall_corner_out_gamma",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_29": {
+    "tiles": [
+      "tile_floor_gamma_var1",
+      "tile_floor_gamma_var2",
+      "tile_hazard_gamma",
+      "tile_grate_gamma"
+    ],
+    "props": [
+      "wall_ne_standard_gamma",
+      "wall_nw_standard_gamma",
+      "wall_pillar_column_gamma",
+      "wall_corner_in_gamma",
+      "wall_corner_out_gamma",
+      "crate_standard_blue",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_30": {
+    "tiles": [
+      "tile_floor_gamma_var1",
+      "tile_floor_gamma_var2",
+      "tile_hazard_gamma",
+      "tile_grate_gamma"
+    ],
+    "props": [
+      "wall_ne_standard_gamma",
+      "wall_nw_standard_gamma",
+      "wall_pillar_column_gamma",
+      "wall_corner_in_gamma",
+      "wall_corner_out_gamma",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "nano_medkit_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_31": {
+    "tiles": [
+      "tile_floor_gamma_var1",
+      "tile_floor_gamma_var2",
+      "tile_hazard_gamma",
+      "tile_grate_gamma"
+    ],
+    "props": [
+      "wall_ne_standard_gamma",
+      "wall_nw_standard_gamma",
+      "wall_pillar_column_gamma",
+      "wall_corner_in_gamma",
+      "wall_corner_out_gamma",
+      "crate_standard_blue",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0",
+      "elevator_lift_platform_standard"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0"
+    ],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay"
+    ]
+  },
+  "sector_32": {
+    "tiles": [
+      "tile_floor_gamma_var1",
+      "tile_floor_gamma_var2",
+      "tile_hazard_gamma",
+      "tile_grate_gamma"
+    ],
+    "props": [
+      "wall_ne_standard_gamma",
+      "wall_nw_standard_gamma",
+      "wall_pillar_column_gamma",
+      "wall_corner_in_gamma",
+      "wall_corner_out_gamma",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0",
+      "drone_interceptor_rapid_se_f0",
+      "drone_enforcer_heavy_se_f0"
+    ],
+    "collectibles": [
+      "frag_alpha_f0",
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_33": {
+    "tiles": [
+      "tile_floor_gamma_var1",
+      "tile_floor_gamma_var2",
+      "tile_hazard_gamma",
+      "tile_grate_gamma"
+    ],
+    "props": [
+      "wall_ne_standard_gamma",
+      "wall_nw_standard_gamma",
+      "wall_pillar_column_gamma",
+      "wall_corner_in_gamma",
+      "wall_corner_out_gamma",
+      "crate_standard_blue",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "keycard_red_f0",
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_34": {
+    "tiles": [
+      "tile_floor_gamma_var1",
+      "tile_floor_gamma_var2",
+      "tile_hazard_gamma",
+      "tile_grate_gamma"
+    ],
+    "props": [
+      "wall_ne_standard_gamma",
+      "wall_nw_standard_gamma",
+      "wall_pillar_column_gamma",
+      "wall_corner_in_gamma",
+      "wall_corner_out_gamma",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_35": {
+    "tiles": [
+      "tile_floor_delta_var1",
+      "tile_floor_delta_var2",
+      "tile_hazard_delta",
+      "tile_grate_delta"
+    ],
+    "props": [
+      "wall_ne_standard_delta",
+      "wall_nw_standard_delta",
+      "wall_pillar_column_delta",
+      "wall_corner_in_delta",
+      "wall_corner_out_delta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_36": {
+    "tiles": [
+      "tile_floor_delta_var1",
+      "tile_floor_delta_var2",
+      "tile_hazard_delta",
+      "tile_grate_delta"
+    ],
+    "props": [
+      "wall_ne_standard_delta",
+      "wall_nw_standard_delta",
+      "wall_pillar_column_delta",
+      "wall_corner_in_delta",
+      "wall_corner_out_delta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0"
+    ],
+    "collectibles": [
+      "keycard_blue_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay"
+    ]
+  },
+  "sector_37": {
+    "tiles": [
+      "tile_floor_delta_var1",
+      "tile_floor_delta_var2",
+      "tile_hazard_delta",
+      "tile_grate_delta"
+    ],
+    "props": [
+      "wall_ne_standard_delta",
+      "wall_nw_standard_delta",
+      "wall_pillar_column_delta",
+      "wall_corner_in_delta",
+      "wall_corner_out_delta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "frag_alpha_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_38": {
+    "tiles": [
+      "tile_floor_delta_var1",
+      "tile_floor_delta_var2",
+      "tile_hazard_delta",
+      "tile_grate_delta"
+    ],
+    "props": [
+      "wall_ne_standard_delta",
+      "wall_nw_standard_delta",
+      "wall_pillar_column_delta",
+      "wall_corner_in_delta",
+      "wall_corner_out_delta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_39": {
+    "tiles": [
+      "tile_floor_delta_var1",
+      "tile_floor_delta_var2",
+      "tile_hazard_delta",
+      "tile_grate_delta"
+    ],
+    "props": [
+      "wall_ne_standard_delta",
+      "wall_nw_standard_delta",
+      "wall_pillar_column_delta",
+      "wall_corner_in_delta",
+      "wall_corner_out_delta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0"
+    ],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay"
+    ]
+  },
+  "sector_40": {
+    "tiles": [
+      "tile_floor_delta_var1",
+      "tile_floor_delta_var2",
+      "tile_hazard_delta",
+      "tile_grate_delta"
+    ],
+    "props": [
+      "wall_ne_standard_delta",
+      "wall_nw_standard_delta",
+      "wall_pillar_column_delta",
+      "wall_corner_in_delta",
+      "wall_corner_out_delta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_41": {
+    "tiles": [
+      "tile_floor_delta_var1",
+      "tile_floor_delta_var2",
+      "tile_hazard_delta",
+      "tile_grate_delta"
+    ],
+    "props": [
+      "wall_ne_standard_delta",
+      "wall_nw_standard_delta",
+      "wall_pillar_column_delta",
+      "wall_corner_in_delta",
+      "wall_corner_out_delta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "frag_alpha_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_42": {
+    "tiles": [
+      "tile_floor_delta_var1",
+      "tile_floor_delta_var2",
+      "tile_hazard_delta",
+      "tile_grate_delta"
+    ],
+    "props": [
+      "wall_ne_standard_delta",
+      "wall_nw_standard_delta",
+      "wall_pillar_column_delta",
+      "wall_corner_in_delta",
+      "wall_corner_out_delta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0"
+    ],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay"
+    ]
+  },
+  "sector_43": {
+    "tiles": [
+      "tile_floor_delta_var1",
+      "tile_floor_delta_var2",
+      "tile_hazard_delta",
+      "tile_grate_delta"
+    ],
+    "props": [
+      "wall_ne_standard_delta",
+      "wall_nw_standard_delta",
+      "wall_pillar_column_delta",
+      "wall_corner_in_delta",
+      "wall_corner_out_delta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0"
+    ],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay",
+      "vfx_laser_beam_red_core",
+      "vfx_laser_impact_flare",
+      "vfx_laser_floor_scorch"
+    ]
+  },
+  "sector_44": {
+    "tiles": [
+      "tile_floor_delta_var1",
+      "tile_floor_delta_var2",
+      "tile_hazard_delta",
+      "tile_grate_delta"
+    ],
+    "props": [
+      "wall_ne_standard_delta",
+      "wall_nw_standard_delta",
+      "wall_pillar_column_delta",
+      "wall_corner_in_delta",
+      "wall_corner_out_delta",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "switch_pressure_cyan_idle",
+      "switch_pressure_cyan_pressed",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [
+      "drone_sentinel_mk1_se_f0"
+    ],
+    "collectibles": [
+      "frag_alpha_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0",
+      "vfx_vision_cone_gradient_mask",
+      "vfx_vision_cone_scanline_overlay"
+    ]
+  },
+  "sector_45": {
+    "tiles": [
+      "tile_floor_secrets_var1",
+      "tile_floor_secrets_var2",
+      "tile_hazard_secrets",
+      "tile_grate_secrets"
+    ],
+    "props": [
+      "wall_ne_standard_secrets",
+      "wall_nw_standard_secrets",
+      "wall_pillar_column_secrets",
+      "wall_corner_in_secrets",
+      "wall_corner_out_secrets",
+      "crate_standard_blue",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "frag_alpha_f0",
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_46": {
+    "tiles": [
+      "tile_floor_secrets_var1",
+      "tile_floor_secrets_var2",
+      "tile_hazard_secrets",
+      "tile_grate_secrets"
+    ],
+    "props": [
+      "wall_ne_standard_secrets",
+      "wall_nw_standard_secrets",
+      "wall_pillar_column_secrets",
+      "wall_corner_in_secrets",
+      "wall_corner_out_secrets",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "frag_alpha_f0",
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_47": {
+    "tiles": [
+      "tile_floor_secrets_var1",
+      "tile_floor_secrets_var2",
+      "tile_hazard_secrets",
+      "tile_grate_secrets"
+    ],
+    "props": [
+      "wall_ne_standard_secrets",
+      "wall_nw_standard_secrets",
+      "wall_pillar_column_secrets",
+      "wall_corner_in_secrets",
+      "wall_corner_out_secrets",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "frag_alpha_f0",
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_48": {
+    "tiles": [
+      "tile_floor_secrets_var1",
+      "tile_floor_secrets_var2",
+      "tile_hazard_secrets",
+      "tile_grate_secrets"
+    ],
+    "props": [
+      "wall_ne_standard_secrets",
+      "wall_nw_standard_secrets",
+      "wall_pillar_column_secrets",
+      "wall_corner_in_secrets",
+      "wall_corner_out_secrets",
+      "crate_standard_blue",
+      "crate_heavy_iron",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0",
+      "frag_alpha_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_49": {
+    "tiles": [
+      "tile_floor_secrets_var1",
+      "tile_floor_secrets_var2",
+      "tile_hazard_secrets",
+      "tile_grate_secrets"
+    ],
+    "props": [
+      "wall_ne_standard_secrets",
+      "wall_nw_standard_secrets",
+      "wall_pillar_column_secrets",
+      "wall_corner_in_secrets",
+      "wall_corner_out_secrets",
+      "terminal_console_security_idle",
+      "terminal_console_security_active",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "frag_alpha_f0",
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_50": {
+    "tiles": [
+      "tile_floor_alpha_var1",
+      "tile_floor_alpha_var2",
+      "tile_hazard_alpha",
+      "tile_grate_alpha"
+    ],
+    "props": [
+      "wall_ne_standard_alpha",
+      "wall_nw_standard_alpha",
+      "wall_pillar_column_alpha",
+      "wall_corner_in_alpha",
+      "wall_corner_out_alpha",
+      "crate_standard_blue",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_51": {
+    "tiles": [
+      "tile_floor_alpha_var1",
+      "tile_floor_alpha_var2",
+      "tile_hazard_alpha",
+      "tile_grate_alpha"
+    ],
+    "props": [
+      "wall_ne_standard_alpha",
+      "wall_nw_standard_alpha",
+      "wall_pillar_column_alpha",
+      "wall_corner_in_alpha",
+      "wall_corner_out_alpha",
+      "crate_standard_blue",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  },
+  "sector_52": {
+    "tiles": [
+      "tile_floor_alpha_var1",
+      "tile_floor_alpha_var2",
+      "tile_hazard_alpha",
+      "tile_grate_alpha"
+    ],
+    "props": [
+      "wall_ne_standard_alpha",
+      "wall_nw_standard_alpha",
+      "wall_pillar_column_alpha",
+      "wall_corner_in_alpha",
+      "wall_corner_out_alpha",
+      "door_frame_standard",
+      "door_slide_standard_f0"
+    ],
+    "enemies": [],
+    "collectibles": [
+      "plasma_cell_f0"
+    ],
+    "vfx": [
+      "player_shadow_state_0",
+      "vfx_thruster_flame_f0",
+      "vfx_particle_sparks_f0"
+    ]
+  }
+}

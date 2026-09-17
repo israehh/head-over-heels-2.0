@@ -1,0 +1,113 @@
+{
+  "questions": {
+    "1": {
+      "question": "Are there really 53 rooms?",
+      "answer": true,
+      "evidence": "Confirmed. src/data/roomsNetwork.json defines exactly 53 rooms (sector_00 through sector_52). All 53 are parsed and registered at runtime into ALL_ROOMS by buildRoomsFromJson() in src/engine/roomNetwork.ts."
+    },
+    "2": {
+      "question": "Are there only 29 rooms?",
+      "answer": false,
+      "evidence": "False. The number 29 is not a room count. It corresponds to Sector 29 (ENG-29 \"High-Voltage Stepping Conduits\"), which is an individual room in Wing C Reactor Core. In early development, mock quadrant files only contained 20 sectors, but the active executable game engine loads all 53 rooms from roomsNetwork.json."
+    },
+    "3": {
+      "question": "How many rooms exist in executable gameplay?",
+      "answer": 53,
+      "evidence": "53 rooms exist in executable gameplay. All 53 have full floor grids, collision matrices, isometric rendering coordinates, doors, switches, items, and transition hooks."
+    },
+    "4": {
+      "question": "How many rooms are reachable from the starting room?",
+      "answer": 53,
+      "evidence": "All 53 rooms are reachable from the starting room (sector_01) via breadth-first search through compass exits, bulkhead doors, and transit lifts."
+    },
+    "5": {
+      "question": "Is the entire game fully connected?",
+      "answer": true,
+      "evidence": "Yes. The game forms a single Strongly Connected Component (SCC size 53). Every room can reach every other room and return to the origin with 100% reciprocal transitions."
+    },
+    "6": {
+      "question": "Which rooms cannot be reached?",
+      "answer": [],
+      "evidence": "None. 0 rooms are unreachable. Every room has at least one valid incoming transition path from the starting hub."
+    },
+    "7": {
+      "question": "Which rooms are referenced but not implemented?",
+      "answer": [],
+      "evidence": "None. All targetRoomId references across all exits, door triggers, and elevator linkages point to valid room IDs in roomsNetwork.json."
+    },
+    "8": {
+      "question": "Which rooms are implemented but never used?",
+      "answer": [],
+      "evidence": "None. Every room has active entities, puzzle elements, items, or shortcuts, and is part of the traversable world graph."
+    }
+  },
+  "metrics": {
+    "totalRooms": 53,
+    "totalDirectedEdges": 142,
+    "totalBidirectionalEdges": 71,
+    "stronglyConnectedComponents": 1,
+    "startingRoom": "sector_01",
+    "victoryRoom": "sector_20",
+    "culDeSacsCount": 9,
+    "culDeSacs": [
+      {
+        "id": "sector_25",
+        "name": "Cryo-Storage Apex Vault",
+        "connectsTo": "sector_24"
+      },
+      {
+        "id": "sector_26",
+        "name": "Sub-Deck Maintenance Vent (SECRET)",
+        "connectsTo": "sector_24"
+      },
+      {
+        "id": "sector_32",
+        "name": "The Reactor Core Heart",
+        "connectsTo": "sector_31"
+      },
+      {
+        "id": "sector_33",
+        "name": "Overcharged Capacitor Cache (SECRET)",
+        "connectsTo": "sector_31"
+      },
+      {
+        "id": "sector_45",
+        "name": "Sub-Vault Maintenance Nook (SECRET)",
+        "connectsTo": "sector_37"
+      },
+      {
+        "id": "sector_46",
+        "name": "Cryo-Depot Hidden Catacomb (SECRET)",
+        "connectsTo": "sector_10"
+      },
+      {
+        "id": "sector_47",
+        "name": "Decommissioned Drone Foundry (SECRET)",
+        "connectsTo": "sector_18"
+      },
+      {
+        "id": "sector_48",
+        "name": "Plasma Conductor Void (SECRET)",
+        "connectsTo": "sector_29"
+      },
+      {
+        "id": "sector_49",
+        "name": "Archival Vault Zero (SECRET)",
+        "connectsTo": "sector_44"
+      }
+    ],
+    "sectorsBreakdown": {
+      "Alpha: Docking Bay": 4,
+      "Beta: Engineering Core": 4,
+      "Gamma: Cargo & Logistics": 4,
+      "Delta: Power & Dynamos": 4,
+      "Omega: Citadel Bastion": 4,
+      "Nexus: Central Transit Hub": 1,
+      "Beta: Cargo & Cryo Vaults": 7,
+      "Gamma: Reactor Core": 7,
+      "Delta: Heavy Cargo & Stacking Yards": 10,
+      "Secrets: Hidden Chambers": 5,
+      "Alpha: Station Shortcuts": 3
+    }
+  }
+}

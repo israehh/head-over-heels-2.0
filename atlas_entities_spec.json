@@ -1,0 +1,4348 @@
+{
+  "atlas": {
+    "name": "atlas_entities_items.png",
+    "dimensions": {
+      "width": 1024,
+      "height": 1024
+    },
+    "format": "RGBA8888_PNG",
+    "filterMode": "Point/Nearest",
+    "totalElements": 195,
+    "shelfPackedFinalHeight": 536,
+    "occupancyRate": "52.3% (Vertical Shelf)"
+  },
+  "categories": {
+    "DRONES": {
+      "count": 51
+    },
+    "TURRETS": {
+      "count": 17
+    },
+    "OVERMIND": {
+      "count": 12
+    },
+    "KEYCARDS": {
+      "count": 32
+    },
+    "NEXUS_FRAGMENTS": {
+      "count": 72
+    },
+    "ENERGY_CELLS": {
+      "count": 4
+    },
+    "MEDKITS": {
+      "count": 4
+    },
+    "PROJECTILES": {
+      "count": 3
+    }
+  },
+  "elements": [
+    {
+      "id": "drone_sentinel_mk1_se_f0",
+      "name": "Drone sentinel_mk1 Dir SE Frame 0",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_se_f1",
+      "name": "Drone sentinel_mk1 Dir SE Frame 1",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 50,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_se_f2",
+      "name": "Drone sentinel_mk1 Dir SE Frame 2",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 100,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_se_f3",
+      "name": "Drone sentinel_mk1 Dir SE Frame 3",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 150,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_sw_f0",
+      "name": "Drone sentinel_mk1 Dir SW Frame 0",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 200,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_sw_f1",
+      "name": "Drone sentinel_mk1 Dir SW Frame 1",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 250,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_sw_f2",
+      "name": "Drone sentinel_mk1 Dir SW Frame 2",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 300,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_sw_f3",
+      "name": "Drone sentinel_mk1 Dir SW Frame 3",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 350,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_nw_f0",
+      "name": "Drone sentinel_mk1 Dir NW Frame 0",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 400,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_nw_f1",
+      "name": "Drone sentinel_mk1 Dir NW Frame 1",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 450,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_nw_f2",
+      "name": "Drone sentinel_mk1 Dir NW Frame 2",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 500,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_nw_f3",
+      "name": "Drone sentinel_mk1 Dir NW Frame 3",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 550,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_ne_f0",
+      "name": "Drone sentinel_mk1 Dir NE Frame 0",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 600,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_ne_f1",
+      "name": "Drone sentinel_mk1 Dir NE Frame 1",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 650,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_ne_f2",
+      "name": "Drone sentinel_mk1 Dir NE Frame 2",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 700,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_ne_f3",
+      "name": "Drone sentinel_mk1 Dir NE Frame 3",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 750,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_sentinel_mk1_alert",
+      "name": "Drone sentinel_mk1 Alert State",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "bounds": {
+        "x": 800,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_se_f0",
+      "name": "Drone interceptor_rapid Dir SE Frame 0",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 850,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_se_f1",
+      "name": "Drone interceptor_rapid Dir SE Frame 1",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 900,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_se_f2",
+      "name": "Drone interceptor_rapid Dir SE Frame 2",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 950,
+        "y": 0,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_se_f3",
+      "name": "Drone interceptor_rapid Dir SE Frame 3",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 0,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_sw_f0",
+      "name": "Drone interceptor_rapid Dir SW Frame 0",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 50,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_sw_f1",
+      "name": "Drone interceptor_rapid Dir SW Frame 1",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 100,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_sw_f2",
+      "name": "Drone interceptor_rapid Dir SW Frame 2",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 150,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_sw_f3",
+      "name": "Drone interceptor_rapid Dir SW Frame 3",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 200,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_nw_f0",
+      "name": "Drone interceptor_rapid Dir NW Frame 0",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 250,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_nw_f1",
+      "name": "Drone interceptor_rapid Dir NW Frame 1",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 300,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_nw_f2",
+      "name": "Drone interceptor_rapid Dir NW Frame 2",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 350,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_nw_f3",
+      "name": "Drone interceptor_rapid Dir NW Frame 3",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 400,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_ne_f0",
+      "name": "Drone interceptor_rapid Dir NE Frame 0",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 450,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_ne_f1",
+      "name": "Drone interceptor_rapid Dir NE Frame 1",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 500,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_ne_f2",
+      "name": "Drone interceptor_rapid Dir NE Frame 2",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 550,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_ne_f3",
+      "name": "Drone interceptor_rapid Dir NE Frame 3",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 600,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_interceptor_rapid_alert",
+      "name": "Drone interceptor_rapid Alert State",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "bounds": {
+        "x": 650,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_se_f0",
+      "name": "Drone enforcer_heavy Dir SE Frame 0",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 700,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_se_f1",
+      "name": "Drone enforcer_heavy Dir SE Frame 1",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 750,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_se_f2",
+      "name": "Drone enforcer_heavy Dir SE Frame 2",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 800,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_se_f3",
+      "name": "Drone enforcer_heavy Dir SE Frame 3",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 850,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_sw_f0",
+      "name": "Drone enforcer_heavy Dir SW Frame 0",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 900,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_sw_f1",
+      "name": "Drone enforcer_heavy Dir SW Frame 1",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 950,
+        "y": 50,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_sw_f2",
+      "name": "Drone enforcer_heavy Dir SW Frame 2",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 0,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_sw_f3",
+      "name": "Drone enforcer_heavy Dir SW Frame 3",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 50,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_nw_f0",
+      "name": "Drone enforcer_heavy Dir NW Frame 0",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 100,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_nw_f1",
+      "name": "Drone enforcer_heavy Dir NW Frame 1",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 150,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_nw_f2",
+      "name": "Drone enforcer_heavy Dir NW Frame 2",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 200,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_nw_f3",
+      "name": "Drone enforcer_heavy Dir NW Frame 3",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 250,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_ne_f0",
+      "name": "Drone enforcer_heavy Dir NE Frame 0",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 300,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_ne_f1",
+      "name": "Drone enforcer_heavy Dir NE Frame 1",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 350,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_ne_f2",
+      "name": "Drone enforcer_heavy Dir NE Frame 2",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 400,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_ne_f3",
+      "name": "Drone enforcer_heavy Dir NE Frame 3",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "durationMs": 120,
+      "bounds": {
+        "x": 450,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "drone_enforcer_heavy_alert",
+      "name": "Drone enforcer_heavy Alert State",
+      "category": "DRONES",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 36
+      },
+      "collision": {
+        "type": "cylinder_hitbox",
+        "radius": 18,
+        "height": 28
+      },
+      "bounds": {
+        "x": 500,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_heavy_base",
+      "name": "Heavy Turret Bolted Base",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 32
+      },
+      "collision": {
+        "type": "solid_cylinder",
+        "radius": 20
+      },
+      "bounds": {
+        "x": 550,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_0",
+      "name": "Turret Gun Swivel 0.0°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 600,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_1",
+      "name": "Turret Gun Swivel 22.5°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 650,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_2",
+      "name": "Turret Gun Swivel 45.0°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 700,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_3",
+      "name": "Turret Gun Swivel 67.5°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 750,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_4",
+      "name": "Turret Gun Swivel 90.0°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 800,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_5",
+      "name": "Turret Gun Swivel 112.5°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 850,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_6",
+      "name": "Turret Gun Swivel 135.0°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 900,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_7",
+      "name": "Turret Gun Swivel 157.5°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 950,
+        "y": 100,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_8",
+      "name": "Turret Gun Swivel 180.0°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 0,
+        "y": 150,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_9",
+      "name": "Turret Gun Swivel 202.5°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 50,
+        "y": 150,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_10",
+      "name": "Turret Gun Swivel 225.0°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 100,
+        "y": 150,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_11",
+      "name": "Turret Gun Swivel 247.5°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 150,
+        "y": 150,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_12",
+      "name": "Turret Gun Swivel 270.0°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 200,
+        "y": 150,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_13",
+      "name": "Turret Gun Swivel 292.5°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 250,
+        "y": 150,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_14",
+      "name": "Turret Gun Swivel 315.0°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 300,
+        "y": 150,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "turret_gunhead_rot_15",
+      "name": "Turret Gun Swivel 337.5°",
+      "category": "TURRETS",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "turret_head"
+      },
+      "bounds": {
+        "x": 350,
+        "y": 150,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "boss_overmind_core_f0",
+      "name": "Overmind Core Brain Frame 0",
+      "category": "OVERMIND",
+      "width": 128,
+      "height": 128,
+      "anchor": {
+        "x": 64,
+        "y": 96
+      },
+      "collision": {
+        "type": "boss_core_hitbox",
+        "radius": 48,
+        "height": 80
+      },
+      "durationMs": 125,
+      "bounds": {
+        "x": 400,
+        "y": 150,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "id": "boss_overmind_core_f1",
+      "name": "Overmind Core Brain Frame 1",
+      "category": "OVERMIND",
+      "width": 128,
+      "height": 128,
+      "anchor": {
+        "x": 64,
+        "y": 96
+      },
+      "collision": {
+        "type": "boss_core_hitbox",
+        "radius": 48,
+        "height": 80
+      },
+      "durationMs": 125,
+      "bounds": {
+        "x": 530,
+        "y": 150,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "id": "boss_overmind_core_f2",
+      "name": "Overmind Core Brain Frame 2",
+      "category": "OVERMIND",
+      "width": 128,
+      "height": 128,
+      "anchor": {
+        "x": 64,
+        "y": 96
+      },
+      "collision": {
+        "type": "boss_core_hitbox",
+        "radius": 48,
+        "height": 80
+      },
+      "durationMs": 125,
+      "bounds": {
+        "x": 660,
+        "y": 150,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "id": "boss_overmind_core_f3",
+      "name": "Overmind Core Brain Frame 3",
+      "category": "OVERMIND",
+      "width": 128,
+      "height": 128,
+      "anchor": {
+        "x": 64,
+        "y": 96
+      },
+      "collision": {
+        "type": "boss_core_hitbox",
+        "radius": 48,
+        "height": 80
+      },
+      "durationMs": 125,
+      "bounds": {
+        "x": 790,
+        "y": 150,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "id": "boss_overmind_core_f4",
+      "name": "Overmind Core Brain Frame 4",
+      "category": "OVERMIND",
+      "width": 128,
+      "height": 128,
+      "anchor": {
+        "x": 64,
+        "y": 96
+      },
+      "collision": {
+        "type": "boss_core_hitbox",
+        "radius": 48,
+        "height": 80
+      },
+      "durationMs": 125,
+      "bounds": {
+        "x": 0,
+        "y": 280,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "id": "boss_overmind_core_f5",
+      "name": "Overmind Core Brain Frame 5",
+      "category": "OVERMIND",
+      "width": 128,
+      "height": 128,
+      "anchor": {
+        "x": 64,
+        "y": 96
+      },
+      "collision": {
+        "type": "boss_core_hitbox",
+        "radius": 48,
+        "height": 80
+      },
+      "durationMs": 125,
+      "bounds": {
+        "x": 130,
+        "y": 280,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "id": "boss_overmind_core_f6",
+      "name": "Overmind Core Brain Frame 6",
+      "category": "OVERMIND",
+      "width": 128,
+      "height": 128,
+      "anchor": {
+        "x": 64,
+        "y": 96
+      },
+      "collision": {
+        "type": "boss_core_hitbox",
+        "radius": 48,
+        "height": 80
+      },
+      "durationMs": 125,
+      "bounds": {
+        "x": 260,
+        "y": 280,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "id": "boss_overmind_core_f7",
+      "name": "Overmind Core Brain Frame 7",
+      "category": "OVERMIND",
+      "width": 128,
+      "height": 128,
+      "anchor": {
+        "x": 64,
+        "y": 96
+      },
+      "collision": {
+        "type": "boss_core_hitbox",
+        "radius": 48,
+        "height": 80
+      },
+      "durationMs": 125,
+      "bounds": {
+        "x": 390,
+        "y": 280,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "id": "boss_overmind_satellite_1",
+      "name": "Overmind Deflector Satellite Pod 1",
+      "category": "OVERMIND",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "shield_satellite",
+        "radius": 16
+      },
+      "bounds": {
+        "x": 520,
+        "y": 280,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "boss_overmind_satellite_2",
+      "name": "Overmind Deflector Satellite Pod 2",
+      "category": "OVERMIND",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "shield_satellite",
+        "radius": 16
+      },
+      "bounds": {
+        "x": 570,
+        "y": 280,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "boss_overmind_satellite_3",
+      "name": "Overmind Deflector Satellite Pod 3",
+      "category": "OVERMIND",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "shield_satellite",
+        "radius": 16
+      },
+      "bounds": {
+        "x": 620,
+        "y": 280,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "boss_overmind_satellite_4",
+      "name": "Overmind Deflector Satellite Pod 4",
+      "category": "OVERMIND",
+      "width": 48,
+      "height": 48,
+      "anchor": {
+        "x": 24,
+        "y": 24
+      },
+      "collision": {
+        "type": "shield_satellite",
+        "radius": 16
+      },
+      "bounds": {
+        "x": 670,
+        "y": 280,
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "id": "keycard_blue_f0",
+      "name": "keycard_blue Spin Frame 0",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 720,
+        "y": 280,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_blue_f1",
+      "name": "keycard_blue Spin Frame 1",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 746,
+        "y": 280,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_blue_f2",
+      "name": "keycard_blue Spin Frame 2",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 772,
+        "y": 280,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_blue_f3",
+      "name": "keycard_blue Spin Frame 3",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 798,
+        "y": 280,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_blue_f4",
+      "name": "keycard_blue Spin Frame 4",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 824,
+        "y": 280,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_blue_f5",
+      "name": "keycard_blue Spin Frame 5",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 850,
+        "y": 280,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_blue_f6",
+      "name": "keycard_blue Spin Frame 6",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 876,
+        "y": 280,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_blue_f7",
+      "name": "keycard_blue Spin Frame 7",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 902,
+        "y": 280,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_red_f0",
+      "name": "keycard_red Spin Frame 0",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 928,
+        "y": 280,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_red_f1",
+      "name": "keycard_red Spin Frame 1",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 954,
+        "y": 280,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_red_f2",
+      "name": "keycard_red Spin Frame 2",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 980,
+        "y": 280,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_red_f3",
+      "name": "keycard_red Spin Frame 3",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 0,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_red_f4",
+      "name": "keycard_red Spin Frame 4",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 26,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_red_f5",
+      "name": "keycard_red Spin Frame 5",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 52,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_red_f6",
+      "name": "keycard_red Spin Frame 6",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 78,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_red_f7",
+      "name": "keycard_red Spin Frame 7",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 104,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_green_f0",
+      "name": "keycard_green Spin Frame 0",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 130,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_green_f1",
+      "name": "keycard_green Spin Frame 1",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 156,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_green_f2",
+      "name": "keycard_green Spin Frame 2",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 182,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_green_f3",
+      "name": "keycard_green Spin Frame 3",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 208,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_green_f4",
+      "name": "keycard_green Spin Frame 4",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 234,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_green_f5",
+      "name": "keycard_green Spin Frame 5",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 260,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_green_f6",
+      "name": "keycard_green Spin Frame 6",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 286,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_green_f7",
+      "name": "keycard_green Spin Frame 7",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 312,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_master_f0",
+      "name": "keycard_master Spin Frame 0",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 338,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_master_f1",
+      "name": "keycard_master Spin Frame 1",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 364,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_master_f2",
+      "name": "keycard_master Spin Frame 2",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 390,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_master_f3",
+      "name": "keycard_master Spin Frame 3",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 416,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_master_f4",
+      "name": "keycard_master Spin Frame 4",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 442,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_master_f5",
+      "name": "keycard_master Spin Frame 5",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 468,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_master_f6",
+      "name": "keycard_master Spin Frame 6",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 494,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "keycard_master_f7",
+      "name": "keycard_master Spin Frame 7",
+      "category": "KEYCARDS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 16
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 16
+      },
+      "durationMs": 100,
+      "bounds": {
+        "x": 520,
+        "y": 410,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "frag_alpha_f0",
+      "name": "frag_alpha Crystal Spin Frame 0",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 546,
+        "y": 410,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_alpha_f1",
+      "name": "frag_alpha Crystal Spin Frame 1",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 580,
+        "y": 410,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_alpha_f2",
+      "name": "frag_alpha Crystal Spin Frame 2",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 614,
+        "y": 410,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_alpha_f3",
+      "name": "frag_alpha Crystal Spin Frame 3",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 648,
+        "y": 410,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_alpha_f4",
+      "name": "frag_alpha Crystal Spin Frame 4",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 682,
+        "y": 410,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_alpha_f5",
+      "name": "frag_alpha Crystal Spin Frame 5",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 716,
+        "y": 410,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_alpha_f6",
+      "name": "frag_alpha Crystal Spin Frame 6",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 750,
+        "y": 410,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_alpha_f7",
+      "name": "frag_alpha Crystal Spin Frame 7",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 784,
+        "y": 410,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_alpha_f8",
+      "name": "frag_alpha Crystal Spin Frame 8",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 818,
+        "y": 410,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_alpha_f9",
+      "name": "frag_alpha Crystal Spin Frame 9",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 852,
+        "y": 410,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_alpha_f10",
+      "name": "frag_alpha Crystal Spin Frame 10",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 886,
+        "y": 410,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_alpha_f11",
+      "name": "frag_alpha Crystal Spin Frame 11",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 920,
+        "y": 410,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_beta_f0",
+      "name": "frag_beta Crystal Spin Frame 0",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 954,
+        "y": 410,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_beta_f1",
+      "name": "frag_beta Crystal Spin Frame 1",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 988,
+        "y": 410,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_beta_f2",
+      "name": "frag_beta Crystal Spin Frame 2",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 0,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_beta_f3",
+      "name": "frag_beta Crystal Spin Frame 3",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 34,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_beta_f4",
+      "name": "frag_beta Crystal Spin Frame 4",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 68,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_beta_f5",
+      "name": "frag_beta Crystal Spin Frame 5",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 102,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_beta_f6",
+      "name": "frag_beta Crystal Spin Frame 6",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 136,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_beta_f7",
+      "name": "frag_beta Crystal Spin Frame 7",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 170,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_beta_f8",
+      "name": "frag_beta Crystal Spin Frame 8",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 204,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_beta_f9",
+      "name": "frag_beta Crystal Spin Frame 9",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 238,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_beta_f10",
+      "name": "frag_beta Crystal Spin Frame 10",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 272,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_beta_f11",
+      "name": "frag_beta Crystal Spin Frame 11",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 306,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_gamma_f0",
+      "name": "frag_gamma Crystal Spin Frame 0",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 340,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_gamma_f1",
+      "name": "frag_gamma Crystal Spin Frame 1",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 374,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_gamma_f2",
+      "name": "frag_gamma Crystal Spin Frame 2",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 408,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_gamma_f3",
+      "name": "frag_gamma Crystal Spin Frame 3",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 442,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_gamma_f4",
+      "name": "frag_gamma Crystal Spin Frame 4",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 476,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_gamma_f5",
+      "name": "frag_gamma Crystal Spin Frame 5",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 510,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_gamma_f6",
+      "name": "frag_gamma Crystal Spin Frame 6",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 544,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_gamma_f7",
+      "name": "frag_gamma Crystal Spin Frame 7",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 578,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_gamma_f8",
+      "name": "frag_gamma Crystal Spin Frame 8",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 612,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_gamma_f9",
+      "name": "frag_gamma Crystal Spin Frame 9",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 646,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_gamma_f10",
+      "name": "frag_gamma Crystal Spin Frame 10",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 680,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_gamma_f11",
+      "name": "frag_gamma Crystal Spin Frame 11",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 714,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_delta_f0",
+      "name": "frag_delta Crystal Spin Frame 0",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 748,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_delta_f1",
+      "name": "frag_delta Crystal Spin Frame 1",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 782,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_delta_f2",
+      "name": "frag_delta Crystal Spin Frame 2",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 816,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_delta_f3",
+      "name": "frag_delta Crystal Spin Frame 3",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 850,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_delta_f4",
+      "name": "frag_delta Crystal Spin Frame 4",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 884,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_delta_f5",
+      "name": "frag_delta Crystal Spin Frame 5",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 918,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_delta_f6",
+      "name": "frag_delta Crystal Spin Frame 6",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 952,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_delta_f7",
+      "name": "frag_delta Crystal Spin Frame 7",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 986,
+        "y": 444,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_delta_f8",
+      "name": "frag_delta Crystal Spin Frame 8",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 0,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_delta_f9",
+      "name": "frag_delta Crystal Spin Frame 9",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 34,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_delta_f10",
+      "name": "frag_delta Crystal Spin Frame 10",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 68,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_delta_f11",
+      "name": "frag_delta Crystal Spin Frame 11",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 102,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_omega_f0",
+      "name": "frag_omega Crystal Spin Frame 0",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 136,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_omega_f1",
+      "name": "frag_omega Crystal Spin Frame 1",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 170,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_omega_f2",
+      "name": "frag_omega Crystal Spin Frame 2",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 204,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_omega_f3",
+      "name": "frag_omega Crystal Spin Frame 3",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 238,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_omega_f4",
+      "name": "frag_omega Crystal Spin Frame 4",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 272,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_omega_f5",
+      "name": "frag_omega Crystal Spin Frame 5",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 306,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_omega_f6",
+      "name": "frag_omega Crystal Spin Frame 6",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 340,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_omega_f7",
+      "name": "frag_omega Crystal Spin Frame 7",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 374,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_omega_f8",
+      "name": "frag_omega Crystal Spin Frame 8",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 408,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_omega_f9",
+      "name": "frag_omega Crystal Spin Frame 9",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 442,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_omega_f10",
+      "name": "frag_omega Crystal Spin Frame 10",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 476,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "frag_omega_f11",
+      "name": "frag_omega Crystal Spin Frame 11",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 510,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "master_crest_f0",
+      "name": "master_crest Crystal Spin Frame 0",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 544,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "master_crest_f1",
+      "name": "master_crest Crystal Spin Frame 1",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 578,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "master_crest_f2",
+      "name": "master_crest Crystal Spin Frame 2",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 612,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "master_crest_f3",
+      "name": "master_crest Crystal Spin Frame 3",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 646,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "master_crest_f4",
+      "name": "master_crest Crystal Spin Frame 4",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 680,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "master_crest_f5",
+      "name": "master_crest Crystal Spin Frame 5",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 714,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "master_crest_f6",
+      "name": "master_crest Crystal Spin Frame 6",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 748,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "master_crest_f7",
+      "name": "master_crest Crystal Spin Frame 7",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 782,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "master_crest_f8",
+      "name": "master_crest Crystal Spin Frame 8",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 816,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "master_crest_f9",
+      "name": "master_crest Crystal Spin Frame 9",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 850,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "master_crest_f10",
+      "name": "master_crest Crystal Spin Frame 10",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 884,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "master_crest_f11",
+      "name": "master_crest Crystal Spin Frame 11",
+      "category": "NEXUS_FRAGMENTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 24
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 20
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 918,
+        "y": 478,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "plasma_cell_f0",
+      "name": "plasma_cell Bob Frame 0",
+      "category": "ENERGY_CELLS",
+      "width": 20,
+      "height": 20,
+      "anchor": {
+        "x": 10,
+        "y": 14
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 14
+      },
+      "durationMs": 150,
+      "bounds": {
+        "x": 952,
+        "y": 478,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "id": "plasma_cell_f1",
+      "name": "plasma_cell Bob Frame 1",
+      "category": "ENERGY_CELLS",
+      "width": 20,
+      "height": 20,
+      "anchor": {
+        "x": 10,
+        "y": 14
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 14
+      },
+      "durationMs": 150,
+      "bounds": {
+        "x": 974,
+        "y": 478,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "id": "plasma_cell_f2",
+      "name": "plasma_cell Bob Frame 2",
+      "category": "ENERGY_CELLS",
+      "width": 20,
+      "height": 20,
+      "anchor": {
+        "x": 10,
+        "y": 14
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 14
+      },
+      "durationMs": 150,
+      "bounds": {
+        "x": 996,
+        "y": 478,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "id": "plasma_cell_f3",
+      "name": "plasma_cell Bob Frame 3",
+      "category": "ENERGY_CELLS",
+      "width": 20,
+      "height": 20,
+      "anchor": {
+        "x": 10,
+        "y": 14
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 14
+      },
+      "durationMs": 150,
+      "bounds": {
+        "x": 0,
+        "y": 512,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "id": "nano_medkit_f0",
+      "name": "nano_medkit Bob Frame 0",
+      "category": "MEDKITS",
+      "width": 20,
+      "height": 20,
+      "anchor": {
+        "x": 10,
+        "y": 14
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 14
+      },
+      "durationMs": 150,
+      "bounds": {
+        "x": 22,
+        "y": 512,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "id": "nano_medkit_f1",
+      "name": "nano_medkit Bob Frame 1",
+      "category": "MEDKITS",
+      "width": 20,
+      "height": 20,
+      "anchor": {
+        "x": 10,
+        "y": 14
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 14
+      },
+      "durationMs": 150,
+      "bounds": {
+        "x": 44,
+        "y": 512,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "id": "nano_medkit_f2",
+      "name": "nano_medkit Bob Frame 2",
+      "category": "MEDKITS",
+      "width": 20,
+      "height": 20,
+      "anchor": {
+        "x": 10,
+        "y": 14
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 14
+      },
+      "durationMs": 150,
+      "bounds": {
+        "x": 66,
+        "y": 512,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "id": "nano_medkit_f3",
+      "name": "nano_medkit Bob Frame 3",
+      "category": "MEDKITS",
+      "width": 20,
+      "height": 20,
+      "anchor": {
+        "x": 10,
+        "y": 14
+      },
+      "collision": {
+        "type": "pickup_trigger",
+        "radius": 14
+      },
+      "durationMs": 150,
+      "bounds": {
+        "x": 88,
+        "y": 512,
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "id": "proj_laser_bolt_cyan",
+      "name": "Player Plasma Bolt (Cyan)",
+      "category": "PROJECTILES",
+      "width": 16,
+      "height": 16,
+      "anchor": {
+        "x": 8,
+        "y": 8
+      },
+      "collision": {
+        "type": "kinetic_projectile",
+        "radius": 6
+      },
+      "bounds": {
+        "x": 110,
+        "y": 512,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "id": "proj_drone_bullet_red",
+      "name": "Drone Turret Bullet (Red)",
+      "category": "PROJECTILES",
+      "width": 16,
+      "height": 16,
+      "anchor": {
+        "x": 8,
+        "y": 8
+      },
+      "collision": {
+        "type": "kinetic_projectile",
+        "radius": 6
+      },
+      "bounds": {
+        "x": 128,
+        "y": 512,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "id": "proj_overmind_plasma_orb",
+      "name": "Boss Heavy Plasma Orb",
+      "category": "PROJECTILES",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "collision": {
+        "type": "kinetic_projectile",
+        "radius": 10
+      },
+      "bounds": {
+        "x": 146,
+        "y": 512,
+        "width": 24,
+        "height": 24
+      }
+    }
+  ]
+}

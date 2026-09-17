@@ -1,0 +1,824 @@
+{
+  "atlas": {
+    "name": "atlas_vfx_ui.png",
+    "dimensions": {
+      "width": 1024,
+      "height": 1024
+    },
+    "format": "RGBA8888_PNG",
+    "filterMode": "Point/Nearest & Bilinear",
+    "totalElements": 44,
+    "shelfPackedFinalHeight": 324,
+    "occupancyRate": "31.6% (Vertical Shelf)"
+  },
+  "categories": {
+    "VISION_CONES": {
+      "count": 2
+    },
+    "LASERS": {
+      "count": 3
+    },
+    "THRUSTER_EFFECTS": {
+      "count": 4
+    },
+    "SPARKS": {
+      "count": 16
+    },
+    "PORTALS": {
+      "count": 8
+    },
+    "HUD": {
+      "count": 6
+    },
+    "MINIMAP": {
+      "count": 2
+    },
+    "ALERTS": {
+      "count": 3
+    }
+  },
+  "elements": [
+    {
+      "id": "vfx_vision_cone_gradient_mask",
+      "name": "Drone Vision Cone Texture Projection Mask",
+      "category": "VISION_CONES",
+      "width": 128,
+      "height": 128,
+      "anchor": {
+        "x": 64,
+        "y": 0
+      },
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "id": "vfx_vision_cone_scanline_overlay",
+      "name": "Radar Sweep Line Overlay Grid",
+      "category": "VISION_CONES",
+      "width": 128,
+      "height": 128,
+      "anchor": {
+        "x": 64,
+        "y": 64
+      },
+      "bounds": {
+        "x": 130,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "id": "vfx_laser_beam_red_core",
+      "name": "Laser Hazard Repeating Tile (Red Core)",
+      "category": "LASERS",
+      "width": 32,
+      "height": 8,
+      "anchor": {
+        "x": 16,
+        "y": 4
+      },
+      "bounds": {
+        "x": 260,
+        "y": 0,
+        "width": 32,
+        "height": 8
+      }
+    },
+    {
+      "id": "vfx_laser_impact_flare",
+      "name": "Laser Impact Lens Flare",
+      "category": "LASERS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 16
+      },
+      "bounds": {
+        "x": 294,
+        "y": 0,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "vfx_laser_floor_scorch",
+      "name": "Laser Scorch Burn Mark Decal",
+      "category": "LASERS",
+      "width": 32,
+      "height": 16,
+      "anchor": {
+        "x": 16,
+        "y": 8
+      },
+      "bounds": {
+        "x": 328,
+        "y": 0,
+        "width": 32,
+        "height": 16
+      }
+    },
+    {
+      "id": "vfx_thruster_flame_f0",
+      "name": "Booster Jet Flame Frame 0",
+      "category": "THRUSTER_EFFECTS",
+      "width": 16,
+      "height": 32,
+      "anchor": {
+        "x": 8,
+        "y": 4
+      },
+      "durationMs": 60,
+      "bounds": {
+        "x": 362,
+        "y": 0,
+        "width": 16,
+        "height": 32
+      }
+    },
+    {
+      "id": "vfx_thruster_flame_f1",
+      "name": "Booster Jet Flame Frame 1",
+      "category": "THRUSTER_EFFECTS",
+      "width": 16,
+      "height": 32,
+      "anchor": {
+        "x": 8,
+        "y": 4
+      },
+      "durationMs": 60,
+      "bounds": {
+        "x": 380,
+        "y": 0,
+        "width": 16,
+        "height": 32
+      }
+    },
+    {
+      "id": "vfx_thruster_flame_f2",
+      "name": "Booster Jet Flame Frame 2",
+      "category": "THRUSTER_EFFECTS",
+      "width": 16,
+      "height": 32,
+      "anchor": {
+        "x": 8,
+        "y": 4
+      },
+      "durationMs": 60,
+      "bounds": {
+        "x": 398,
+        "y": 0,
+        "width": 16,
+        "height": 32
+      }
+    },
+    {
+      "id": "vfx_thruster_flame_f3",
+      "name": "Booster Jet Flame Frame 3",
+      "category": "THRUSTER_EFFECTS",
+      "width": 16,
+      "height": 32,
+      "anchor": {
+        "x": 8,
+        "y": 4
+      },
+      "durationMs": 60,
+      "bounds": {
+        "x": 416,
+        "y": 0,
+        "width": 16,
+        "height": 32
+      }
+    },
+    {
+      "id": "vfx_particle_sparks_f0",
+      "name": "Particle sparks Frame 0",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 434,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_sparks_f1",
+      "name": "Particle sparks Frame 1",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 460,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_sparks_f2",
+      "name": "Particle sparks Frame 2",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 486,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_sparks_f3",
+      "name": "Particle sparks Frame 3",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 512,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_smoke_f0",
+      "name": "Particle smoke Frame 0",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 538,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_smoke_f1",
+      "name": "Particle smoke Frame 1",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 564,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_smoke_f2",
+      "name": "Particle smoke Frame 2",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 590,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_smoke_f3",
+      "name": "Particle smoke Frame 3",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 616,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_plasma_burst_f0",
+      "name": "Particle plasma_burst Frame 0",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 642,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_plasma_burst_f1",
+      "name": "Particle plasma_burst Frame 1",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 668,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_plasma_burst_f2",
+      "name": "Particle plasma_burst Frame 2",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 694,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_plasma_burst_f3",
+      "name": "Particle plasma_burst Frame 3",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 720,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_hull_debris_f0",
+      "name": "Particle hull_debris Frame 0",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 746,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_hull_debris_f1",
+      "name": "Particle hull_debris Frame 1",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 772,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_hull_debris_f2",
+      "name": "Particle hull_debris Frame 2",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 798,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_particle_hull_debris_f3",
+      "name": "Particle hull_debris Frame 3",
+      "category": "SPARKS",
+      "width": 24,
+      "height": 24,
+      "anchor": {
+        "x": 12,
+        "y": 12
+      },
+      "durationMs": 50,
+      "bounds": {
+        "x": 824,
+        "y": 0,
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "id": "vfx_portal_vortex_f0",
+      "name": "Quantum Stargate Vortex Event Horizon Frame 0",
+      "category": "PORTALS",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 32
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 850,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "vfx_portal_vortex_f1",
+      "name": "Quantum Stargate Vortex Event Horizon Frame 1",
+      "category": "PORTALS",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 32
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 916,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "vfx_portal_vortex_f2",
+      "name": "Quantum Stargate Vortex Event Horizon Frame 2",
+      "category": "PORTALS",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 32
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 0,
+        "y": 130,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "vfx_portal_vortex_f3",
+      "name": "Quantum Stargate Vortex Event Horizon Frame 3",
+      "category": "PORTALS",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 32
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 66,
+        "y": 130,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "vfx_portal_vortex_f4",
+      "name": "Quantum Stargate Vortex Event Horizon Frame 4",
+      "category": "PORTALS",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 32
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 132,
+        "y": 130,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "vfx_portal_vortex_f5",
+      "name": "Quantum Stargate Vortex Event Horizon Frame 5",
+      "category": "PORTALS",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 32
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 198,
+        "y": 130,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "vfx_portal_vortex_f6",
+      "name": "Quantum Stargate Vortex Event Horizon Frame 6",
+      "category": "PORTALS",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 32
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 264,
+        "y": 130,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "vfx_portal_vortex_f7",
+      "name": "Quantum Stargate Vortex Event Horizon Frame 7",
+      "category": "PORTALS",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 32,
+        "y": 32
+      },
+      "durationMs": 80,
+      "bounds": {
+        "x": 330,
+        "y": 130,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "ui_panel_9slice_bezel",
+      "name": "Tactical Cyberpunk 9-Slice Window Frame",
+      "category": "HUD",
+      "width": 64,
+      "height": 64,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "nineSlice": {
+        "top": 12,
+        "bottom": 12,
+        "left": 12,
+        "right": 12
+      },
+      "bounds": {
+        "x": 396,
+        "y": 130,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "ui_gauge_health_segment",
+      "name": "Segmented Health Bar Unit",
+      "category": "HUD",
+      "width": 16,
+      "height": 24,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "bounds": {
+        "x": 462,
+        "y": 130,
+        "width": 16,
+        "height": 24
+      }
+    },
+    {
+      "id": "ui_gauge_energy_segment",
+      "name": "Segmented Shield/Plasma Unit",
+      "category": "HUD",
+      "width": 16,
+      "height": 24,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "bounds": {
+        "x": 480,
+        "y": 130,
+        "width": 16,
+        "height": 24
+      }
+    },
+    {
+      "id": "ui_minimap_radar_bezel",
+      "name": "Radar Minimap CRT Bezel Overlay",
+      "category": "MINIMAP",
+      "width": 160,
+      "height": 160,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "bounds": {
+        "x": 498,
+        "y": 130,
+        "width": 160,
+        "height": 160
+      }
+    },
+    {
+      "id": "ui_minimap_crt_scanlines",
+      "name": "Minimap Phosphor Scanlines Texture",
+      "category": "MINIMAP",
+      "width": 160,
+      "height": 160,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      },
+      "bounds": {
+        "x": 660,
+        "y": 130,
+        "width": 160,
+        "height": 160
+      }
+    },
+    {
+      "id": "ui_alert_danger_red",
+      "name": "Status Alert Badge alert_danger_red",
+      "category": "ALERTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 16
+      },
+      "bounds": {
+        "x": 822,
+        "y": 130,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "ui_alert_warning_amber",
+      "name": "Status Alert Badge alert_warning_amber",
+      "category": "ALERTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 16
+      },
+      "bounds": {
+        "x": 856,
+        "y": 130,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "ui_alert_info_cyan",
+      "name": "Status Alert Badge alert_info_cyan",
+      "category": "ALERTS",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 16
+      },
+      "bounds": {
+        "x": 890,
+        "y": 130,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "ui_prompt_key_e_interact",
+      "name": "Input Prompt Glyph key_e_interact",
+      "category": "HUD",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 16
+      },
+      "bounds": {
+        "x": 924,
+        "y": 130,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "ui_prompt_key_space_jump",
+      "name": "Input Prompt Glyph key_space_jump",
+      "category": "HUD",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 16
+      },
+      "bounds": {
+        "x": 958,
+        "y": 130,
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "id": "ui_prompt_key_wasd_dpad",
+      "name": "Input Prompt Glyph key_wasd_dpad",
+      "category": "HUD",
+      "width": 32,
+      "height": 32,
+      "anchor": {
+        "x": 16,
+        "y": 16
+      },
+      "bounds": {
+        "x": 0,
+        "y": 292,
+        "width": 32,
+        "height": 32
+      }
+    }
+  ]
+}

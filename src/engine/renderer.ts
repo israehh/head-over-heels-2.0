@@ -16,6 +16,102 @@ import {
 } from '../types/game';
 import { TILE_HEIGHT, TILE_WIDTH, TILE_Z_HEIGHT, worldToScreen } from './isometric';
 
+// ----------------------------------------------------
+// STAGE 1: FLOOR SPRITE ATLAS CACHE & LOADER
+// ----------------------------------------------------
+export interface FrameRect {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  anchorX: number;
+  anchorY: number;
+}
+
+export interface AtlasSpecification {
+  meta?: {
+    image: string;
+    size: { w: number; h: number };
+    format: string;
+  };
+  frames: Record<string, FrameRect>;
+}
+
+class EnvironmentAssetCache {
+  private atlasImage: HTMLImageElement | null = null;
+  private frameMap: Map<string, FrameRect> = new Map();
+  private loadAttempted = false;
+
+  constructor() {
+    this.initDefaultFrames();
+    this.loadAtlasAsync();
+  }
+
+  private initDefaultFrames() {
+    // Default 64x32 isometric floor diamond frame coordinates
+    // Anchor (32, 16) mathematically places the sprite center on screen.x, screen.y
+    const defaultFrames: Record<string, FrameRect> = {
+      tile_floor_alpha_standard: { x: 0, y: 0, w: 64, h: 32, anchorX: 32, anchorY: 16 },
+      tile_floor_alpha_alt:      { x: 64, y: 0, w: 64, h: 32, anchorX: 32, anchorY: 16 },
+      tile_floor_beta_standard:  { x: 128, y: 0, w: 64, h: 32, anchorX: 32, anchorY: 16 },
+      tile_floor_beta_alt:       { x: 192, y: 0, w: 64, h: 32, anchorX: 32, anchorY: 16 },
+      tile_floor_gamma_standard: { x: 256, y: 0, w: 64, h: 32, anchorX: 32, anchorY: 16 },
+      tile_floor_gamma_alt:      { x: 320, y: 0, w: 64, h: 32, anchorX: 32, anchorY: 16 },
+      tile_floor_delta_standard: { x: 384, y: 0, w: 64, h: 32, anchorX: 32, anchorY: 16 },
+      tile_floor_delta_alt:      { x: 448, y: 0, w: 64, h: 32, anchorX: 32, anchorY: 16 },
+      tile_floor_omega_standard: { x: 512, y: 0, w: 64, h: 32, anchorX: 32, anchorY: 16 },
+      tile_floor_omega_alt:      { x: 576, y: 0, w: 64, h: 32, anchorX: 32, anchorY: 16 },
+    };
+
+    for (const [key, frame] of Object.entries(defaultFrames)) {
+      this.frameMap.set(key, frame);
+    }
+  }
+
+  public loadAtlasAsync() {
+    if (this.loadAttempted || typeof window === 'undefined') return;
+    this.loadAttempted = true;
+
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+    img.onload = () => {
+      this.atlasImage = img;
+    };
+    img.onerror = () => {
+      // Atlas asset missing or loading in progress: procedural vector fallback triggers cleanly
+      this.atlasImage = null;
+    };
+    img.src = '/assets/atlases/atlas_environment.png';
+
+    // Attempt to load metadata specification if available
+    fetch('/atlas_environment_spec.json')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((spec: AtlasSpecification | null) => {
+        if (spec && spec.frames) {
+          for (const [key, frame] of Object.entries(spec.frames)) {
+            this.frameMap.set(key, frame);
+          }
+        }
+      })
+      .catch(() => {
+        // Retain default frame coordinates
+      });
+  }
+
+  public getAtlas(): HTMLImageElement | null {
+    if (this.atlasImage && this.atlasImage.complete && this.atlasImage.naturalWidth > 0) {
+      return this.atlasImage;
+    }
+    return null;
+  }
+
+  public getFrame(spriteKey: string): FrameRect | undefined {
+    return this.frameMap.get(spriteKey);
+  }
+}
+
+export const environmentAssetCache = new EnvironmentAssetCache();
+
 interface RenderContext {
   ctx: CanvasRenderingContext2D;
   canvasWidth: number;
@@ -306,72 +402,62 @@ export class IsometricRenderer {
               }
             } else {
               // ----------------------------------------------------
-              // HIGH-TECH SCI-FI FLOOR TILE
+              // HIGH-PERFORMANCE ATLAS FLOOR TILE (WITH PROCEDURAL FALLBACK)
               // ----------------------------------------------------
               const isAlt = (x + y) % 2 === 0;
+              const sectorQuadrant = (room.quadrant || room.name || 'alpha').toLowerCase();
+              const biome = sectorQuadrant.includes('beta') ? 'beta'
+                : sectorQuadrant.includes('gamma') ? 'gamma'
+                : sectorQuadrant.includes('delta') ? 'delta'
+                : sectorQuadrant.includes('omega') ? 'omega'
+                : 'alpha';
 
-              // Top face diamond
-              ctx.beginPath();
-              ctx.moveTo(screen.x, screen.y - halfH);
-              ctx.lineTo(screen.x + halfW, screen.y);
-              ctx.lineTo(screen.x, screen.y + halfH);
-              ctx.lineTo(screen.x - halfW, screen.y);
-              ctx.closePath();
+              const spriteKey = isAlt
+                ? `tile_floor_${biome}_alt`
+                : `tile_floor_${biome}_standard`;
 
-              // Subtle metallic directional gradient across tile
-              const floorGrad = ctx.createLinearGradient(
-                screen.x - halfW,
-                screen.y - halfH,
-                screen.x + halfW,
-                screen.y + halfH
-              );
-              if (isAlt) {
-                floorGrad.addColorStop(0, '#101726');
-                floorGrad.addColorStop(0.5, '#0b101c');
-                floorGrad.addColorStop(1, '#070b14');
+              const frame = environmentAssetCache.getFrame(spriteKey);
+              const atlas = environmentAssetCache.getAtlas();
+
+              if (frame && atlas) {
+                // High-performance direct texture blit
+                // Anchor (32, 16) places the 64x32 sprite center directly on screen.x, screen.y
+                ctx.drawImage(
+                  atlas,
+                  frame.x,
+                  frame.y,
+                  frame.w,
+                  frame.h,
+                  Math.round(screen.x - frame.anchorX),
+                  Math.round(screen.y - frame.anchorY),
+                  frame.w,
+                  frame.h
+                );
+
+                // Emissive conduit overlay (retains dynamic sector ambient lighting)
+                if ((x === 3 || x === 7 || y === 4 || y === 8) && (x + y) % 3 === 0) {
+                  const pulse = (Math.sin(time * 4 + x + y) + 1) * 0.5;
+                  ctx.strokeStyle = `rgba(56, 189, 248, ${0.15 + pulse * 0.25})`;
+                  ctx.lineWidth = 1.2;
+                  ctx.beginPath();
+                  ctx.moveTo(screen.x, screen.y - halfH * 0.5);
+                  ctx.lineTo(screen.x, screen.y + halfH * 0.5);
+                  ctx.stroke();
+                }
               } else {
-                floorGrad.addColorStop(0, '#151e30');
-                floorGrad.addColorStop(0.5, '#0f1726');
-                floorGrad.addColorStop(1, '#0a0f1a');
-              }
+                // Guaranteed Zero-Regression Procedural Fallback
+                this.drawProceduralFloorTile(ctx, screen.x, screen.y, halfW, halfH, isAlt, x, y);
 
-              ctx.fillStyle = floorGrad;
-              ctx.fill();
-
-              // Beveled expansion seams
-              ctx.strokeStyle = '#182438';
-              ctx.lineWidth = 0.8;
-              ctx.stroke();
-
-              // Corner bolt accents on floor panels
-              ctx.fillStyle = '#080d16';
-              ctx.fillRect(screen.x - halfW + 4, screen.y - 1, 2, 2);
-              ctx.fillRect(screen.x + halfW - 6, screen.y - 1, 2, 2);
-              ctx.fillRect(screen.x - 1, screen.y - halfH + 3, 2, 2);
-              ctx.fillRect(screen.x - 1, screen.y + halfH - 5, 2, 2);
-
-              // Industrial Grip Grid / Micro-Circuit Lines
-              if (isAlt && (x * 3 + y * 5) % 4 === 0) {
-                ctx.strokeStyle = 'rgba(56, 189, 248, 0.09)';
-                ctx.lineWidth = 0.7;
-                ctx.beginPath();
-                ctx.moveTo(screen.x - halfW * 0.5, screen.y);
-                ctx.lineTo(screen.x, screen.y - halfH * 0.5);
-                ctx.lineTo(screen.x + halfW * 0.5, screen.y);
-                ctx.lineTo(screen.x, screen.y + halfH * 0.5);
-                ctx.closePath();
-                ctx.stroke();
-              }
-
-              // Glowing Floor Energy Conduits
-              if ((x === 3 || x === 7 || y === 4 || y === 8) && (x + y) % 3 === 0) {
-                const pulse = (Math.sin(time * 4 + x + y) + 1) * 0.5;
-                ctx.strokeStyle = `rgba(56, 189, 248, ${0.15 + pulse * 0.25})`;
-                ctx.lineWidth = 1.2;
-                ctx.beginPath();
-                ctx.moveTo(screen.x, screen.y - halfH * 0.5);
-                ctx.lineTo(screen.x, screen.y + halfH * 0.5);
-                ctx.stroke();
+                // Glowing Floor Energy Conduits
+                if ((x === 3 || x === 7 || y === 4 || y === 8) && (x + y) % 3 === 0) {
+                  const pulse = (Math.sin(time * 4 + x + y) + 1) * 0.5;
+                  ctx.strokeStyle = `rgba(56, 189, 248, ${0.15 + pulse * 0.25})`;
+                  ctx.lineWidth = 1.2;
+                  ctx.beginPath();
+                  ctx.moveTo(screen.x, screen.y - halfH * 0.5);
+                  ctx.lineTo(screen.x, screen.y + halfH * 0.5);
+                  ctx.stroke();
+                }
               }
             }
           },
@@ -1619,6 +1705,73 @@ export class IsometricRenderer {
     }
 
     return maxHeight;
+  }
+
+  // ----------------------------------------------------
+  // STAGE 1 HELPER: PROCEDURAL FLOOR FALLBACK
+  // ----------------------------------------------------
+  private drawProceduralFloorTile(
+    ctx: CanvasRenderingContext2D,
+    screenX: number,
+    screenY: number,
+    halfW: number,
+    halfH: number,
+    isAlt: boolean,
+    x: number,
+    y: number
+  ) {
+    // 1. Top face diamond
+    ctx.beginPath();
+    ctx.moveTo(screenX, screenY - halfH);
+    ctx.lineTo(screenX + halfW, screenY);
+    ctx.lineTo(screenX, screenY + halfH);
+    ctx.lineTo(screenX - halfW, screenY);
+    ctx.closePath();
+
+    // 2. Linear gradient fill
+    const floorGrad = ctx.createLinearGradient(
+      screenX - halfW,
+      screenY - halfH,
+      screenX + halfW,
+      screenY + halfH
+    );
+    if (isAlt) {
+      floorGrad.addColorStop(0, '#101726');
+      floorGrad.addColorStop(0.5, '#0b101c');
+      floorGrad.addColorStop(1, '#070b14');
+    } else {
+      floorGrad.addColorStop(0, '#151e30');
+      floorGrad.addColorStop(0.5, '#0f1726');
+      floorGrad.addColorStop(1, '#0a0f1a');
+    }
+
+    ctx.fillStyle = floorGrad;
+    ctx.fill();
+
+    // 3. Beveled seams
+    ctx.strokeStyle = '#182438';
+    ctx.lineWidth = 0.8;
+    ctx.stroke();
+
+    // 4. Corner bolt accents
+    ctx.fillStyle = '#080d16';
+    ctx.fillRect(screenX - halfW + 4, screenY - 1, 2, 2);
+    ctx.fillRect(screenX + halfW - 6, screenY - 1, 2, 2);
+    ctx.fillRect(screenX - 1, screenY - halfH + 3, 2, 2);
+    ctx.fillRect(screenX - 1, screenY + halfH - 5, 2, 2);
+
+    // 5. Industrial Micro-Circuit Lines
+    if (isAlt && (x * 3 + y * 5) % 4 === 0) {
+      ctx.strokeStyle = 'rgba(56, 189, 248, 0.09)';
+      ctx.lineWidth = 0.7;
+      ctx.beginPath();
+      ctx.moveTo(screenX - halfW * 0.5, screenY);
+      ctx.lineTo(screenX, screenY - halfH * 0.5);
+      ctx.lineTo(screenX + halfW * 0.5, screenY);
+      ctx.lineTo(screenX, screenY + halfH * 0.5);
+      ctx.closePath();
+      ctx.stroke();
+    }
   }
 
   // ----------------------------------------------------

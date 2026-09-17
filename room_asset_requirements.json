@@ -1,0 +1,3822 @@
+{
+  "meta": {
+    "stationName": "Orbital Station Zenith",
+    "totalRooms": 53,
+    "generatedAt": "2026-09-17T19:35:44.488Z",
+    "evaluationSummary": {
+      "gameplayCompleteRooms": 53,
+      "visuallyIncompleteRooms": 53,
+      "proceduralPlaceholderRooms": 53,
+      "customArtRequiredRooms": 53,
+      "averageCompletionPercentage": 82
+    }
+  },
+  "rooms": [
+    {
+      "id": "sector_00",
+      "name": "Orbital Transit Grand Nexus",
+      "code": "NEX-00",
+      "sector": "Nexus: Central Transit Hub",
+      "category": "vertical",
+      "categoryLabel": "Nexus Core",
+      "gridCoords": {
+        "col": 2,
+        "row": 0
+      },
+      "dimensions": {
+        "width": 14,
+        "depth": 14
+      },
+      "productionPriority": 1,
+      "productionPriorityLabel": "P1 - Central Station Hub",
+      "productionRationale": "Grand Nexus atrium connecting 6 major sectors. High recurrence transit area.",
+      "assetRequirements": {
+        "biome": "Orbital Central Transit Nexus",
+        "tilesRequired": [
+          "grand_nexus_terrazzo_plate",
+          "rotary_lift_perimeter_tile",
+          "transit_arterial_marking_tile",
+          "fragment_dais_inlay_tile"
+        ],
+        "wallsRequired": [
+          "monolithic_station_keystone_wall",
+          "dual_lift_channel_bulkhead",
+          "atrium_observation_glazing"
+        ],
+        "propsRequired": [
+          "grand_fragment_receptacle_altar",
+          "dual_elevator_counterweight_tower",
+          "station_hologram_projector_plinth",
+          "mezzanine_guardrail_mesh"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "interactive_data_terminal",
+          "manual_toggle_breaker_switch",
+          "automated_hydraulic_bulkhead_door",
+          "continuous_vertical_lift_platform"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "receptacle_quantum_resonance_beam",
+          "holographic_station_spin_display",
+          "lift_shaft_energy_ring",
+          "nexus_core_ambient_gleam"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 93,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 82
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_01",
+      "name": "Cryo-Dock Awakening",
+      "code": "SEC-01",
+      "sector": "Alpha: Docking Bay",
+      "category": "tutorial",
+      "categoryLabel": "Tutorial",
+      "gridCoords": {
+        "col": 0,
+        "row": 0
+      },
+      "dimensions": {
+        "width": 10,
+        "depth": 10
+      },
+      "productionPriority": 1,
+      "productionPriorityLabel": "P1 - First 15 Minutes / Tutorial Experience",
+      "productionRationale": "Initial player onboarding, core jump/push mechanics introduction, visual first impression.",
+      "assetRequirements": {
+        "biome": "Cryo-Docking & Awakening",
+        "tilesRequired": [
+          "cryo_deck_composite_tile",
+          "docking_bay_marking_tile",
+          "sub_atmospheric_grate",
+          "frost_rim_tile"
+        ],
+        "wallsRequired": [
+          "pressurized_dock_bulkhead",
+          "insulated_cryo_wall",
+          "observation_reinforced_glass"
+        ],
+        "propsRequired": [
+          "cryo_stasis_pod_dormant",
+          "docking_clamp_hydraulic",
+          "decontamination_vent_nozzle",
+          "guidance_marking_stencils",
+          "diagnostic_console_pedestal"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "cryo_condensation_fog",
+          "pressurization_steam_burst",
+          "docking_bay_beacon_pulse",
+          "floor_vent_sub_vapor"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_02",
+      "name": "Jump Calibration Bay",
+      "code": "SEC-02",
+      "sector": "Alpha: Docking Bay",
+      "category": "tutorial",
+      "categoryLabel": "Tutorial",
+      "gridCoords": {
+        "col": 1,
+        "row": 0
+      },
+      "dimensions": {
+        "width": 10,
+        "depth": 10
+      },
+      "productionPriority": 1,
+      "productionPriorityLabel": "P1 - First 15 Minutes / Tutorial Experience",
+      "productionRationale": "Initial player onboarding, core jump/push mechanics introduction, visual first impression.",
+      "assetRequirements": {
+        "biome": "Cryo-Docking & Awakening",
+        "tilesRequired": [
+          "cryo_deck_composite_tile",
+          "docking_bay_marking_tile",
+          "sub_atmospheric_grate",
+          "frost_rim_tile"
+        ],
+        "wallsRequired": [
+          "pressurized_dock_bulkhead",
+          "insulated_cryo_wall",
+          "observation_reinforced_glass"
+        ],
+        "propsRequired": [
+          "cryo_stasis_pod_dormant",
+          "docking_clamp_hydraulic",
+          "decontamination_vent_nozzle",
+          "guidance_marking_stencils",
+          "diagnostic_console_pedestal"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "keycard_blue_tier1_clearance"
+        ],
+        "vfxRequired": [
+          "cryo_condensation_fog",
+          "pressurization_steam_burst",
+          "docking_bay_beacon_pulse",
+          "floor_vent_sub_vapor"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_03",
+      "name": "Crate Logistics Lab",
+      "code": "SEC-03",
+      "sector": "Alpha: Docking Bay",
+      "category": "tutorial",
+      "categoryLabel": "Tutorial",
+      "gridCoords": {
+        "col": 2,
+        "row": 0
+      },
+      "dimensions": {
+        "width": 10,
+        "depth": 10
+      },
+      "productionPriority": 1,
+      "productionPriorityLabel": "P1 - First 15 Minutes / Tutorial Experience",
+      "productionRationale": "Initial player onboarding, core jump/push mechanics introduction, visual first impression.",
+      "assetRequirements": {
+        "biome": "Cryo-Docking & Awakening",
+        "tilesRequired": [
+          "cryo_deck_composite_tile",
+          "docking_bay_marking_tile",
+          "sub_atmospheric_grate",
+          "frost_rim_tile"
+        ],
+        "wallsRequired": [
+          "pressurized_dock_bulkhead",
+          "insulated_cryo_wall",
+          "observation_reinforced_glass"
+        ],
+        "propsRequired": [
+          "cryo_stasis_pod_dormant",
+          "docking_clamp_hydraulic",
+          "decontamination_vent_nozzle",
+          "guidance_marking_stencils",
+          "diagnostic_console_pedestal"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "biometric_keycard_reader_panel"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "nano_repair_medkit_capsule"
+        ],
+        "vfxRequired": [
+          "cryo_condensation_fog",
+          "pressurization_steam_burst",
+          "docking_bay_beacon_pulse",
+          "floor_vent_sub_vapor"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_04",
+      "name": "Apex Vault I: Cryo Matrix",
+      "code": "SEC-04",
+      "sector": "Alpha: Docking Bay",
+      "category": "tutorial",
+      "categoryLabel": "Tutorial",
+      "gridCoords": {
+        "col": 3,
+        "row": 0
+      },
+      "dimensions": {
+        "width": 11,
+        "depth": 11
+      },
+      "productionPriority": 1,
+      "productionPriorityLabel": "P1 - First 15 Minutes / Tutorial Experience",
+      "productionRationale": "Initial player onboarding, core jump/push mechanics introduction, visual first impression.",
+      "assetRequirements": {
+        "biome": "Cryo-Docking & Awakening",
+        "tilesRequired": [
+          "cryo_deck_composite_tile",
+          "docking_bay_marking_tile",
+          "sub_atmospheric_grate",
+          "frost_rim_tile"
+        ],
+        "wallsRequired": [
+          "pressurized_dock_bulkhead",
+          "insulated_cryo_wall",
+          "observation_reinforced_glass"
+        ],
+        "propsRequired": [
+          "cryo_stasis_pod_dormant",
+          "docking_clamp_hydraulic",
+          "decontamination_vent_nozzle",
+          "guidance_marking_stencils",
+          "diagnostic_console_pedestal"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "nexus_fragment_nexus_fragment_i__cryo_matrix"
+        ],
+        "vfxRequired": [
+          "cryo_condensation_fog",
+          "pressurization_steam_burst",
+          "docking_bay_beacon_pulse",
+          "floor_vent_sub_vapor"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_07",
+      "name": "Laser Synchronization Maze",
+      "code": "SEC-07",
+      "sector": "Beta: Engineering Core",
+      "category": "puzzle",
+      "categoryLabel": "Puzzle Sector",
+      "gridCoords": {
+        "col": 2,
+        "row": 1
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 1,
+      "productionPriorityLabel": "P1 - Critical Progression Gatekeepers",
+      "productionRationale": "Houses mandatory keycards (Red/Green) and core Nexus Fragments (II, III, IV).",
+      "assetRequirements": {
+        "biome": "Engineering Core & Heavy Cargo",
+        "tilesRequired": [
+          "diamond_tread_steel_plate",
+          "heavy_gantry_mesh_tile",
+          "hydraulic_pit_rim_tile",
+          "reinforced_strut_tile"
+        ],
+        "wallsRequired": [
+          "heavy_riveted_hull_wall",
+          "conduit_junction_rack_wall",
+          "coolant_manifold_wall"
+        ],
+        "propsRequired": [
+          "overhead_crane_rail_segment",
+          "hydraulic_piston_housing",
+          "coolant_reservoir_tank",
+          "high_tonnage_cargo_pallet",
+          "cable_spool_industrial"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "keycard_red_tier2_clearance"
+        ],
+        "vfxRequired": [
+          "coolant_leak_drip",
+          "hydraulic_steam_exhaust",
+          "circuit_short_spark",
+          "gantry_motion_dust"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_08",
+      "name": "Quantum Inversion Matrix",
+      "code": "SEC-08",
+      "sector": "Beta: Engineering Core",
+      "category": "puzzle",
+      "categoryLabel": "Puzzle Sector",
+      "gridCoords": {
+        "col": 3,
+        "row": 1
+      },
+      "dimensions": {
+        "width": 11,
+        "depth": 11
+      },
+      "productionPriority": 1,
+      "productionPriorityLabel": "P1 - Critical Progression Gatekeepers",
+      "productionRationale": "Houses mandatory keycards (Red/Green) and core Nexus Fragments (II, III, IV).",
+      "assetRequirements": {
+        "biome": "Engineering Core & Heavy Cargo",
+        "tilesRequired": [
+          "diamond_tread_steel_plate",
+          "heavy_gantry_mesh_tile",
+          "hydraulic_pit_rim_tile",
+          "reinforced_strut_tile"
+        ],
+        "wallsRequired": [
+          "heavy_riveted_hull_wall",
+          "conduit_junction_rack_wall",
+          "coolant_manifold_wall"
+        ],
+        "propsRequired": [
+          "overhead_crane_rail_segment",
+          "hydraulic_piston_housing",
+          "coolant_reservoir_tank",
+          "high_tonnage_cargo_pallet",
+          "cable_spool_industrial"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "interactive_data_terminal",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "inter_room_transit_elevator_chassis"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "nexus_fragment_nexus_fragment_ii__fusion_core"
+        ],
+        "vfxRequired": [
+          "coolant_leak_drip",
+          "hydraulic_steam_exhaust",
+          "circuit_short_spark",
+          "gantry_motion_dust"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 93,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 82
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_12",
+      "name": "High-Value Vault III: AI Sub-Brain",
+      "code": "SEC-12",
+      "sector": "Gamma: Cargo & Logistics",
+      "category": "storage",
+      "categoryLabel": "Storage Bay",
+      "gridCoords": {
+        "col": 3,
+        "row": 2
+      },
+      "dimensions": {
+        "width": 11,
+        "depth": 11
+      },
+      "productionPriority": 1,
+      "productionPriorityLabel": "P1 - Critical Progression Gatekeepers",
+      "productionRationale": "Houses mandatory keycards (Red/Green) and core Nexus Fragments (II, III, IV).",
+      "assetRequirements": {
+        "biome": "Logistics Grid & Fusion Confinement",
+        "tilesRequired": [
+          "conveyor_track_deck_tile",
+          "magnetic_suspension_tile",
+          "reactor_trench_thermal_tile",
+          "lead_shielding_tile"
+        ],
+        "wallsRequired": [
+          "magnetic_containment_wall",
+          "radiation_baffle_wall",
+          "high_frequency_emitter_bulkhead"
+        ],
+        "propsRequired": [
+          "magnetic_stabilizer_pylon",
+          "automated_sorting_chute",
+          "radiation_warning_placard",
+          "coolant_conduit_loop",
+          "cargo_scanner_arch"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "nexus_fragment_nexus_fragment_iii__cybernetic_overmind"
+        ],
+        "vfxRequired": [
+          "plasma_arc_microburst",
+          "magnetic_field_heat_shimmer",
+          "radiation_ion_glimmer",
+          "reactor_core_ambient_corona"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_15",
+      "name": "Supercharger Sub-Station",
+      "code": "SEC-15",
+      "sector": "Delta: Power & Dynamos",
+      "category": "energy",
+      "categoryLabel": "Energy Sector",
+      "gridCoords": {
+        "col": 2,
+        "row": 3
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 1,
+      "productionPriorityLabel": "P1 - Critical Progression Gatekeepers",
+      "productionRationale": "Houses mandatory keycards (Red/Green) and core Nexus Fragments (II, III, IV).",
+      "assetRequirements": {
+        "biome": "Power Substation & Heavy Stacking Yard",
+        "tilesRequired": [
+          "inductive_copper_bus_tile",
+          "high_voltage_isolation_tile",
+          "heavy_crush_tested_paver",
+          "hydraulic_press_bed_tile"
+        ],
+        "wallsRequired": [
+          "dielectric_ceramic_wall",
+          "inductive_transformer_housing",
+          "blast_mitigation_ribbed_wall"
+        ],
+        "propsRequired": [
+          "tesla_insulator_stack",
+          "step_down_transformer_housing",
+          "stacking_alignment_guide_post",
+          "heavy_lifting_winch",
+          "fuse_breaker_assembly"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "biometric_keycard_reader_panel",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "keycard_green_tier3_clearance"
+        ],
+        "vfxRequired": [
+          "dielectric_glow_halo",
+          "ground_current_spark",
+          "hydraulic_press_impact_dust",
+          "transformer_hum_vibration_ring"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_16",
+      "name": "Reactor Core Apex",
+      "code": "SEC-16",
+      "sector": "Delta: Power & Dynamos",
+      "category": "energy",
+      "categoryLabel": "Energy Sector",
+      "gridCoords": {
+        "col": 3,
+        "row": 3
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 1,
+      "productionPriorityLabel": "P1 - Critical Progression Gatekeepers",
+      "productionRationale": "Houses mandatory keycards (Red/Green) and core Nexus Fragments (II, III, IV).",
+      "assetRequirements": {
+        "biome": "Power Substation & Heavy Stacking Yard",
+        "tilesRequired": [
+          "inductive_copper_bus_tile",
+          "high_voltage_isolation_tile",
+          "heavy_crush_tested_paver",
+          "hydraulic_press_bed_tile"
+        ],
+        "wallsRequired": [
+          "dielectric_ceramic_wall",
+          "inductive_transformer_housing",
+          "blast_mitigation_ribbed_wall"
+        ],
+        "propsRequired": [
+          "tesla_insulator_stack",
+          "step_down_transformer_housing",
+          "stacking_alignment_guide_post",
+          "heavy_lifting_winch",
+          "fuse_breaker_assembly"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "nexus_fragment_nexus_fragment_iv__graviton_dynamo"
+        ],
+        "vfxRequired": [
+          "dielectric_glow_halo",
+          "ground_current_spark",
+          "hydraulic_press_impact_dust",
+          "transformer_hum_vibration_ring"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_19",
+      "name": "Master Access Antechamber",
+      "code": "SEC-19",
+      "sector": "Omega: Citadel Bastion",
+      "category": "security",
+      "categoryLabel": "Security Sector",
+      "gridCoords": {
+        "col": 2,
+        "row": 4
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 1,
+      "productionPriorityLabel": "P1 - Climax / Boss Arena & Victory",
+      "productionRationale": "Overmind Sanctum climax, boss encounter visual centerpiece, and victory portal.",
+      "assetRequirements": {
+        "biome": "Citadel Bastion & Overmind Sanctum",
+        "tilesRequired": [
+          "obsidian_alloy_chitin_tile",
+          "bioluminescent_neural_vein_tile",
+          "security_grid_perimeter_tile",
+          "bastion_throne_dais_tile"
+        ],
+        "wallsRequired": [
+          "overmind_neural_lattice_wall",
+          "kinetic_blast_armor_slab",
+          "turret_housing_bulkhead"
+        ],
+        "propsRequired": [
+          "ai_sub_node_obelisk",
+          "drone_charging_dock_cradle",
+          "security_sentry_mount",
+          "neural_server_column",
+          "biomorphic_data_tendril"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door",
+          "biometric_keycard_reader_panel",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "nexus_fragment_nexus_fragment_v__chrono_resonance"
+        ],
+        "vfxRequired": [
+          "neural_pulse_data_stream",
+          "red_alert_strobe_sweep",
+          "forcefield_shimmer_hex",
+          "overmind_singularity_distortion"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_20",
+      "name": "Overmind Sanctum Core",
+      "code": "SEC-20",
+      "sector": "Omega: Citadel Bastion",
+      "category": "security",
+      "categoryLabel": "Security Sector",
+      "gridCoords": {
+        "col": 3,
+        "row": 4
+      },
+      "dimensions": {
+        "width": 14,
+        "depth": 14
+      },
+      "productionPriority": 1,
+      "productionPriorityLabel": "P1 - Climax / Boss Arena & Victory",
+      "productionRationale": "Overmind Sanctum climax, boss encounter visual centerpiece, and victory portal.",
+      "assetRequirements": {
+        "biome": "Citadel Bastion & Overmind Sanctum",
+        "tilesRequired": [
+          "obsidian_alloy_chitin_tile",
+          "bioluminescent_neural_vein_tile",
+          "security_grid_perimeter_tile",
+          "bastion_throne_dais_tile"
+        ],
+        "wallsRequired": [
+          "overmind_neural_lattice_wall",
+          "kinetic_blast_armor_slab",
+          "turret_housing_bulkhead"
+        ],
+        "propsRequired": [
+          "ai_sub_node_obelisk",
+          "drone_charging_dock_cradle",
+          "security_sentry_mount",
+          "neural_server_column",
+          "biomorphic_data_tendril"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "quantum_reunification_exit_portal_altar"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1",
+          "interceptor_scout_drone_rapid",
+          "heavy_bastion_enforcer_drone",
+          "overmind_central_core_boss"
+        ],
+        "collectiblesRequired": [],
+        "vfxRequired": [
+          "neural_pulse_data_stream",
+          "red_alert_strobe_sweep",
+          "forcefield_shimmer_hex",
+          "overmind_singularity_distortion"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_05",
+      "name": "Dual Relay Chamber",
+      "code": "SEC-05",
+      "sector": "Beta: Engineering Core",
+      "category": "puzzle",
+      "categoryLabel": "Puzzle Sector",
+      "gridCoords": {
+        "col": 0,
+        "row": 1
+      },
+      "dimensions": {
+        "width": 11,
+        "depth": 11
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Primary Sector Mainline",
+      "productionRationale": "Core quadrant spine connecting key engineering, logistics, and citadel defense zones.",
+      "assetRequirements": {
+        "biome": "Engineering Core & Heavy Cargo",
+        "tilesRequired": [
+          "diamond_tread_steel_plate",
+          "heavy_gantry_mesh_tile",
+          "hydraulic_pit_rim_tile",
+          "reinforced_strut_tile"
+        ],
+        "wallsRequired": [
+          "heavy_riveted_hull_wall",
+          "conduit_junction_rack_wall",
+          "coolant_manifold_wall"
+        ],
+        "propsRequired": [
+          "overhead_crane_rail_segment",
+          "hydraulic_piston_housing",
+          "coolant_reservoir_tank",
+          "high_tonnage_cargo_pallet",
+          "cable_spool_industrial"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "multi_relay_lock_indicator_display",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "coolant_leak_drip",
+          "hydraulic_steam_exhaust",
+          "circuit_short_spark",
+          "gantry_motion_dust"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_06",
+      "name": "Stacking Stepper Pit",
+      "code": "SEC-06",
+      "sector": "Beta: Engineering Core",
+      "category": "puzzle",
+      "categoryLabel": "Puzzle Sector",
+      "gridCoords": {
+        "col": 1,
+        "row": 1
+      },
+      "dimensions": {
+        "width": 11,
+        "depth": 11
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Primary Sector Mainline",
+      "productionRationale": "Core quadrant spine connecting key engineering, logistics, and citadel defense zones.",
+      "assetRequirements": {
+        "biome": "Engineering Core & Heavy Cargo",
+        "tilesRequired": [
+          "diamond_tread_steel_plate",
+          "heavy_gantry_mesh_tile",
+          "hydraulic_pit_rim_tile",
+          "reinforced_strut_tile"
+        ],
+        "wallsRequired": [
+          "heavy_riveted_hull_wall",
+          "conduit_junction_rack_wall",
+          "coolant_manifold_wall"
+        ],
+        "propsRequired": [
+          "overhead_crane_rail_segment",
+          "hydraulic_piston_housing",
+          "coolant_reservoir_tank",
+          "high_tonnage_cargo_pallet",
+          "cable_spool_industrial"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "multi_relay_lock_indicator_display"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "nano_repair_medkit_capsule"
+        ],
+        "vfxRequired": [
+          "coolant_leak_drip",
+          "hydraulic_steam_exhaust",
+          "circuit_short_spark",
+          "gantry_motion_dust"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_09",
+      "name": "Freight Receiving Dock",
+      "code": "SEC-09",
+      "sector": "Gamma: Cargo & Logistics",
+      "category": "storage",
+      "categoryLabel": "Storage Bay",
+      "gridCoords": {
+        "col": 0,
+        "row": 2
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Primary Sector Mainline",
+      "productionRationale": "Core quadrant spine connecting key engineering, logistics, and citadel defense zones.",
+      "assetRequirements": {
+        "biome": "Logistics Grid & Fusion Confinement",
+        "tilesRequired": [
+          "conveyor_track_deck_tile",
+          "magnetic_suspension_tile",
+          "reactor_trench_thermal_tile",
+          "lead_shielding_tile"
+        ],
+        "wallsRequired": [
+          "magnetic_containment_wall",
+          "radiation_baffle_wall",
+          "high_frequency_emitter_bulkhead"
+        ],
+        "propsRequired": [
+          "magnetic_stabilizer_pylon",
+          "automated_sorting_chute",
+          "radiation_warning_placard",
+          "coolant_conduit_loop",
+          "cargo_scanner_arch"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "inter_room_transit_elevator_chassis"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "plasma_arc_microburst",
+          "magnetic_field_heat_shimmer",
+          "radiation_ion_glimmer",
+          "reactor_core_ambient_corona"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_10",
+      "name": "Deep Cryo Warehouse",
+      "code": "SEC-10",
+      "sector": "Gamma: Cargo & Logistics",
+      "category": "storage",
+      "categoryLabel": "Storage Bay",
+      "gridCoords": {
+        "col": 1,
+        "row": 2
+      },
+      "dimensions": {
+        "width": 11,
+        "depth": 11
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Primary Sector Mainline",
+      "productionRationale": "Core quadrant spine connecting key engineering, logistics, and citadel defense zones.",
+      "assetRequirements": {
+        "biome": "Logistics Grid & Fusion Confinement",
+        "tilesRequired": [
+          "conveyor_track_deck_tile",
+          "magnetic_suspension_tile",
+          "reactor_trench_thermal_tile",
+          "lead_shielding_tile"
+        ],
+        "wallsRequired": [
+          "magnetic_containment_wall",
+          "radiation_baffle_wall",
+          "high_frequency_emitter_bulkhead"
+        ],
+        "propsRequired": [
+          "magnetic_stabilizer_pylon",
+          "automated_sorting_chute",
+          "radiation_warning_placard",
+          "coolant_conduit_loop",
+          "cargo_scanner_arch"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "nano_repair_medkit_capsule"
+        ],
+        "vfxRequired": [
+          "plasma_arc_microburst",
+          "magnetic_field_heat_shimmer",
+          "radiation_ion_glimmer",
+          "reactor_core_ambient_corona"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_11",
+      "name": "Hazardous Waste Sump",
+      "code": "SEC-11",
+      "sector": "Gamma: Cargo & Logistics",
+      "category": "storage",
+      "categoryLabel": "Storage Bay",
+      "gridCoords": {
+        "col": 2,
+        "row": 2
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Primary Sector Mainline",
+      "productionRationale": "Core quadrant spine connecting key engineering, logistics, and citadel defense zones.",
+      "assetRequirements": {
+        "biome": "Logistics Grid & Fusion Confinement",
+        "tilesRequired": [
+          "conveyor_track_deck_tile",
+          "magnetic_suspension_tile",
+          "reactor_trench_thermal_tile",
+          "lead_shielding_tile"
+        ],
+        "wallsRequired": [
+          "magnetic_containment_wall",
+          "radiation_baffle_wall",
+          "high_frequency_emitter_bulkhead"
+        ],
+        "propsRequired": [
+          "magnetic_stabilizer_pylon",
+          "automated_sorting_chute",
+          "radiation_warning_placard",
+          "coolant_conduit_loop",
+          "cargo_scanner_arch"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "multi_relay_lock_indicator_display"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1",
+          "interceptor_scout_drone_rapid"
+        ],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "plasma_arc_microburst",
+          "magnetic_field_heat_shimmer",
+          "radiation_ion_glimmer",
+          "reactor_core_ambient_corona"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_13",
+      "name": "Plasma Generator Hub",
+      "code": "SEC-13",
+      "sector": "Delta: Power & Dynamos",
+      "category": "energy",
+      "categoryLabel": "Energy Sector",
+      "gridCoords": {
+        "col": 0,
+        "row": 3
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Primary Sector Mainline",
+      "productionRationale": "Core quadrant spine connecting key engineering, logistics, and citadel defense zones.",
+      "assetRequirements": {
+        "biome": "Power Substation & Heavy Stacking Yard",
+        "tilesRequired": [
+          "inductive_copper_bus_tile",
+          "high_voltage_isolation_tile",
+          "heavy_crush_tested_paver",
+          "hydraulic_press_bed_tile"
+        ],
+        "wallsRequired": [
+          "dielectric_ceramic_wall",
+          "inductive_transformer_housing",
+          "blast_mitigation_ribbed_wall"
+        ],
+        "propsRequired": [
+          "tesla_insulator_stack",
+          "step_down_transformer_housing",
+          "stacking_alignment_guide_post",
+          "heavy_lifting_winch",
+          "fuse_breaker_assembly"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "dielectric_glow_halo",
+          "ground_current_spark",
+          "hydraulic_press_impact_dust",
+          "transformer_hum_vibration_ring"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_14",
+      "name": "High Voltage Transformer",
+      "code": "SEC-14",
+      "sector": "Delta: Power & Dynamos",
+      "category": "energy",
+      "categoryLabel": "Energy Sector",
+      "gridCoords": {
+        "col": 1,
+        "row": 3
+      },
+      "dimensions": {
+        "width": 11,
+        "depth": 11
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Primary Sector Mainline",
+      "productionRationale": "Core quadrant spine connecting key engineering, logistics, and citadel defense zones.",
+      "assetRequirements": {
+        "biome": "Power Substation & Heavy Stacking Yard",
+        "tilesRequired": [
+          "inductive_copper_bus_tile",
+          "high_voltage_isolation_tile",
+          "heavy_crush_tested_paver",
+          "hydraulic_press_bed_tile"
+        ],
+        "wallsRequired": [
+          "dielectric_ceramic_wall",
+          "inductive_transformer_housing",
+          "blast_mitigation_ribbed_wall"
+        ],
+        "propsRequired": [
+          "tesla_insulator_stack",
+          "step_down_transformer_housing",
+          "stacking_alignment_guide_post",
+          "heavy_lifting_winch",
+          "fuse_breaker_assembly"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "nano_repair_medkit_capsule"
+        ],
+        "vfxRequired": [
+          "dielectric_glow_halo",
+          "ground_current_spark",
+          "hydraulic_press_impact_dust",
+          "transformer_hum_vibration_ring"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_17",
+      "name": "Drone Sentinel Perimeter",
+      "code": "SEC-17",
+      "sector": "Omega: Citadel Bastion",
+      "category": "security",
+      "categoryLabel": "Security Sector",
+      "gridCoords": {
+        "col": 0,
+        "row": 4
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Primary Sector Mainline",
+      "productionRationale": "Core quadrant spine connecting key engineering, logistics, and citadel defense zones.",
+      "assetRequirements": {
+        "biome": "Citadel Bastion & Overmind Sanctum",
+        "tilesRequired": [
+          "obsidian_alloy_chitin_tile",
+          "bioluminescent_neural_vein_tile",
+          "security_grid_perimeter_tile",
+          "bastion_throne_dais_tile"
+        ],
+        "wallsRequired": [
+          "overmind_neural_lattice_wall",
+          "kinetic_blast_armor_slab",
+          "turret_housing_bulkhead"
+        ],
+        "propsRequired": [
+          "ai_sub_node_obelisk",
+          "drone_charging_dock_cradle",
+          "security_sentry_mount",
+          "neural_server_column",
+          "biomorphic_data_tendril"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "neural_pulse_data_stream",
+          "red_alert_strobe_sweep",
+          "forcefield_shimmer_hex",
+          "overmind_singularity_distortion"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_18",
+      "name": "Interceptor Bastion",
+      "code": "SEC-18",
+      "sector": "Omega: Citadel Bastion",
+      "category": "security",
+      "categoryLabel": "Security Sector",
+      "gridCoords": {
+        "col": 1,
+        "row": 4
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Primary Sector Mainline",
+      "productionRationale": "Core quadrant spine connecting key engineering, logistics, and citadel defense zones.",
+      "assetRequirements": {
+        "biome": "Citadel Bastion & Overmind Sanctum",
+        "tilesRequired": [
+          "obsidian_alloy_chitin_tile",
+          "bioluminescent_neural_vein_tile",
+          "security_grid_perimeter_tile",
+          "bastion_throne_dais_tile"
+        ],
+        "wallsRequired": [
+          "overmind_neural_lattice_wall",
+          "kinetic_blast_armor_slab",
+          "turret_housing_bulkhead"
+        ],
+        "propsRequired": [
+          "ai_sub_node_obelisk",
+          "drone_charging_dock_cradle",
+          "security_sentry_mount",
+          "neural_server_column",
+          "biomorphic_data_tendril"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "multi_relay_lock_indicator_display"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1",
+          "interceptor_scout_drone_rapid",
+          "heavy_bastion_enforcer_drone"
+        ],
+        "collectiblesRequired": [
+          "nano_repair_medkit_capsule"
+        ],
+        "vfxRequired": [
+          "neural_pulse_data_stream",
+          "red_alert_strobe_sweep",
+          "forcefield_shimmer_hex",
+          "overmind_singularity_distortion"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_21",
+      "name": "Cargo Intake & Weigh Station",
+      "code": "CRG-21",
+      "sector": "Beta: Cargo & Cryo Vaults",
+      "category": "storage",
+      "categoryLabel": "Wing B: Cargo",
+      "gridCoords": {
+        "col": 1,
+        "row": 0
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Secondary Wing Arteries (Wings B & C)",
+      "productionRationale": "Major branch exploration wings housing large-scale platforming and confinement puzzles.",
+      "assetRequirements": {
+        "biome": "Engineering Core & Heavy Cargo",
+        "tilesRequired": [
+          "diamond_tread_steel_plate",
+          "heavy_gantry_mesh_tile",
+          "hydraulic_pit_rim_tile",
+          "reinforced_strut_tile"
+        ],
+        "wallsRequired": [
+          "heavy_riveted_hull_wall",
+          "conduit_junction_rack_wall",
+          "coolant_manifold_wall"
+        ],
+        "propsRequired": [
+          "overhead_crane_rail_segment",
+          "hydraulic_piston_housing",
+          "coolant_reservoir_tank",
+          "high_tonnage_cargo_pallet",
+          "cable_spool_industrial"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "coolant_leak_drip",
+          "hydraulic_steam_exhaust",
+          "circuit_short_spark",
+          "gantry_motion_dust"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_22",
+      "name": "Hydraulic Lift Shaft",
+      "code": "CRG-22",
+      "sector": "Beta: Cargo & Cryo Vaults",
+      "category": "vertical",
+      "categoryLabel": "Wing B: Cargo",
+      "gridCoords": {
+        "col": 1,
+        "row": -1
+      },
+      "dimensions": {
+        "width": 10,
+        "depth": 12
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Secondary Wing Arteries (Wings B & C)",
+      "productionRationale": "Major branch exploration wings housing large-scale platforming and confinement puzzles.",
+      "assetRequirements": {
+        "biome": "Engineering Core & Heavy Cargo",
+        "tilesRequired": [
+          "diamond_tread_steel_plate",
+          "heavy_gantry_mesh_tile",
+          "hydraulic_pit_rim_tile",
+          "reinforced_strut_tile"
+        ],
+        "wallsRequired": [
+          "heavy_riveted_hull_wall",
+          "conduit_junction_rack_wall",
+          "coolant_manifold_wall"
+        ],
+        "propsRequired": [
+          "overhead_crane_rail_segment",
+          "hydraulic_piston_housing",
+          "coolant_reservoir_tank",
+          "high_tonnage_cargo_pallet",
+          "cable_spool_industrial"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door",
+          "continuous_vertical_lift_platform"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "coolant_leak_drip",
+          "hydraulic_steam_exhaust",
+          "circuit_short_spark",
+          "gantry_motion_dust"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_23",
+      "name": "Sub-Zero Stacking Bay",
+      "code": "CRG-23",
+      "sector": "Beta: Cargo & Cryo Vaults",
+      "category": "puzzle",
+      "categoryLabel": "Wing B: Cargo",
+      "gridCoords": {
+        "col": 0,
+        "row": 0
+      },
+      "dimensions": {
+        "width": 11,
+        "depth": 11
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Secondary Wing Arteries (Wings B & C)",
+      "productionRationale": "Major branch exploration wings housing large-scale platforming and confinement puzzles.",
+      "assetRequirements": {
+        "biome": "Engineering Core & Heavy Cargo",
+        "tilesRequired": [
+          "diamond_tread_steel_plate",
+          "heavy_gantry_mesh_tile",
+          "hydraulic_pit_rim_tile",
+          "reinforced_strut_tile"
+        ],
+        "wallsRequired": [
+          "heavy_riveted_hull_wall",
+          "conduit_junction_rack_wall",
+          "coolant_manifold_wall"
+        ],
+        "propsRequired": [
+          "overhead_crane_rail_segment",
+          "hydraulic_piston_housing",
+          "coolant_reservoir_tank",
+          "high_tonnage_cargo_pallet",
+          "cable_spool_industrial"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "nano_repair_medkit_capsule"
+        ],
+        "vfxRequired": [
+          "coolant_leak_drip",
+          "hydraulic_steam_exhaust",
+          "circuit_short_spark",
+          "gantry_motion_dust"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_24",
+      "name": "Container Crane Gantry",
+      "code": "CRG-24",
+      "sector": "Beta: Cargo & Cryo Vaults",
+      "category": "vertical",
+      "categoryLabel": "Wing B: Cargo",
+      "gridCoords": {
+        "col": 0,
+        "row": -1
+      },
+      "dimensions": {
+        "width": 13,
+        "depth": 13
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Secondary Wing Arteries (Wings B & C)",
+      "productionRationale": "Major branch exploration wings housing large-scale platforming and confinement puzzles.",
+      "assetRequirements": {
+        "biome": "Engineering Core & Heavy Cargo",
+        "tilesRequired": [
+          "diamond_tread_steel_plate",
+          "heavy_gantry_mesh_tile",
+          "hydraulic_pit_rim_tile",
+          "reinforced_strut_tile"
+        ],
+        "wallsRequired": [
+          "heavy_riveted_hull_wall",
+          "conduit_junction_rack_wall",
+          "coolant_manifold_wall"
+        ],
+        "propsRequired": [
+          "overhead_crane_rail_segment",
+          "hydraulic_piston_housing",
+          "coolant_reservoir_tank",
+          "high_tonnage_cargo_pallet",
+          "cable_spool_industrial"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "coolant_leak_drip",
+          "hydraulic_steam_exhaust",
+          "circuit_short_spark",
+          "gantry_motion_dust"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_28",
+      "name": "Plasma Distribution Junction",
+      "code": "ENG-28",
+      "sector": "Gamma: Reactor Core",
+      "category": "energy",
+      "categoryLabel": "Wing C: Reactor",
+      "gridCoords": {
+        "col": 3,
+        "row": 0
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Secondary Wing Arteries (Wings B & C)",
+      "productionRationale": "Major branch exploration wings housing large-scale platforming and confinement puzzles.",
+      "assetRequirements": {
+        "biome": "Logistics Grid & Fusion Confinement",
+        "tilesRequired": [
+          "conveyor_track_deck_tile",
+          "magnetic_suspension_tile",
+          "reactor_trench_thermal_tile",
+          "lead_shielding_tile"
+        ],
+        "wallsRequired": [
+          "magnetic_containment_wall",
+          "radiation_baffle_wall",
+          "high_frequency_emitter_bulkhead"
+        ],
+        "propsRequired": [
+          "magnetic_stabilizer_pylon",
+          "automated_sorting_chute",
+          "radiation_warning_placard",
+          "coolant_conduit_loop",
+          "cargo_scanner_arch"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "plasma_arc_microburst",
+          "magnetic_field_heat_shimmer",
+          "radiation_ion_glimmer",
+          "reactor_core_ambient_corona"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_29",
+      "name": "High Voltage Stepping Conduits",
+      "code": "ENG-29",
+      "sector": "Gamma: Reactor Core",
+      "category": "vertical",
+      "categoryLabel": "Wing C: Reactor",
+      "gridCoords": {
+        "col": 3,
+        "row": -1
+      },
+      "dimensions": {
+        "width": 10,
+        "depth": 13
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Secondary Wing Arteries (Wings B & C)",
+      "productionRationale": "Major branch exploration wings housing large-scale platforming and confinement puzzles.",
+      "assetRequirements": {
+        "biome": "Logistics Grid & Fusion Confinement",
+        "tilesRequired": [
+          "conveyor_track_deck_tile",
+          "magnetic_suspension_tile",
+          "reactor_trench_thermal_tile",
+          "lead_shielding_tile"
+        ],
+        "wallsRequired": [
+          "magnetic_containment_wall",
+          "radiation_baffle_wall",
+          "high_frequency_emitter_bulkhead"
+        ],
+        "propsRequired": [
+          "magnetic_stabilizer_pylon",
+          "automated_sorting_chute",
+          "radiation_warning_placard",
+          "coolant_conduit_loop",
+          "cargo_scanner_arch"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "manual_toggle_breaker_switch",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "plasma_arc_microburst",
+          "magnetic_field_heat_shimmer",
+          "radiation_ion_glimmer",
+          "reactor_core_ambient_corona"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_30",
+      "name": "Laser Reflection Relay Chamber",
+      "code": "ENG-30",
+      "sector": "Gamma: Reactor Core",
+      "category": "puzzle",
+      "categoryLabel": "Wing C: Reactor",
+      "gridCoords": {
+        "col": 4,
+        "row": 0
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Secondary Wing Arteries (Wings B & C)",
+      "productionRationale": "Major branch exploration wings housing large-scale platforming and confinement puzzles.",
+      "assetRequirements": {
+        "biome": "Logistics Grid & Fusion Confinement",
+        "tilesRequired": [
+          "conveyor_track_deck_tile",
+          "magnetic_suspension_tile",
+          "reactor_trench_thermal_tile",
+          "lead_shielding_tile"
+        ],
+        "wallsRequired": [
+          "magnetic_containment_wall",
+          "radiation_baffle_wall",
+          "high_frequency_emitter_bulkhead"
+        ],
+        "propsRequired": [
+          "magnetic_stabilizer_pylon",
+          "automated_sorting_chute",
+          "radiation_warning_placard",
+          "coolant_conduit_loop",
+          "cargo_scanner_arch"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "nano_repair_medkit_capsule"
+        ],
+        "vfxRequired": [
+          "plasma_arc_microburst",
+          "magnetic_field_heat_shimmer",
+          "radiation_ion_glimmer",
+          "reactor_core_ambient_corona"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 93,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 82
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_31",
+      "name": "Electromagnetic Elevator Core",
+      "code": "ENG-31",
+      "sector": "Gamma: Reactor Core",
+      "category": "vertical",
+      "categoryLabel": "Wing C: Reactor",
+      "gridCoords": {
+        "col": 4,
+        "row": -1
+      },
+      "dimensions": {
+        "width": 13,
+        "depth": 13
+      },
+      "productionPriority": 2,
+      "productionPriorityLabel": "P2 - Secondary Wing Arteries (Wings B & C)",
+      "productionRationale": "Major branch exploration wings housing large-scale platforming and confinement puzzles.",
+      "assetRequirements": {
+        "biome": "Logistics Grid & Fusion Confinement",
+        "tilesRequired": [
+          "conveyor_track_deck_tile",
+          "magnetic_suspension_tile",
+          "reactor_trench_thermal_tile",
+          "lead_shielding_tile"
+        ],
+        "wallsRequired": [
+          "magnetic_containment_wall",
+          "radiation_baffle_wall",
+          "high_frequency_emitter_bulkhead"
+        ],
+        "propsRequired": [
+          "magnetic_stabilizer_pylon",
+          "automated_sorting_chute",
+          "radiation_warning_placard",
+          "coolant_conduit_loop",
+          "cargo_scanner_arch"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door",
+          "continuous_vertical_lift_platform"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "plasma_arc_microburst",
+          "magnetic_field_heat_shimmer",
+          "radiation_ion_glimmer",
+          "reactor_core_ambient_corona"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_27",
+      "name": "Cargo Chute Bypass (SHORTCUT)",
+      "code": "SCT-B-CHUTE",
+      "sector": "Beta: Cargo & Cryo Vaults",
+      "category": "vertical",
+      "categoryLabel": "Shortcut",
+      "gridCoords": {
+        "col": 1,
+        "row": -1
+      },
+      "dimensions": {
+        "width": 9,
+        "depth": 9
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Transit Shortcuts & Bypasses",
+      "productionRationale": "Rapid inter-wing conduits and lift shafts unlocked after circuit reactivation.",
+      "assetRequirements": {
+        "biome": "Engineering Core & Heavy Cargo",
+        "tilesRequired": [
+          "diamond_tread_steel_plate",
+          "heavy_gantry_mesh_tile",
+          "hydraulic_pit_rim_tile",
+          "reinforced_strut_tile"
+        ],
+        "wallsRequired": [
+          "heavy_riveted_hull_wall",
+          "conduit_junction_rack_wall",
+          "coolant_manifold_wall"
+        ],
+        "propsRequired": [
+          "overhead_crane_rail_segment",
+          "hydraulic_piston_housing",
+          "coolant_reservoir_tank",
+          "high_tonnage_cargo_pallet",
+          "cable_spool_industrial"
+        ],
+        "puzzleObjectsRequired": [
+          "manual_toggle_breaker_switch",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "coolant_leak_drip",
+          "hydraulic_steam_exhaust",
+          "circuit_short_spark",
+          "gantry_motion_dust"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_34",
+      "name": "High-Energy Service Conduit (SHORTCUT)",
+      "code": "SCT-C-VENT",
+      "sector": "Gamma: Reactor Core",
+      "category": "vertical",
+      "categoryLabel": "Shortcut",
+      "gridCoords": {
+        "col": 3,
+        "row": -1
+      },
+      "dimensions": {
+        "width": 9,
+        "depth": 9
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Transit Shortcuts & Bypasses",
+      "productionRationale": "Rapid inter-wing conduits and lift shafts unlocked after circuit reactivation.",
+      "assetRequirements": {
+        "biome": "Logistics Grid & Fusion Confinement",
+        "tilesRequired": [
+          "conveyor_track_deck_tile",
+          "magnetic_suspension_tile",
+          "reactor_trench_thermal_tile",
+          "lead_shielding_tile"
+        ],
+        "wallsRequired": [
+          "magnetic_containment_wall",
+          "radiation_baffle_wall",
+          "high_frequency_emitter_bulkhead"
+        ],
+        "propsRequired": [
+          "magnetic_stabilizer_pylon",
+          "automated_sorting_chute",
+          "radiation_warning_placard",
+          "coolant_conduit_loop",
+          "cargo_scanner_arch"
+        ],
+        "puzzleObjectsRequired": [
+          "manual_toggle_breaker_switch",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "plasma_arc_microburst",
+          "magnetic_field_heat_shimmer",
+          "radiation_ion_glimmer",
+          "reactor_core_ambient_corona"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_35",
+      "name": "Cargo Stacking Testing Facility",
+      "code": "STK-01-TEST",
+      "sector": "Delta: Heavy Cargo & Stacking Yards",
+      "category": "puzzle",
+      "categoryLabel": "Stacking",
+      "gridCoords": {
+        "col": 2,
+        "row": 1
+      },
+      "dimensions": {
+        "width": 11,
+        "depth": 11
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Heavy Stacking Challenge Gauntlet",
+      "productionRationale": "10-room advanced vertical puzzle sequence for hardcore spatial problem-solving.",
+      "assetRequirements": {
+        "biome": "Power Substation & Heavy Stacking Yard",
+        "tilesRequired": [
+          "inductive_copper_bus_tile",
+          "high_voltage_isolation_tile",
+          "heavy_crush_tested_paver",
+          "hydraulic_press_bed_tile"
+        ],
+        "wallsRequired": [
+          "dielectric_ceramic_wall",
+          "inductive_transformer_housing",
+          "blast_mitigation_ribbed_wall"
+        ],
+        "propsRequired": [
+          "tesla_insulator_stack",
+          "step_down_transformer_housing",
+          "stacking_alignment_guide_post",
+          "heavy_lifting_winch",
+          "fuse_breaker_assembly"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "dielectric_glow_halo",
+          "ground_current_spark",
+          "hydraulic_press_impact_dust",
+          "transformer_hum_vibration_ring"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_36",
+      "name": "Dual-Mass Hydraulic Crucible",
+      "code": "STK-02-MASS",
+      "sector": "Delta: Heavy Cargo & Stacking Yards",
+      "category": "puzzle",
+      "categoryLabel": "Stacking",
+      "gridCoords": {
+        "col": 2,
+        "row": 2
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Heavy Stacking Challenge Gauntlet",
+      "productionRationale": "10-room advanced vertical puzzle sequence for hardcore spatial problem-solving.",
+      "assetRequirements": {
+        "biome": "Power Substation & Heavy Stacking Yard",
+        "tilesRequired": [
+          "inductive_copper_bus_tile",
+          "high_voltage_isolation_tile",
+          "heavy_crush_tested_paver",
+          "hydraulic_press_bed_tile"
+        ],
+        "wallsRequired": [
+          "dielectric_ceramic_wall",
+          "inductive_transformer_housing",
+          "blast_mitigation_ribbed_wall"
+        ],
+        "propsRequired": [
+          "tesla_insulator_stack",
+          "step_down_transformer_housing",
+          "stacking_alignment_guide_post",
+          "heavy_lifting_winch",
+          "fuse_breaker_assembly"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "keycard_blue_tier1_clearance"
+        ],
+        "vfxRequired": [
+          "dielectric_glow_halo",
+          "ground_current_spark",
+          "hydraulic_press_impact_dust",
+          "transformer_hum_vibration_ring"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 93,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 82
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_37",
+      "name": "High-Bay Vertical Stepper",
+      "code": "STK-03-STEP",
+      "sector": "Delta: Heavy Cargo & Stacking Yards",
+      "category": "puzzle",
+      "categoryLabel": "Stacking",
+      "gridCoords": {
+        "col": 2,
+        "row": 3
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Heavy Stacking Challenge Gauntlet",
+      "productionRationale": "10-room advanced vertical puzzle sequence for hardcore spatial problem-solving.",
+      "assetRequirements": {
+        "biome": "Power Substation & Heavy Stacking Yard",
+        "tilesRequired": [
+          "inductive_copper_bus_tile",
+          "high_voltage_isolation_tile",
+          "heavy_crush_tested_paver",
+          "hydraulic_press_bed_tile"
+        ],
+        "wallsRequired": [
+          "dielectric_ceramic_wall",
+          "inductive_transformer_housing",
+          "blast_mitigation_ribbed_wall"
+        ],
+        "propsRequired": [
+          "tesla_insulator_stack",
+          "step_down_transformer_housing",
+          "stacking_alignment_guide_post",
+          "heavy_lifting_winch",
+          "fuse_breaker_assembly"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "nexus_fragment_nexus_core_shard_theta"
+        ],
+        "vfxRequired": [
+          "dielectric_glow_halo",
+          "ground_current_spark",
+          "hydraulic_press_impact_dust",
+          "transformer_hum_vibration_ring"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_38",
+      "name": "Laser Interception Gantry",
+      "code": "STK-04-OPTI",
+      "sector": "Delta: Heavy Cargo & Stacking Yards",
+      "category": "puzzle",
+      "categoryLabel": "Stacking",
+      "gridCoords": {
+        "col": 2,
+        "row": 4
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Heavy Stacking Challenge Gauntlet",
+      "productionRationale": "10-room advanced vertical puzzle sequence for hardcore spatial problem-solving.",
+      "assetRequirements": {
+        "biome": "Power Substation & Heavy Stacking Yard",
+        "tilesRequired": [
+          "inductive_copper_bus_tile",
+          "high_voltage_isolation_tile",
+          "heavy_crush_tested_paver",
+          "hydraulic_press_bed_tile"
+        ],
+        "wallsRequired": [
+          "dielectric_ceramic_wall",
+          "inductive_transformer_housing",
+          "blast_mitigation_ribbed_wall"
+        ],
+        "propsRequired": [
+          "tesla_insulator_stack",
+          "step_down_transformer_housing",
+          "stacking_alignment_guide_post",
+          "heavy_lifting_winch",
+          "fuse_breaker_assembly"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "dielectric_glow_halo",
+          "ground_current_spark",
+          "hydraulic_press_impact_dust",
+          "transformer_hum_vibration_ring"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_39",
+      "name": "Magnetic Freight Balancer",
+      "code": "STK-05-MAG",
+      "sector": "Delta: Heavy Cargo & Stacking Yards",
+      "category": "puzzle",
+      "categoryLabel": "Stacking",
+      "gridCoords": {
+        "col": 2,
+        "row": 5
+      },
+      "dimensions": {
+        "width": 13,
+        "depth": 13
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Heavy Stacking Challenge Gauntlet",
+      "productionRationale": "10-room advanced vertical puzzle sequence for hardcore spatial problem-solving.",
+      "assetRequirements": {
+        "biome": "Power Substation & Heavy Stacking Yard",
+        "tilesRequired": [
+          "inductive_copper_bus_tile",
+          "high_voltage_isolation_tile",
+          "heavy_crush_tested_paver",
+          "hydraulic_press_bed_tile"
+        ],
+        "wallsRequired": [
+          "dielectric_ceramic_wall",
+          "inductive_transformer_housing",
+          "blast_mitigation_ribbed_wall"
+        ],
+        "propsRequired": [
+          "tesla_insulator_stack",
+          "step_down_transformer_housing",
+          "stacking_alignment_guide_post",
+          "heavy_lifting_winch",
+          "fuse_breaker_assembly"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "manual_toggle_breaker_switch",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "dielectric_glow_halo",
+          "ground_current_spark",
+          "hydraulic_press_impact_dust",
+          "transformer_hum_vibration_ring"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 90,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 81
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_40",
+      "name": "Cryo-Crate Logistics Sorter",
+      "code": "STK-06-CRYO",
+      "sector": "Delta: Heavy Cargo & Stacking Yards",
+      "category": "puzzle",
+      "categoryLabel": "Stacking",
+      "gridCoords": {
+        "col": 2,
+        "row": 6
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Heavy Stacking Challenge Gauntlet",
+      "productionRationale": "10-room advanced vertical puzzle sequence for hardcore spatial problem-solving.",
+      "assetRequirements": {
+        "biome": "Power Substation & Heavy Stacking Yard",
+        "tilesRequired": [
+          "inductive_copper_bus_tile",
+          "high_voltage_isolation_tile",
+          "heavy_crush_tested_paver",
+          "hydraulic_press_bed_tile"
+        ],
+        "wallsRequired": [
+          "dielectric_ceramic_wall",
+          "inductive_transformer_housing",
+          "blast_mitigation_ribbed_wall"
+        ],
+        "propsRequired": [
+          "tesla_insulator_stack",
+          "step_down_transformer_housing",
+          "stacking_alignment_guide_post",
+          "heavy_lifting_winch",
+          "fuse_breaker_assembly"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "dielectric_glow_halo",
+          "ground_current_spark",
+          "hydraulic_press_impact_dust",
+          "transformer_hum_vibration_ring"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_41",
+      "name": "Pneumatic Column Press",
+      "code": "STK-07-PRESS",
+      "sector": "Delta: Heavy Cargo & Stacking Yards",
+      "category": "puzzle",
+      "categoryLabel": "Stacking",
+      "gridCoords": {
+        "col": 2,
+        "row": 7
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Heavy Stacking Challenge Gauntlet",
+      "productionRationale": "10-room advanced vertical puzzle sequence for hardcore spatial problem-solving.",
+      "assetRequirements": {
+        "biome": "Power Substation & Heavy Stacking Yard",
+        "tilesRequired": [
+          "inductive_copper_bus_tile",
+          "high_voltage_isolation_tile",
+          "heavy_crush_tested_paver",
+          "hydraulic_press_bed_tile"
+        ],
+        "wallsRequired": [
+          "dielectric_ceramic_wall",
+          "inductive_transformer_housing",
+          "blast_mitigation_ribbed_wall"
+        ],
+        "propsRequired": [
+          "tesla_insulator_stack",
+          "step_down_transformer_housing",
+          "stacking_alignment_guide_post",
+          "heavy_lifting_winch",
+          "fuse_breaker_assembly"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "nexus_fragment_nexus_fragment_iota"
+        ],
+        "vfxRequired": [
+          "dielectric_glow_halo",
+          "ground_current_spark",
+          "hydraulic_press_impact_dust",
+          "transformer_hum_vibration_ring"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_42",
+      "name": "Overhead Concourse Mezzanine",
+      "code": "STK-08-CATW",
+      "sector": "Delta: Heavy Cargo & Stacking Yards",
+      "category": "puzzle",
+      "categoryLabel": "Stacking",
+      "gridCoords": {
+        "col": 2,
+        "row": 8
+      },
+      "dimensions": {
+        "width": 13,
+        "depth": 13
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Heavy Stacking Challenge Gauntlet",
+      "productionRationale": "10-room advanced vertical puzzle sequence for hardcore spatial problem-solving.",
+      "assetRequirements": {
+        "biome": "Power Substation & Heavy Stacking Yard",
+        "tilesRequired": [
+          "inductive_copper_bus_tile",
+          "high_voltage_isolation_tile",
+          "heavy_crush_tested_paver",
+          "hydraulic_press_bed_tile"
+        ],
+        "wallsRequired": [
+          "dielectric_ceramic_wall",
+          "inductive_transformer_housing",
+          "blast_mitigation_ribbed_wall"
+        ],
+        "propsRequired": [
+          "tesla_insulator_stack",
+          "step_down_transformer_housing",
+          "stacking_alignment_guide_post",
+          "heavy_lifting_winch",
+          "fuse_breaker_assembly"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "manual_toggle_breaker_switch",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "dielectric_glow_halo",
+          "ground_current_spark",
+          "hydraulic_press_impact_dust",
+          "transformer_hum_vibration_ring"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_43",
+      "name": "Dual-Beam Deflection Vault",
+      "code": "STK-09-DEFL",
+      "sector": "Delta: Heavy Cargo & Stacking Yards",
+      "category": "puzzle",
+      "categoryLabel": "Stacking",
+      "gridCoords": {
+        "col": 2,
+        "row": 9
+      },
+      "dimensions": {
+        "width": 13,
+        "depth": 13
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Heavy Stacking Challenge Gauntlet",
+      "productionRationale": "10-room advanced vertical puzzle sequence for hardcore spatial problem-solving.",
+      "assetRequirements": {
+        "biome": "Power Substation & Heavy Stacking Yard",
+        "tilesRequired": [
+          "inductive_copper_bus_tile",
+          "high_voltage_isolation_tile",
+          "heavy_crush_tested_paver",
+          "hydraulic_press_bed_tile"
+        ],
+        "wallsRequired": [
+          "dielectric_ceramic_wall",
+          "inductive_transformer_housing",
+          "blast_mitigation_ribbed_wall"
+        ],
+        "propsRequired": [
+          "tesla_insulator_stack",
+          "step_down_transformer_housing",
+          "stacking_alignment_guide_post",
+          "heavy_lifting_winch",
+          "fuse_breaker_assembly"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "dielectric_glow_halo",
+          "ground_current_spark",
+          "hydraulic_press_impact_dust",
+          "transformer_hum_vibration_ring"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_44",
+      "name": "Apex Stacking Colosseum",
+      "code": "STK-10-COLOS",
+      "sector": "Delta: Heavy Cargo & Stacking Yards",
+      "category": "puzzle",
+      "categoryLabel": "Stacking",
+      "gridCoords": {
+        "col": 2,
+        "row": 10
+      },
+      "dimensions": {
+        "width": 14,
+        "depth": 14
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Heavy Stacking Challenge Gauntlet",
+      "productionRationale": "10-room advanced vertical puzzle sequence for hardcore spatial problem-solving.",
+      "assetRequirements": {
+        "biome": "Power Substation & Heavy Stacking Yard",
+        "tilesRequired": [
+          "inductive_copper_bus_tile",
+          "high_voltage_isolation_tile",
+          "heavy_crush_tested_paver",
+          "hydraulic_press_bed_tile"
+        ],
+        "wallsRequired": [
+          "dielectric_ceramic_wall",
+          "inductive_transformer_housing",
+          "blast_mitigation_ribbed_wall"
+        ],
+        "propsRequired": [
+          "tesla_insulator_stack",
+          "step_down_transformer_housing",
+          "stacking_alignment_guide_post",
+          "heavy_lifting_winch",
+          "fuse_breaker_assembly"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "nexus_fragment_grand_nexus_fragment_omega"
+        ],
+        "vfxRequired": [
+          "dielectric_glow_halo",
+          "ground_current_spark",
+          "hydraulic_press_impact_dust",
+          "transformer_hum_vibration_ring"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 90,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 81
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_50",
+      "name": "High-Catwalk Express (SHORTCUT)",
+      "code": "SCT-01-EXP",
+      "sector": "Alpha: Station Shortcuts",
+      "category": "vertical",
+      "categoryLabel": "Shortcut",
+      "gridCoords": {
+        "col": 1,
+        "row": -1
+      },
+      "dimensions": {
+        "width": 10,
+        "depth": 10
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Transit Shortcuts & Bypasses",
+      "productionRationale": "Rapid inter-wing conduits and lift shafts unlocked after circuit reactivation.",
+      "assetRequirements": {
+        "biome": "Cryo-Docking & Awakening",
+        "tilesRequired": [
+          "cryo_deck_composite_tile",
+          "docking_bay_marking_tile",
+          "sub_atmospheric_grate",
+          "frost_rim_tile"
+        ],
+        "wallsRequired": [
+          "pressurized_dock_bulkhead",
+          "insulated_cryo_wall",
+          "observation_reinforced_glass"
+        ],
+        "propsRequired": [
+          "cryo_stasis_pod_dormant",
+          "docking_clamp_hydraulic",
+          "decontamination_vent_nozzle",
+          "guidance_marking_stencils",
+          "diagnostic_console_pedestal"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "manual_toggle_breaker_switch",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "cryo_condensation_fog",
+          "pressurization_steam_burst",
+          "docking_bay_beacon_pulse",
+          "floor_vent_sub_vapor"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_51",
+      "name": "Ventilation Bypass (SHORTCUT)",
+      "code": "SCT-02-VENT",
+      "sector": "Alpha: Station Shortcuts",
+      "category": "vertical",
+      "categoryLabel": "Shortcut",
+      "gridCoords": {
+        "col": -1,
+        "row": 1
+      },
+      "dimensions": {
+        "width": 10,
+        "depth": 10
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Transit Shortcuts & Bypasses",
+      "productionRationale": "Rapid inter-wing conduits and lift shafts unlocked after circuit reactivation.",
+      "assetRequirements": {
+        "biome": "Cryo-Docking & Awakening",
+        "tilesRequired": [
+          "cryo_deck_composite_tile",
+          "docking_bay_marking_tile",
+          "sub_atmospheric_grate",
+          "frost_rim_tile"
+        ],
+        "wallsRequired": [
+          "pressurized_dock_bulkhead",
+          "insulated_cryo_wall",
+          "observation_reinforced_glass"
+        ],
+        "propsRequired": [
+          "cryo_stasis_pod_dormant",
+          "docking_clamp_hydraulic",
+          "decontamination_vent_nozzle",
+          "guidance_marking_stencils",
+          "diagnostic_console_pedestal"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "manual_toggle_breaker_switch",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "cryo_condensation_fog",
+          "pressurization_steam_burst",
+          "docking_bay_beacon_pulse",
+          "floor_vent_sub_vapor"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_52",
+      "name": "Service Elevator Maintenance (SHORTCUT)",
+      "code": "SCT-03-ELEV",
+      "sector": "Alpha: Station Shortcuts",
+      "category": "vertical",
+      "categoryLabel": "Shortcut",
+      "gridCoords": {
+        "col": 0,
+        "row": 5
+      },
+      "dimensions": {
+        "width": 10,
+        "depth": 10
+      },
+      "productionPriority": 3,
+      "productionPriorityLabel": "P3 - Transit Shortcuts & Bypasses",
+      "productionRationale": "Rapid inter-wing conduits and lift shafts unlocked after circuit reactivation.",
+      "assetRequirements": {
+        "biome": "Cryo-Docking & Awakening",
+        "tilesRequired": [
+          "cryo_deck_composite_tile",
+          "docking_bay_marking_tile",
+          "sub_atmospheric_grate",
+          "frost_rim_tile"
+        ],
+        "wallsRequired": [
+          "pressurized_dock_bulkhead",
+          "insulated_cryo_wall",
+          "observation_reinforced_glass"
+        ],
+        "propsRequired": [
+          "cryo_stasis_pod_dormant",
+          "docking_clamp_hydraulic",
+          "decontamination_vent_nozzle",
+          "guidance_marking_stencils",
+          "diagnostic_console_pedestal"
+        ],
+        "puzzleObjectsRequired": [
+          "manual_toggle_breaker_switch",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "cryo_condensation_fog",
+          "pressurization_steam_burst",
+          "docking_bay_beacon_pulse",
+          "floor_vent_sub_vapor"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_25",
+      "name": "Cryo-Storage Apex Vault",
+      "code": "CRG-25",
+      "sector": "Beta: Cargo & Cryo Vaults",
+      "category": "storage",
+      "categoryLabel": "Wing B: Cryo Vault",
+      "gridCoords": {
+        "col": 0,
+        "row": -2
+      },
+      "dimensions": {
+        "width": 12,
+        "depth": 12
+      },
+      "productionPriority": 4,
+      "productionPriorityLabel": "P4 - Secret Vaults & Optional Reward Nooks",
+      "productionRationale": "Degree-1 hidden chambers requiring box-stacking stunts to discover optional shards and master crests.",
+      "assetRequirements": {
+        "biome": "Engineering Core & Heavy Cargo",
+        "tilesRequired": [
+          "diamond_tread_steel_plate",
+          "heavy_gantry_mesh_tile",
+          "hydraulic_pit_rim_tile",
+          "reinforced_strut_tile"
+        ],
+        "wallsRequired": [
+          "heavy_riveted_hull_wall",
+          "conduit_junction_rack_wall",
+          "coolant_manifold_wall"
+        ],
+        "propsRequired": [
+          "overhead_crane_rail_segment",
+          "hydraulic_piston_housing",
+          "coolant_reservoir_tank",
+          "high_tonnage_cargo_pallet",
+          "cable_spool_industrial"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "manual_toggle_breaker_switch",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1"
+        ],
+        "collectiblesRequired": [
+          "nexus_fragment_nexus_fragment_i__cryo_stasis_shard",
+          "nano_repair_medkit_capsule"
+        ],
+        "vfxRequired": [
+          "coolant_leak_drip",
+          "hydraulic_steam_exhaust",
+          "circuit_short_spark",
+          "gantry_motion_dust"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_26",
+      "name": "Sub-Deck Maintenance Vent (SECRET)",
+      "code": "SEC-B-VENT",
+      "sector": "Beta: Cargo & Cryo Vaults",
+      "category": "puzzle",
+      "categoryLabel": "Secret Vault",
+      "gridCoords": {
+        "col": 0,
+        "row": 0
+      },
+      "dimensions": {
+        "width": 8,
+        "depth": 8
+      },
+      "productionPriority": 4,
+      "productionPriorityLabel": "P4 - Secret Vaults & Optional Reward Nooks",
+      "productionRationale": "Degree-1 hidden chambers requiring box-stacking stunts to discover optional shards and master crests.",
+      "assetRequirements": {
+        "biome": "Engineering Core & Heavy Cargo",
+        "tilesRequired": [
+          "diamond_tread_steel_plate",
+          "heavy_gantry_mesh_tile",
+          "hydraulic_pit_rim_tile",
+          "reinforced_strut_tile"
+        ],
+        "wallsRequired": [
+          "heavy_riveted_hull_wall",
+          "conduit_junction_rack_wall",
+          "coolant_manifold_wall"
+        ],
+        "propsRequired": [
+          "overhead_crane_rail_segment",
+          "hydraulic_piston_housing",
+          "coolant_reservoir_tank",
+          "high_tonnage_cargo_pallet",
+          "cable_spool_industrial"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "keycard_blue_tier1_clearance",
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "coolant_leak_drip",
+          "hydraulic_steam_exhaust",
+          "circuit_short_spark",
+          "gantry_motion_dust"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_32",
+      "name": "The Reactor Core Heart",
+      "code": "ENG-32",
+      "sector": "Gamma: Reactor Core",
+      "category": "energy",
+      "categoryLabel": "Wing C: Reactor Apex",
+      "gridCoords": {
+        "col": 4,
+        "row": -2
+      },
+      "dimensions": {
+        "width": 14,
+        "depth": 14
+      },
+      "productionPriority": 4,
+      "productionPriorityLabel": "P4 - Secret Vaults & Optional Reward Nooks",
+      "productionRationale": "Degree-1 hidden chambers requiring box-stacking stunts to discover optional shards and master crests.",
+      "assetRequirements": {
+        "biome": "Logistics Grid & Fusion Confinement",
+        "tilesRequired": [
+          "conveyor_track_deck_tile",
+          "magnetic_suspension_tile",
+          "reactor_trench_thermal_tile",
+          "lead_shielding_tile"
+        ],
+        "wallsRequired": [
+          "magnetic_containment_wall",
+          "radiation_baffle_wall",
+          "high_frequency_emitter_bulkhead"
+        ],
+        "propsRequired": [
+          "magnetic_stabilizer_pylon",
+          "automated_sorting_chute",
+          "radiation_warning_placard",
+          "coolant_conduit_loop",
+          "cargo_scanner_arch"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "pressure_plate_weight_sensitive",
+          "automated_hydraulic_bulkhead_door",
+          "hazard_laser_emitter_pylon",
+          "laser_beam_energy_barrier",
+          "refractive_ceramic_deflector_surface"
+        ],
+        "enemiesRequired": [
+          "patrol_drone_sentinel_mk1",
+          "interceptor_scout_drone_rapid"
+        ],
+        "collectiblesRequired": [
+          "nexus_fragment_nexus_fragment_ii__fusion_core_torus",
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "plasma_arc_microburst",
+          "magnetic_field_heat_shimmer",
+          "radiation_ion_glimmer",
+          "reactor_core_ambient_corona"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_33",
+      "name": "Overcharged Capacitor Cache (SECRET)",
+      "code": "SEC-C-CACHE",
+      "sector": "Gamma: Reactor Core",
+      "category": "energy",
+      "categoryLabel": "Secret Vault",
+      "gridCoords": {
+        "col": 4,
+        "row": 0
+      },
+      "dimensions": {
+        "width": 8,
+        "depth": 8
+      },
+      "productionPriority": 4,
+      "productionPriorityLabel": "P4 - Secret Vaults & Optional Reward Nooks",
+      "productionRationale": "Degree-1 hidden chambers requiring box-stacking stunts to discover optional shards and master crests.",
+      "assetRequirements": {
+        "biome": "Logistics Grid & Fusion Confinement",
+        "tilesRequired": [
+          "conveyor_track_deck_tile",
+          "magnetic_suspension_tile",
+          "reactor_trench_thermal_tile",
+          "lead_shielding_tile"
+        ],
+        "wallsRequired": [
+          "magnetic_containment_wall",
+          "radiation_baffle_wall",
+          "high_frequency_emitter_bulkhead"
+        ],
+        "propsRequired": [
+          "magnetic_stabilizer_pylon",
+          "automated_sorting_chute",
+          "radiation_warning_placard",
+          "coolant_conduit_loop",
+          "cargo_scanner_arch"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "keycard_red_tier2_clearance",
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "plasma_arc_microburst",
+          "magnetic_field_heat_shimmer",
+          "radiation_ion_glimmer",
+          "reactor_core_ambient_corona"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_45",
+      "name": "Sub-Vault Maintenance Nook (SECRET)",
+      "code": "SEC-A-NOOK",
+      "sector": "Secrets: Hidden Chambers",
+      "category": "puzzle",
+      "categoryLabel": "Secret Area",
+      "gridCoords": {
+        "col": 3,
+        "row": 3
+      },
+      "dimensions": {
+        "width": 9,
+        "depth": 9
+      },
+      "productionPriority": 4,
+      "productionPriorityLabel": "P4 - Secret Vaults & Optional Reward Nooks",
+      "productionRationale": "Degree-1 hidden chambers requiring box-stacking stunts to discover optional shards and master crests.",
+      "assetRequirements": {
+        "biome": "Decommissioned Catacombs & Secret Vaults",
+        "tilesRequired": [
+          "weathered_grate_floor_tile",
+          "exposed_structural_rib_tile",
+          "dust_blanketed_subfloor_tile"
+        ],
+        "wallsRequired": [
+          "unshielded_hull_plating",
+          "collapsed_duct_framing",
+          "corroded_conduit_recess"
+        ],
+        "propsRequired": [
+          "abandoned_maintenance_cart",
+          "disconnected_cable_nest",
+          "makeshift_stepping_catwalk",
+          "ancient_zenith_crest_plinth"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "nexus_fragment_nexus_fragment_epsilon",
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "thick_ambient_spore_dust",
+          "hanging_wire_short_flicker",
+          "relic_gold_glow_halo"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_46",
+      "name": "Cryo-Depot Hidden Catacomb (SECRET)",
+      "code": "SEC-B-CATA",
+      "sector": "Secrets: Hidden Chambers",
+      "category": "storage",
+      "categoryLabel": "Secret Area",
+      "gridCoords": {
+        "col": 2,
+        "row": -1
+      },
+      "dimensions": {
+        "width": 10,
+        "depth": 10
+      },
+      "productionPriority": 4,
+      "productionPriorityLabel": "P4 - Secret Vaults & Optional Reward Nooks",
+      "productionRationale": "Degree-1 hidden chambers requiring box-stacking stunts to discover optional shards and master crests.",
+      "assetRequirements": {
+        "biome": "Decommissioned Catacombs & Secret Vaults",
+        "tilesRequired": [
+          "weathered_grate_floor_tile",
+          "exposed_structural_rib_tile",
+          "dust_blanketed_subfloor_tile"
+        ],
+        "wallsRequired": [
+          "unshielded_hull_plating",
+          "collapsed_duct_framing",
+          "corroded_conduit_recess"
+        ],
+        "propsRequired": [
+          "abandoned_maintenance_cart",
+          "disconnected_cable_nest",
+          "makeshift_stepping_catwalk",
+          "ancient_zenith_crest_plinth"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "nexus_fragment_nexus_shard_zeta",
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "thick_ambient_spore_dust",
+          "hanging_wire_short_flicker",
+          "relic_gold_glow_halo"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_47",
+      "name": "Decommissioned Drone Foundry (SECRET)",
+      "code": "SEC-C-DRON",
+      "sector": "Secrets: Hidden Chambers",
+      "category": "security",
+      "categoryLabel": "Secret Area",
+      "gridCoords": {
+        "col": 2,
+        "row": 12
+      },
+      "dimensions": {
+        "width": 11,
+        "depth": 11
+      },
+      "productionPriority": 4,
+      "productionPriorityLabel": "P4 - Secret Vaults & Optional Reward Nooks",
+      "productionRationale": "Degree-1 hidden chambers requiring box-stacking stunts to discover optional shards and master crests.",
+      "assetRequirements": {
+        "biome": "Decommissioned Catacombs & Secret Vaults",
+        "tilesRequired": [
+          "weathered_grate_floor_tile",
+          "exposed_structural_rib_tile",
+          "dust_blanketed_subfloor_tile"
+        ],
+        "wallsRequired": [
+          "unshielded_hull_plating",
+          "collapsed_duct_framing",
+          "corroded_conduit_recess"
+        ],
+        "propsRequired": [
+          "abandoned_maintenance_cart",
+          "disconnected_cable_nest",
+          "makeshift_stepping_catwalk",
+          "ancient_zenith_crest_plinth"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "nexus_fragment_nexus_core_shard_eta",
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "thick_ambient_spore_dust",
+          "hanging_wire_short_flicker",
+          "relic_gold_glow_halo"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_48",
+      "name": "Plasma Conductor Void (SECRET)",
+      "code": "SEC-D-VOID",
+      "sector": "Secrets: Hidden Chambers",
+      "category": "energy",
+      "categoryLabel": "Secret Area",
+      "gridCoords": {
+        "col": 4,
+        "row": -2
+      },
+      "dimensions": {
+        "width": 10,
+        "depth": 10
+      },
+      "productionPriority": 4,
+      "productionPriorityLabel": "P4 - Secret Vaults & Optional Reward Nooks",
+      "productionRationale": "Degree-1 hidden chambers requiring box-stacking stunts to discover optional shards and master crests.",
+      "assetRequirements": {
+        "biome": "Decommissioned Catacombs & Secret Vaults",
+        "tilesRequired": [
+          "weathered_grate_floor_tile",
+          "exposed_structural_rib_tile",
+          "dust_blanketed_subfloor_tile"
+        ],
+        "wallsRequired": [
+          "unshielded_hull_plating",
+          "collapsed_duct_framing",
+          "corroded_conduit_recess"
+        ],
+        "propsRequired": [
+          "abandoned_maintenance_cart",
+          "disconnected_cable_nest",
+          "makeshift_stepping_catwalk",
+          "ancient_zenith_crest_plinth"
+        ],
+        "puzzleObjectsRequired": [
+          "movable_crate_composite_standard",
+          "stackable_crate_locking_lip",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "plasma_energy_cell_canister",
+          "nexus_fragment_nexus_shard_lambda"
+        ],
+        "vfxRequired": [
+          "thick_ambient_spore_dust",
+          "hanging_wire_short_flicker",
+          "relic_gold_glow_halo"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 85,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 80
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    },
+    {
+      "id": "sector_49",
+      "name": "Archival Vault Zero (SECRET)",
+      "code": "SEC-E-ARCH",
+      "sector": "Secrets: Hidden Chambers",
+      "category": "puzzle",
+      "categoryLabel": "Secret Area",
+      "gridCoords": {
+        "col": 3,
+        "row": 10
+      },
+      "dimensions": {
+        "width": 11,
+        "depth": 11
+      },
+      "productionPriority": 4,
+      "productionPriorityLabel": "P4 - Secret Vaults & Optional Reward Nooks",
+      "productionRationale": "Degree-1 hidden chambers requiring box-stacking stunts to discover optional shards and master crests.",
+      "assetRequirements": {
+        "biome": "Decommissioned Catacombs & Secret Vaults",
+        "tilesRequired": [
+          "weathered_grate_floor_tile",
+          "exposed_structural_rib_tile",
+          "dust_blanketed_subfloor_tile"
+        ],
+        "wallsRequired": [
+          "unshielded_hull_plating",
+          "collapsed_duct_framing",
+          "corroded_conduit_recess"
+        ],
+        "propsRequired": [
+          "abandoned_maintenance_cart",
+          "disconnected_cable_nest",
+          "makeshift_stepping_catwalk",
+          "ancient_zenith_crest_plinth"
+        ],
+        "puzzleObjectsRequired": [
+          "interactive_data_terminal",
+          "automated_hydraulic_bulkhead_door"
+        ],
+        "enemiesRequired": [],
+        "collectiblesRequired": [
+          "nexus_fragment_zenith_master_crest",
+          "plasma_energy_cell_canister"
+        ],
+        "vfxRequired": [
+          "thick_ambient_spore_dust",
+          "hanging_wire_short_flicker",
+          "relic_gold_glow_halo"
+        ]
+      },
+      "completionMetrics": {
+        "gameplayImplementation": 100,
+        "visualImplementation": 35,
+        "puzzleImplementation": 100,
+        "enemyImplementation": 100,
+        "collectibleImplementation": 100,
+        "overallCompletionPercentage": 84
+      },
+      "statusFlags": {
+        "isGameplayComplete": true,
+        "isVisuallyIncomplete": true,
+        "usesProceduralPlaceholders": true,
+        "requiresCustomArtAssets": true
+      }
+    }
+  ]
+}

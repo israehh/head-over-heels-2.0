@@ -1,0 +1,9336 @@
+{
+  "atlas": {
+    "name": "atlas_player.png",
+    "dimensions": {
+      "width": 2048,
+      "height": 1024
+    },
+    "format": "RGBA8888_PNG",
+    "colorSpace": "sRGB",
+    "filterMode": "Point/Nearest",
+    "pixelGrid": 64,
+    "columns": 32,
+    "rows": 16,
+    "totalFramesAllocated": 404,
+    "maxCapacityFrames": 512,
+    "occupancyRate": "78.9%"
+  },
+  "namingConvention": "player_{animation}_{direction}_f{frameIndex}",
+  "animations": {
+    "idle": {
+      "frameCount": 4,
+      "loop": true,
+      "fps": 8
+    },
+    "walk": {
+      "frameCount": 8,
+      "loop": true,
+      "fps": 12
+    },
+    "run": {
+      "frameCount": 8,
+      "loop": true,
+      "fps": 14
+    },
+    "jump": {
+      "frameCount": 4,
+      "loop": false,
+      "fps": 10
+    },
+    "carry_idle": {
+      "frameCount": 4,
+      "loop": true,
+      "fps": 8
+    },
+    "carry_walk": {
+      "frameCount": 8,
+      "loop": true,
+      "fps": 12
+    },
+    "push": {
+      "frameCount": 4,
+      "loop": true,
+      "fps": 8
+    },
+    "hurt": {
+      "frameCount": 4,
+      "loop": false,
+      "fps": 12
+    },
+    "death": {
+      "frameCount": 6,
+      "loop": false,
+      "fps": 10
+    }
+  },
+  "directions": [
+    "SE",
+    "S",
+    "SW",
+    "W",
+    "NW",
+    "N",
+    "NE",
+    "E"
+  ],
+  "frames": [
+    {
+      "id": "player_idle_se_f0",
+      "animation": "idle",
+      "direction": "SE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_se_f1",
+      "animation": "idle",
+      "direction": "SE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_se_f2",
+      "animation": "idle",
+      "direction": "SE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_se_f3",
+      "animation": "idle",
+      "direction": "SE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 192,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_s_f0",
+      "animation": "idle",
+      "direction": "S",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 256,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_s_f1",
+      "animation": "idle",
+      "direction": "S",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 320,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_s_f2",
+      "animation": "idle",
+      "direction": "S",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 384,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_s_f3",
+      "animation": "idle",
+      "direction": "S",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 448,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_sw_f0",
+      "animation": "idle",
+      "direction": "SW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 512,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_sw_f1",
+      "animation": "idle",
+      "direction": "SW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 576,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_sw_f2",
+      "animation": "idle",
+      "direction": "SW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 640,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_sw_f3",
+      "animation": "idle",
+      "direction": "SW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 704,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_w_f0",
+      "animation": "idle",
+      "direction": "W",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 768,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_w_f1",
+      "animation": "idle",
+      "direction": "W",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 832,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_w_f2",
+      "animation": "idle",
+      "direction": "W",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 896,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_w_f3",
+      "animation": "idle",
+      "direction": "W",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 960,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_nw_f0",
+      "animation": "idle",
+      "direction": "NW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1024,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_nw_f1",
+      "animation": "idle",
+      "direction": "NW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1088,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_nw_f2",
+      "animation": "idle",
+      "direction": "NW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1152,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_nw_f3",
+      "animation": "idle",
+      "direction": "NW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1216,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_n_f0",
+      "animation": "idle",
+      "direction": "N",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1280,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_n_f1",
+      "animation": "idle",
+      "direction": "N",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1344,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_n_f2",
+      "animation": "idle",
+      "direction": "N",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1408,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_n_f3",
+      "animation": "idle",
+      "direction": "N",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1472,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_ne_f0",
+      "animation": "idle",
+      "direction": "NE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1536,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_ne_f1",
+      "animation": "idle",
+      "direction": "NE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1600,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_ne_f2",
+      "animation": "idle",
+      "direction": "NE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1664,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_ne_f3",
+      "animation": "idle",
+      "direction": "NE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1728,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_e_f0",
+      "animation": "idle",
+      "direction": "E",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1792,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_e_f1",
+      "animation": "idle",
+      "direction": "E",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1856,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_e_f2",
+      "animation": "idle",
+      "direction": "E",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1920,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_idle_e_f3",
+      "animation": "idle",
+      "direction": "E",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1984,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_walk_se_f0",
+      "animation": "walk",
+      "direction": "SE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 0,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_se_f1",
+      "animation": "walk",
+      "direction": "SE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 64,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_se_f2",
+      "animation": "walk",
+      "direction": "SE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 128,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_se_f3",
+      "animation": "walk",
+      "direction": "SE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 192,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_se_f4",
+      "animation": "walk",
+      "direction": "SE",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 256,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_se_f5",
+      "animation": "walk",
+      "direction": "SE",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 320,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_se_f6",
+      "animation": "walk",
+      "direction": "SE",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 384,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_se_f7",
+      "animation": "walk",
+      "direction": "SE",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 448,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_s_f0",
+      "animation": "walk",
+      "direction": "S",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 512,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_s_f1",
+      "animation": "walk",
+      "direction": "S",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 576,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_s_f2",
+      "animation": "walk",
+      "direction": "S",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 640,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_s_f3",
+      "animation": "walk",
+      "direction": "S",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 704,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_s_f4",
+      "animation": "walk",
+      "direction": "S",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 768,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_s_f5",
+      "animation": "walk",
+      "direction": "S",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 832,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_s_f6",
+      "animation": "walk",
+      "direction": "S",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 896,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_s_f7",
+      "animation": "walk",
+      "direction": "S",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 960,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_sw_f0",
+      "animation": "walk",
+      "direction": "SW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1024,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_sw_f1",
+      "animation": "walk",
+      "direction": "SW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1088,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_sw_f2",
+      "animation": "walk",
+      "direction": "SW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1152,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_sw_f3",
+      "animation": "walk",
+      "direction": "SW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1216,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_sw_f4",
+      "animation": "walk",
+      "direction": "SW",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1280,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_sw_f5",
+      "animation": "walk",
+      "direction": "SW",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1344,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_sw_f6",
+      "animation": "walk",
+      "direction": "SW",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 1408,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_sw_f7",
+      "animation": "walk",
+      "direction": "SW",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 1472,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_w_f0",
+      "animation": "walk",
+      "direction": "W",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1536,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_w_f1",
+      "animation": "walk",
+      "direction": "W",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1600,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_w_f2",
+      "animation": "walk",
+      "direction": "W",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1664,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_w_f3",
+      "animation": "walk",
+      "direction": "W",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1728,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_w_f4",
+      "animation": "walk",
+      "direction": "W",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1792,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_w_f5",
+      "animation": "walk",
+      "direction": "W",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1856,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_w_f6",
+      "animation": "walk",
+      "direction": "W",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 1920,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_w_f7",
+      "animation": "walk",
+      "direction": "W",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 1984,
+        "y": 64,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_nw_f0",
+      "animation": "walk",
+      "direction": "NW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 0,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_nw_f1",
+      "animation": "walk",
+      "direction": "NW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 64,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_nw_f2",
+      "animation": "walk",
+      "direction": "NW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 128,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_nw_f3",
+      "animation": "walk",
+      "direction": "NW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 192,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_nw_f4",
+      "animation": "walk",
+      "direction": "NW",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 256,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_nw_f5",
+      "animation": "walk",
+      "direction": "NW",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 320,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_nw_f6",
+      "animation": "walk",
+      "direction": "NW",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 384,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_nw_f7",
+      "animation": "walk",
+      "direction": "NW",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 448,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_n_f0",
+      "animation": "walk",
+      "direction": "N",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 512,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_n_f1",
+      "animation": "walk",
+      "direction": "N",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 576,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_n_f2",
+      "animation": "walk",
+      "direction": "N",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 640,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_n_f3",
+      "animation": "walk",
+      "direction": "N",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 704,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_n_f4",
+      "animation": "walk",
+      "direction": "N",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 768,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_n_f5",
+      "animation": "walk",
+      "direction": "N",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 832,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_n_f6",
+      "animation": "walk",
+      "direction": "N",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 896,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_n_f7",
+      "animation": "walk",
+      "direction": "N",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 960,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_ne_f0",
+      "animation": "walk",
+      "direction": "NE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1024,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_ne_f1",
+      "animation": "walk",
+      "direction": "NE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1088,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_ne_f2",
+      "animation": "walk",
+      "direction": "NE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1152,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_ne_f3",
+      "animation": "walk",
+      "direction": "NE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1216,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_ne_f4",
+      "animation": "walk",
+      "direction": "NE",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1280,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_ne_f5",
+      "animation": "walk",
+      "direction": "NE",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1344,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_ne_f6",
+      "animation": "walk",
+      "direction": "NE",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 1408,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_ne_f7",
+      "animation": "walk",
+      "direction": "NE",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 1472,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_e_f0",
+      "animation": "walk",
+      "direction": "E",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1536,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_e_f1",
+      "animation": "walk",
+      "direction": "E",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1600,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_e_f2",
+      "animation": "walk",
+      "direction": "E",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1664,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_e_f3",
+      "animation": "walk",
+      "direction": "E",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1728,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_e_f4",
+      "animation": "walk",
+      "direction": "E",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1792,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_e_f5",
+      "animation": "walk",
+      "direction": "E",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1856,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_e_f6",
+      "animation": "walk",
+      "direction": "E",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 1920,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_walk_e_f7",
+      "animation": "walk",
+      "direction": "E",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 1984,
+        "y": 128,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_run_se_f0",
+      "animation": "run",
+      "direction": "SE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 0,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_se_f1",
+      "animation": "run",
+      "direction": "SE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 64,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_se_f2",
+      "animation": "run",
+      "direction": "SE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 128,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_se_f3",
+      "animation": "run",
+      "direction": "SE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 192,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_se_f4",
+      "animation": "run",
+      "direction": "SE",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 256,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_se_f5",
+      "animation": "run",
+      "direction": "SE",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 320,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_se_f6",
+      "animation": "run",
+      "direction": "SE",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 384,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_se_f7",
+      "animation": "run",
+      "direction": "SE",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 448,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_s_f0",
+      "animation": "run",
+      "direction": "S",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 512,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_s_f1",
+      "animation": "run",
+      "direction": "S",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 576,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_s_f2",
+      "animation": "run",
+      "direction": "S",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 640,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_s_f3",
+      "animation": "run",
+      "direction": "S",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 704,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_s_f4",
+      "animation": "run",
+      "direction": "S",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 768,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_s_f5",
+      "animation": "run",
+      "direction": "S",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 832,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_s_f6",
+      "animation": "run",
+      "direction": "S",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 896,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_s_f7",
+      "animation": "run",
+      "direction": "S",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 960,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_sw_f0",
+      "animation": "run",
+      "direction": "SW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1024,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_sw_f1",
+      "animation": "run",
+      "direction": "SW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1088,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_sw_f2",
+      "animation": "run",
+      "direction": "SW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1152,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_sw_f3",
+      "animation": "run",
+      "direction": "SW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1216,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_sw_f4",
+      "animation": "run",
+      "direction": "SW",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1280,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_sw_f5",
+      "animation": "run",
+      "direction": "SW",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1344,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_sw_f6",
+      "animation": "run",
+      "direction": "SW",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 1408,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_sw_f7",
+      "animation": "run",
+      "direction": "SW",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 1472,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_w_f0",
+      "animation": "run",
+      "direction": "W",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1536,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_w_f1",
+      "animation": "run",
+      "direction": "W",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1600,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_w_f2",
+      "animation": "run",
+      "direction": "W",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1664,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_w_f3",
+      "animation": "run",
+      "direction": "W",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1728,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_w_f4",
+      "animation": "run",
+      "direction": "W",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1792,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_w_f5",
+      "animation": "run",
+      "direction": "W",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1856,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_w_f6",
+      "animation": "run",
+      "direction": "W",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 1920,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_w_f7",
+      "animation": "run",
+      "direction": "W",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 1984,
+        "y": 192,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_nw_f0",
+      "animation": "run",
+      "direction": "NW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 0,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_nw_f1",
+      "animation": "run",
+      "direction": "NW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 64,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_nw_f2",
+      "animation": "run",
+      "direction": "NW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 128,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_nw_f3",
+      "animation": "run",
+      "direction": "NW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 192,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_nw_f4",
+      "animation": "run",
+      "direction": "NW",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 256,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_nw_f5",
+      "animation": "run",
+      "direction": "NW",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 320,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_nw_f6",
+      "animation": "run",
+      "direction": "NW",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 384,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_nw_f7",
+      "animation": "run",
+      "direction": "NW",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 448,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_n_f0",
+      "animation": "run",
+      "direction": "N",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 512,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_n_f1",
+      "animation": "run",
+      "direction": "N",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 576,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_n_f2",
+      "animation": "run",
+      "direction": "N",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 640,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_n_f3",
+      "animation": "run",
+      "direction": "N",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 704,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_n_f4",
+      "animation": "run",
+      "direction": "N",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 768,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_n_f5",
+      "animation": "run",
+      "direction": "N",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 832,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_n_f6",
+      "animation": "run",
+      "direction": "N",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 896,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_n_f7",
+      "animation": "run",
+      "direction": "N",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 960,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_ne_f0",
+      "animation": "run",
+      "direction": "NE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1024,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_ne_f1",
+      "animation": "run",
+      "direction": "NE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1088,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_ne_f2",
+      "animation": "run",
+      "direction": "NE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1152,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_ne_f3",
+      "animation": "run",
+      "direction": "NE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1216,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_ne_f4",
+      "animation": "run",
+      "direction": "NE",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1280,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_ne_f5",
+      "animation": "run",
+      "direction": "NE",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1344,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_ne_f6",
+      "animation": "run",
+      "direction": "NE",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 1408,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_ne_f7",
+      "animation": "run",
+      "direction": "NE",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 1472,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_e_f0",
+      "animation": "run",
+      "direction": "E",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1536,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_e_f1",
+      "animation": "run",
+      "direction": "E",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1600,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_e_f2",
+      "animation": "run",
+      "direction": "E",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1664,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_e_f3",
+      "animation": "run",
+      "direction": "E",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1728,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_e_f4",
+      "animation": "run",
+      "direction": "E",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1792,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_e_f5",
+      "animation": "run",
+      "direction": "E",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1856,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_e_f6",
+      "animation": "run",
+      "direction": "E",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 1920,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_run_e_f7",
+      "animation": "run",
+      "direction": "E",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 1984,
+        "y": 256,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 71
+    },
+    {
+      "id": "player_jump_se_f0",
+      "animation": "jump",
+      "direction": "SE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 0,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_se_f1",
+      "animation": "jump",
+      "direction": "SE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 64,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_se_f2",
+      "animation": "jump",
+      "direction": "SE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 128,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_se_f3",
+      "animation": "jump",
+      "direction": "SE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 192,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_s_f0",
+      "animation": "jump",
+      "direction": "S",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 256,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_s_f1",
+      "animation": "jump",
+      "direction": "S",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 320,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_s_f2",
+      "animation": "jump",
+      "direction": "S",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 384,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_s_f3",
+      "animation": "jump",
+      "direction": "S",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 448,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_sw_f0",
+      "animation": "jump",
+      "direction": "SW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 512,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_sw_f1",
+      "animation": "jump",
+      "direction": "SW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 576,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_sw_f2",
+      "animation": "jump",
+      "direction": "SW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 640,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_sw_f3",
+      "animation": "jump",
+      "direction": "SW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 704,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_w_f0",
+      "animation": "jump",
+      "direction": "W",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 768,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_w_f1",
+      "animation": "jump",
+      "direction": "W",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 832,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_w_f2",
+      "animation": "jump",
+      "direction": "W",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 896,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_w_f3",
+      "animation": "jump",
+      "direction": "W",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 960,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_nw_f0",
+      "animation": "jump",
+      "direction": "NW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1024,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_nw_f1",
+      "animation": "jump",
+      "direction": "NW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1088,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_nw_f2",
+      "animation": "jump",
+      "direction": "NW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1152,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_nw_f3",
+      "animation": "jump",
+      "direction": "NW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1216,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_n_f0",
+      "animation": "jump",
+      "direction": "N",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1280,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_n_f1",
+      "animation": "jump",
+      "direction": "N",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1344,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_n_f2",
+      "animation": "jump",
+      "direction": "N",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1408,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_n_f3",
+      "animation": "jump",
+      "direction": "N",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1472,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_ne_f0",
+      "animation": "jump",
+      "direction": "NE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1536,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_ne_f1",
+      "animation": "jump",
+      "direction": "NE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1600,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_ne_f2",
+      "animation": "jump",
+      "direction": "NE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1664,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_ne_f3",
+      "animation": "jump",
+      "direction": "NE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1728,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_e_f0",
+      "animation": "jump",
+      "direction": "E",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1792,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_e_f1",
+      "animation": "jump",
+      "direction": "E",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1856,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_e_f2",
+      "animation": "jump",
+      "direction": "E",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1920,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_jump_e_f3",
+      "animation": "jump",
+      "direction": "E",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1984,
+        "y": 320,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_carry_idle_se_f0",
+      "animation": "carry_idle",
+      "direction": "SE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 0,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_se_f1",
+      "animation": "carry_idle",
+      "direction": "SE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 64,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_se_f2",
+      "animation": "carry_idle",
+      "direction": "SE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 128,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_se_f3",
+      "animation": "carry_idle",
+      "direction": "SE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 192,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_s_f0",
+      "animation": "carry_idle",
+      "direction": "S",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 256,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_s_f1",
+      "animation": "carry_idle",
+      "direction": "S",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 320,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_s_f2",
+      "animation": "carry_idle",
+      "direction": "S",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 384,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_s_f3",
+      "animation": "carry_idle",
+      "direction": "S",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 448,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_sw_f0",
+      "animation": "carry_idle",
+      "direction": "SW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 512,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_sw_f1",
+      "animation": "carry_idle",
+      "direction": "SW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 576,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_sw_f2",
+      "animation": "carry_idle",
+      "direction": "SW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 640,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_sw_f3",
+      "animation": "carry_idle",
+      "direction": "SW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 704,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_w_f0",
+      "animation": "carry_idle",
+      "direction": "W",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 768,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_w_f1",
+      "animation": "carry_idle",
+      "direction": "W",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 832,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_w_f2",
+      "animation": "carry_idle",
+      "direction": "W",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 896,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_w_f3",
+      "animation": "carry_idle",
+      "direction": "W",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 960,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_nw_f0",
+      "animation": "carry_idle",
+      "direction": "NW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1024,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_nw_f1",
+      "animation": "carry_idle",
+      "direction": "NW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1088,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_nw_f2",
+      "animation": "carry_idle",
+      "direction": "NW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1152,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_nw_f3",
+      "animation": "carry_idle",
+      "direction": "NW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1216,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_n_f0",
+      "animation": "carry_idle",
+      "direction": "N",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1280,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_n_f1",
+      "animation": "carry_idle",
+      "direction": "N",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1344,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_n_f2",
+      "animation": "carry_idle",
+      "direction": "N",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1408,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_n_f3",
+      "animation": "carry_idle",
+      "direction": "N",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1472,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_ne_f0",
+      "animation": "carry_idle",
+      "direction": "NE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1536,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_ne_f1",
+      "animation": "carry_idle",
+      "direction": "NE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1600,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_ne_f2",
+      "animation": "carry_idle",
+      "direction": "NE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1664,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_ne_f3",
+      "animation": "carry_idle",
+      "direction": "NE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1728,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_e_f0",
+      "animation": "carry_idle",
+      "direction": "E",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1792,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_e_f1",
+      "animation": "carry_idle",
+      "direction": "E",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1856,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_e_f2",
+      "animation": "carry_idle",
+      "direction": "E",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1920,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_idle_e_f3",
+      "animation": "carry_idle",
+      "direction": "E",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1984,
+        "y": 384,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_carry_walk_se_f0",
+      "animation": "carry_walk",
+      "direction": "SE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 0,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_se_f1",
+      "animation": "carry_walk",
+      "direction": "SE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 64,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_se_f2",
+      "animation": "carry_walk",
+      "direction": "SE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 128,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_se_f3",
+      "animation": "carry_walk",
+      "direction": "SE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 192,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_se_f4",
+      "animation": "carry_walk",
+      "direction": "SE",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 256,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_se_f5",
+      "animation": "carry_walk",
+      "direction": "SE",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 320,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_se_f6",
+      "animation": "carry_walk",
+      "direction": "SE",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 384,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_se_f7",
+      "animation": "carry_walk",
+      "direction": "SE",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 448,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_s_f0",
+      "animation": "carry_walk",
+      "direction": "S",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 512,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_s_f1",
+      "animation": "carry_walk",
+      "direction": "S",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 576,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_s_f2",
+      "animation": "carry_walk",
+      "direction": "S",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 640,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_s_f3",
+      "animation": "carry_walk",
+      "direction": "S",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 704,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_s_f4",
+      "animation": "carry_walk",
+      "direction": "S",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 768,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_s_f5",
+      "animation": "carry_walk",
+      "direction": "S",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 832,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_s_f6",
+      "animation": "carry_walk",
+      "direction": "S",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 896,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_s_f7",
+      "animation": "carry_walk",
+      "direction": "S",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 960,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_sw_f0",
+      "animation": "carry_walk",
+      "direction": "SW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1024,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_sw_f1",
+      "animation": "carry_walk",
+      "direction": "SW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1088,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_sw_f2",
+      "animation": "carry_walk",
+      "direction": "SW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1152,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_sw_f3",
+      "animation": "carry_walk",
+      "direction": "SW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1216,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_sw_f4",
+      "animation": "carry_walk",
+      "direction": "SW",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1280,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_sw_f5",
+      "animation": "carry_walk",
+      "direction": "SW",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1344,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_sw_f6",
+      "animation": "carry_walk",
+      "direction": "SW",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 1408,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_sw_f7",
+      "animation": "carry_walk",
+      "direction": "SW",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 1472,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_w_f0",
+      "animation": "carry_walk",
+      "direction": "W",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1536,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_w_f1",
+      "animation": "carry_walk",
+      "direction": "W",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1600,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_w_f2",
+      "animation": "carry_walk",
+      "direction": "W",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1664,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_w_f3",
+      "animation": "carry_walk",
+      "direction": "W",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1728,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_w_f4",
+      "animation": "carry_walk",
+      "direction": "W",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1792,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_w_f5",
+      "animation": "carry_walk",
+      "direction": "W",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1856,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_w_f6",
+      "animation": "carry_walk",
+      "direction": "W",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 1920,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_w_f7",
+      "animation": "carry_walk",
+      "direction": "W",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 1984,
+        "y": 448,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_nw_f0",
+      "animation": "carry_walk",
+      "direction": "NW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 0,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_nw_f1",
+      "animation": "carry_walk",
+      "direction": "NW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 64,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_nw_f2",
+      "animation": "carry_walk",
+      "direction": "NW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 128,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_nw_f3",
+      "animation": "carry_walk",
+      "direction": "NW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 192,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_nw_f4",
+      "animation": "carry_walk",
+      "direction": "NW",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 256,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_nw_f5",
+      "animation": "carry_walk",
+      "direction": "NW",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 320,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_nw_f6",
+      "animation": "carry_walk",
+      "direction": "NW",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 384,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_nw_f7",
+      "animation": "carry_walk",
+      "direction": "NW",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 448,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_n_f0",
+      "animation": "carry_walk",
+      "direction": "N",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 512,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_n_f1",
+      "animation": "carry_walk",
+      "direction": "N",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 576,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_n_f2",
+      "animation": "carry_walk",
+      "direction": "N",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 640,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_n_f3",
+      "animation": "carry_walk",
+      "direction": "N",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 704,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_n_f4",
+      "animation": "carry_walk",
+      "direction": "N",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 768,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_n_f5",
+      "animation": "carry_walk",
+      "direction": "N",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 832,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_n_f6",
+      "animation": "carry_walk",
+      "direction": "N",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 896,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_n_f7",
+      "animation": "carry_walk",
+      "direction": "N",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 960,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_ne_f0",
+      "animation": "carry_walk",
+      "direction": "NE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1024,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_ne_f1",
+      "animation": "carry_walk",
+      "direction": "NE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1088,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_ne_f2",
+      "animation": "carry_walk",
+      "direction": "NE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1152,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_ne_f3",
+      "animation": "carry_walk",
+      "direction": "NE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1216,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_ne_f4",
+      "animation": "carry_walk",
+      "direction": "NE",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1280,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_ne_f5",
+      "animation": "carry_walk",
+      "direction": "NE",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1344,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_ne_f6",
+      "animation": "carry_walk",
+      "direction": "NE",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 1408,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_ne_f7",
+      "animation": "carry_walk",
+      "direction": "NE",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 1472,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_e_f0",
+      "animation": "carry_walk",
+      "direction": "E",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1536,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_e_f1",
+      "animation": "carry_walk",
+      "direction": "E",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1600,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_e_f2",
+      "animation": "carry_walk",
+      "direction": "E",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1664,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_e_f3",
+      "animation": "carry_walk",
+      "direction": "E",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1728,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_e_f4",
+      "animation": "carry_walk",
+      "direction": "E",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1792,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_e_f5",
+      "animation": "carry_walk",
+      "direction": "E",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1856,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_e_f6",
+      "animation": "carry_walk",
+      "direction": "E",
+      "frameIndex": 6,
+      "bounds": {
+        "x": 1920,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_carry_walk_e_f7",
+      "animation": "carry_walk",
+      "direction": "E",
+      "frameIndex": 7,
+      "bounds": {
+        "x": 1984,
+        "y": 512,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_push_se_f0",
+      "animation": "push",
+      "direction": "SE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 0,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_se_f1",
+      "animation": "push",
+      "direction": "SE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 64,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_se_f2",
+      "animation": "push",
+      "direction": "SE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 128,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_se_f3",
+      "animation": "push",
+      "direction": "SE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 192,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_s_f0",
+      "animation": "push",
+      "direction": "S",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 256,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_s_f1",
+      "animation": "push",
+      "direction": "S",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 320,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_s_f2",
+      "animation": "push",
+      "direction": "S",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 384,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_s_f3",
+      "animation": "push",
+      "direction": "S",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 448,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_sw_f0",
+      "animation": "push",
+      "direction": "SW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 512,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_sw_f1",
+      "animation": "push",
+      "direction": "SW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 576,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_sw_f2",
+      "animation": "push",
+      "direction": "SW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 640,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_sw_f3",
+      "animation": "push",
+      "direction": "SW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 704,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_w_f0",
+      "animation": "push",
+      "direction": "W",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 768,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_w_f1",
+      "animation": "push",
+      "direction": "W",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 832,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_w_f2",
+      "animation": "push",
+      "direction": "W",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 896,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_w_f3",
+      "animation": "push",
+      "direction": "W",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 960,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_nw_f0",
+      "animation": "push",
+      "direction": "NW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1024,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_nw_f1",
+      "animation": "push",
+      "direction": "NW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1088,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_nw_f2",
+      "animation": "push",
+      "direction": "NW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1152,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_nw_f3",
+      "animation": "push",
+      "direction": "NW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1216,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_n_f0",
+      "animation": "push",
+      "direction": "N",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1280,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_n_f1",
+      "animation": "push",
+      "direction": "N",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1344,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_n_f2",
+      "animation": "push",
+      "direction": "N",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1408,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_n_f3",
+      "animation": "push",
+      "direction": "N",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1472,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_ne_f0",
+      "animation": "push",
+      "direction": "NE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1536,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_ne_f1",
+      "animation": "push",
+      "direction": "NE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1600,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_ne_f2",
+      "animation": "push",
+      "direction": "NE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1664,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_ne_f3",
+      "animation": "push",
+      "direction": "NE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1728,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_e_f0",
+      "animation": "push",
+      "direction": "E",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1792,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_e_f1",
+      "animation": "push",
+      "direction": "E",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1856,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_e_f2",
+      "animation": "push",
+      "direction": "E",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1920,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_push_e_f3",
+      "animation": "push",
+      "direction": "E",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1984,
+        "y": 576,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 125
+    },
+    {
+      "id": "player_hurt_se_f0",
+      "animation": "hurt",
+      "direction": "SE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 0,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_se_f1",
+      "animation": "hurt",
+      "direction": "SE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 64,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_se_f2",
+      "animation": "hurt",
+      "direction": "SE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 128,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_se_f3",
+      "animation": "hurt",
+      "direction": "SE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 192,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_s_f0",
+      "animation": "hurt",
+      "direction": "S",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 256,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_s_f1",
+      "animation": "hurt",
+      "direction": "S",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 320,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_s_f2",
+      "animation": "hurt",
+      "direction": "S",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 384,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_s_f3",
+      "animation": "hurt",
+      "direction": "S",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 448,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_sw_f0",
+      "animation": "hurt",
+      "direction": "SW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 512,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_sw_f1",
+      "animation": "hurt",
+      "direction": "SW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 576,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_sw_f2",
+      "animation": "hurt",
+      "direction": "SW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 640,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_sw_f3",
+      "animation": "hurt",
+      "direction": "SW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 704,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_w_f0",
+      "animation": "hurt",
+      "direction": "W",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 768,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_w_f1",
+      "animation": "hurt",
+      "direction": "W",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 832,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_w_f2",
+      "animation": "hurt",
+      "direction": "W",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 896,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_w_f3",
+      "animation": "hurt",
+      "direction": "W",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 960,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_nw_f0",
+      "animation": "hurt",
+      "direction": "NW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1024,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_nw_f1",
+      "animation": "hurt",
+      "direction": "NW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1088,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_nw_f2",
+      "animation": "hurt",
+      "direction": "NW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1152,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_nw_f3",
+      "animation": "hurt",
+      "direction": "NW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1216,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_n_f0",
+      "animation": "hurt",
+      "direction": "N",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1280,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_n_f1",
+      "animation": "hurt",
+      "direction": "N",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1344,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_n_f2",
+      "animation": "hurt",
+      "direction": "N",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1408,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_n_f3",
+      "animation": "hurt",
+      "direction": "N",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1472,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_ne_f0",
+      "animation": "hurt",
+      "direction": "NE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1536,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_ne_f1",
+      "animation": "hurt",
+      "direction": "NE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1600,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_ne_f2",
+      "animation": "hurt",
+      "direction": "NE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1664,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_ne_f3",
+      "animation": "hurt",
+      "direction": "NE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1728,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_e_f0",
+      "animation": "hurt",
+      "direction": "E",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1792,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_e_f1",
+      "animation": "hurt",
+      "direction": "E",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1856,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_e_f2",
+      "animation": "hurt",
+      "direction": "E",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1920,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_hurt_e_f3",
+      "animation": "hurt",
+      "direction": "E",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1984,
+        "y": 640,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 83
+    },
+    {
+      "id": "player_death_se_f0",
+      "animation": "death",
+      "direction": "SE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 0,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_se_f1",
+      "animation": "death",
+      "direction": "SE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 64,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_se_f2",
+      "animation": "death",
+      "direction": "SE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 128,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_se_f3",
+      "animation": "death",
+      "direction": "SE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 192,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_se_f4",
+      "animation": "death",
+      "direction": "SE",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 256,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_se_f5",
+      "animation": "death",
+      "direction": "SE",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 320,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_s_f0",
+      "animation": "death",
+      "direction": "S",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 384,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_s_f1",
+      "animation": "death",
+      "direction": "S",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 448,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_s_f2",
+      "animation": "death",
+      "direction": "S",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 512,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_s_f3",
+      "animation": "death",
+      "direction": "S",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 576,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_s_f4",
+      "animation": "death",
+      "direction": "S",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 640,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_s_f5",
+      "animation": "death",
+      "direction": "S",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 704,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_sw_f0",
+      "animation": "death",
+      "direction": "SW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 768,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_sw_f1",
+      "animation": "death",
+      "direction": "SW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 832,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_sw_f2",
+      "animation": "death",
+      "direction": "SW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 896,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_sw_f3",
+      "animation": "death",
+      "direction": "SW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 960,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_sw_f4",
+      "animation": "death",
+      "direction": "SW",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1024,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_sw_f5",
+      "animation": "death",
+      "direction": "SW",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1088,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_w_f0",
+      "animation": "death",
+      "direction": "W",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1152,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_w_f1",
+      "animation": "death",
+      "direction": "W",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1216,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_w_f2",
+      "animation": "death",
+      "direction": "W",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1280,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_w_f3",
+      "animation": "death",
+      "direction": "W",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1344,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_w_f4",
+      "animation": "death",
+      "direction": "W",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1408,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_w_f5",
+      "animation": "death",
+      "direction": "W",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1472,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_nw_f0",
+      "animation": "death",
+      "direction": "NW",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1536,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_nw_f1",
+      "animation": "death",
+      "direction": "NW",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1600,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_nw_f2",
+      "animation": "death",
+      "direction": "NW",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 1664,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_nw_f3",
+      "animation": "death",
+      "direction": "NW",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 1728,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_nw_f4",
+      "animation": "death",
+      "direction": "NW",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 1792,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_nw_f5",
+      "animation": "death",
+      "direction": "NW",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 1856,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_n_f0",
+      "animation": "death",
+      "direction": "N",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 1920,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_n_f1",
+      "animation": "death",
+      "direction": "N",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 1984,
+        "y": 704,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_n_f2",
+      "animation": "death",
+      "direction": "N",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 0,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_n_f3",
+      "animation": "death",
+      "direction": "N",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 64,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_n_f4",
+      "animation": "death",
+      "direction": "N",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 128,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_n_f5",
+      "animation": "death",
+      "direction": "N",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 192,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_ne_f0",
+      "animation": "death",
+      "direction": "NE",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 256,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_ne_f1",
+      "animation": "death",
+      "direction": "NE",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 320,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_ne_f2",
+      "animation": "death",
+      "direction": "NE",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 384,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_ne_f3",
+      "animation": "death",
+      "direction": "NE",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 448,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_ne_f4",
+      "animation": "death",
+      "direction": "NE",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 512,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_ne_f5",
+      "animation": "death",
+      "direction": "NE",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 576,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_e_f0",
+      "animation": "death",
+      "direction": "E",
+      "frameIndex": 0,
+      "bounds": {
+        "x": 640,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_e_f1",
+      "animation": "death",
+      "direction": "E",
+      "frameIndex": 1,
+      "bounds": {
+        "x": 704,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_e_f2",
+      "animation": "death",
+      "direction": "E",
+      "frameIndex": 2,
+      "bounds": {
+        "x": 768,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_e_f3",
+      "animation": "death",
+      "direction": "E",
+      "frameIndex": 3,
+      "bounds": {
+        "x": 832,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_e_f4",
+      "animation": "death",
+      "direction": "E",
+      "frameIndex": 4,
+      "bounds": {
+        "x": 896,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    },
+    {
+      "id": "player_death_e_f5",
+      "animation": "death",
+      "direction": "E",
+      "frameIndex": 5,
+      "bounds": {
+        "x": 960,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 52
+      },
+      "hitbox": {
+        "x": 22,
+        "y": 20,
+        "width": 20,
+        "height": 40
+      },
+      "durationMs": 100
+    }
+  ],
+  "shadows": [
+    {
+      "id": "player_shadow_state_0",
+      "bounds": {
+        "x": 1024,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 32
+      },
+      "scale": 1
+    },
+    {
+      "id": "player_shadow_state_1",
+      "bounds": {
+        "x": 1088,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 32
+      },
+      "scale": 0.85
+    },
+    {
+      "id": "player_shadow_state_2",
+      "bounds": {
+        "x": 1152,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 32
+      },
+      "scale": 0.7
+    },
+    {
+      "id": "player_shadow_state_3",
+      "bounds": {
+        "x": 1216,
+        "y": 768,
+        "width": 64,
+        "height": 64
+      },
+      "anchor": {
+        "x": 32,
+        "y": 32
+      },
+      "scale": 0.5
+    }
+  ]
+}
