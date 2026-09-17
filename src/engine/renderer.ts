@@ -32,30 +32,7 @@ interface RenderContext {
 }
 
 export class IsometricRenderer {
-  // Offscreen lightmap canvas for volumetric lighting & 60 FPS performance on integrated GPUs
-  private lightCanvas: HTMLCanvasElement | null = null;
-  private lightCtx: CanvasRenderingContext2D | null = null;
-
   constructor() {}
-
-  // Ensure lightweight half-resolution lighting buffer for soft volumetric diffusion & ultra-high performance
-  private getLightBuffer(width: number, height: number): { canvas: HTMLCanvasElement; ctx: CanvasRenderingContext2D } {
-    const targetW = Math.max(1, Math.floor(width / 2));
-    const targetH = Math.max(1, Math.floor(height / 2));
-
-    if (!this.lightCanvas) {
-      this.lightCanvas = document.createElement('canvas');
-      this.lightCanvas.width = targetW;
-      this.lightCanvas.height = targetH;
-      this.lightCtx = this.lightCanvas.getContext('2d', { alpha: true });
-    } else if (this.lightCanvas.width !== targetW || this.lightCanvas.height !== targetH) {
-      this.lightCanvas.width = targetW;
-      this.lightCanvas.height = targetH;
-      this.lightCtx = this.lightCanvas.getContext('2d', { alpha: true });
-    }
-
-    return { canvas: this.lightCanvas, ctx: this.lightCtx! };
-  }
 
   public render(params: RenderContext) {
     const { ctx, canvasWidth, canvasHeight, cameraX, cameraY, zoom, time, room, player, particles, projectiles } = params;
@@ -129,12 +106,7 @@ export class IsometricRenderer {
     ctx.restore();
 
     // ----------------------------------------------------
-    // 13. DYNAMIC VOLUMETRIC LIGHTING PASS (DEFERRED COMPOSITE)
-    // ----------------------------------------------------
-    this.renderVolumetricLightingPass(ctx, canvasWidth, canvasHeight, cameraX, cameraY, zoom, room, player, time);
-
-    // ----------------------------------------------------
-    // 14. CINEMATIC POST-PROCESSING & LENS VIGNETTE
+    // UNIFORM AMBIENT POST-PROCESSING
     // ----------------------------------------------------
     this.drawCinematicVignette(ctx, canvasWidth, canvasHeight, room, time);
   }
@@ -1583,139 +1555,7 @@ export class IsometricRenderer {
   }
 
   // ----------------------------------------------------
-  // VOLUMETRIC LIGHTING PASS (DEFERRED CANVAS COMPOSITING)
-  // ----------------------------------------------------
-  private renderVolumetricLightingPass(
-    ctx: CanvasRenderingContext2D,
-    canvasW: number,
-    canvasH: number,
-    camX: number,
-    camY: number,
-    zoom: number,
-    room: RoomDefinition,
-    player: PlayerState,
-    time: number
-  ) {
-    const { canvas: lCanvas, ctx: lCtx } = this.getLightBuffer(canvasW, canvasH);
-    const lw = lCanvas.width;
-    const lh = lCanvas.height;
-    const scale = lw / canvasW;
-
-    // 1. Clear Light Buffer with space station ambient darkness
-    lCtx.clearRect(0, 0, lw, lh);
-    lCtx.fillStyle = 'rgba(2, 4, 10, 0.88)';
-    lCtx.fillRect(0, 0, lw, lh);
-
-    // Save lightmap matrix matching isometric camera space
-    lCtx.save();
-    lCtx.scale(scale, scale);
-    lCtx.translate(canvasW / 2 - camX * zoom, canvasH / 2 - camY * zoom);
-    lCtx.scale(zoom, zoom);
-
-    // We use 'destination-out' to cut radiant light holes in the ambient darkness
-    lCtx.globalCompositeOperation = 'destination-out';
-
-    // ----------------------------------------------------
-    // PLAYER ILLUMINATION: AMBIENT VISIBILITY
-    // ----------------------------------------------------
-    const playerScreen = worldToScreen(player.x, player.y, player.z);
-    const flashOriginX = playerScreen.x;
-    const flashOriginY = playerScreen.y - 18;
-
-    // Soft omnidirectional light around operative
-    const coreGrad = lCtx.createRadialGradient(flashOriginX, flashOriginY, 10, flashOriginX, flashOriginY, 130);
-    coreGrad.addColorStop(0, 'rgba(0, 0, 0, 0.95)');
-    coreGrad.addColorStop(0.5, 'rgba(0, 0, 0, 0.75)');
-    coreGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-    lCtx.fillStyle = coreGrad;
-    lCtx.beginPath();
-    lCtx.arc(flashOriginX, flashOriginY, 130, 0, Math.PI * 2);
-    lCtx.fill();
-
-    // ----------------------------------------------------
-    // LIGHT 2: TERMINALS & EMISSIVE SWITCHES
-    // ----------------------------------------------------
-    for (const sw of room.switches) {
-      const sp = worldToScreen(sw.x, sw.y, sw.z);
-      const sGrad = lCtx.createRadialGradient(sp.x, sp.y - 20, 5, sp.x, sp.y - 20, 65);
-      sGrad.addColorStop(0, 'rgba(0, 0, 0, 0.75)');
-      sGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-      lCtx.fillStyle = sGrad;
-      lCtx.beginPath();
-      lCtx.arc(sp.x, sp.y - 20, 65, 0, Math.PI * 2);
-      lCtx.fill();
-    }
-
-    // ----------------------------------------------------
-    // LIGHT 4: LASER BARRIER GLOW
-    // ----------------------------------------------------
-    for (const laser of room.lasers) {
-      if (!laser.isActive) continue;
-      const lp1 = worldToScreen(laser.startX, laser.startY, laser.z);
-      const lp2 = worldToScreen(laser.endX, laser.endY, laser.z);
-      const mx = (lp1.x + lp2.x) * 0.5;
-      const my = (lp1.y + lp2.y) * 0.5 - 12;
-
-      const lGrad = lCtx.createRadialGradient(mx, my, 10, mx, my, 85);
-      lGrad.addColorStop(0, 'rgba(0, 0, 0, 0.8)');
-      lGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-      lCtx.fillStyle = lGrad;
-      lCtx.beginPath();
-      lCtx.arc(mx, my, 85, 0, Math.PI * 2);
-      lCtx.fill();
-    }
-
-    // ----------------------------------------------------
-    // LIGHT 5: DRONE SEARCHLIGHTS
-    // ----------------------------------------------------
-    for (const drone of room.drones) {
-      const dp = worldToScreen(drone.x, drone.y, drone.z);
-      const dGrad = lCtx.createRadialGradient(dp.x, dp.y - 18, 5, dp.x, dp.y - 18, 75);
-      dGrad.addColorStop(0, 'rgba(0, 0, 0, 0.85)');
-      dGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-      lCtx.fillStyle = dGrad;
-      lCtx.beginPath();
-      lCtx.arc(dp.x, dp.y - 18, 75, 0, Math.PI * 2);
-      lCtx.fill();
-    }
-
-    // ----------------------------------------------------
-    // LIGHT 6: EMERGENCY ALARM BEACON (Chase Mode)
-    // ----------------------------------------------------
-    const hasChase = room.drones.some((d) => d.alertState === 'chase');
-    if (hasChase) {
-      const sirenAngle = time * 4.0;
-      const sx = Math.cos(sirenAngle) * 350;
-      const sy = Math.sin(sirenAngle) * 200;
-      const sirenGrad = lCtx.createRadialGradient(
-        playerScreen.x + sx,
-        playerScreen.y + sy,
-        20,
-        playerScreen.x + sx,
-        playerScreen.y + sy,
-        320
-      );
-      sirenGrad.addColorStop(0, 'rgba(0, 0, 0, 0.45)');
-      sirenGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-      lCtx.fillStyle = sirenGrad;
-      lCtx.beginPath();
-      lCtx.arc(playerScreen.x + sx, playerScreen.y + sy, 320, 0, Math.PI * 2);
-      lCtx.fill();
-    }
-
-    lCtx.restore();
-
-    // ----------------------------------------------------
-    // COMPOSITE LIGHTMAP OVER MAIN CANVAS (Hardware-Accelerated)
-    // ----------------------------------------------------
-    ctx.save();
-    ctx.imageSmoothingEnabled = true;
-    ctx.drawImage(lCanvas, 0, 0, lw, lh, 0, 0, canvasW, canvasH);
-    ctx.restore();
-  }
-
-  // ----------------------------------------------------
-  // CINEMATIC VIGNETTE & COLOR GRADING
+  // UNIFORM SCREEN FEEDBACK (Under Pursuit Alert)
   // ----------------------------------------------------
   private drawCinematicVignette(
     ctx: CanvasRenderingContext2D,
@@ -1724,28 +1564,15 @@ export class IsometricRenderer {
     room: RoomDefinition,
     time: number
   ) {
-    ctx.save();
-    const cx = w / 2;
-    const cy = h / 2;
-    const maxR = Math.max(w, h) * 0.72;
-
-    const vigGrad = ctx.createRadialGradient(cx, cy, maxR * 0.45, cx, cy, maxR);
-    vigGrad.addColorStop(0, 'rgba(0, 0, 0, 0)');
-    vigGrad.addColorStop(0.7, 'rgba(1, 3, 8, 0.35)');
-    vigGrad.addColorStop(1, 'rgba(0, 0, 0, 0.75)');
-
-    ctx.fillStyle = vigGrad;
-    ctx.fillRect(0, 0, w, h);
-
-    // Subtle Emergency Alarm Screen Strobe if Under Pursuit
+    // Subtle Emergency Alarm Screen Strobe if Under Pursuit (uniform tint, no dark corner masks)
     const hasChase = room.drones.some((d) => d.alertState === 'chase');
     if (hasChase) {
+      ctx.save();
       const strobe = (Math.sin(time * 12) + 1) * 0.5;
       ctx.fillStyle = `rgba(239, 68, 68, ${0.04 + strobe * 0.06})`;
       ctx.fillRect(0, 0, w, h);
+      ctx.restore();
     }
-
-    ctx.restore();
   }
 
   // ----------------------------------------------------
